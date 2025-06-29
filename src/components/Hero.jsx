@@ -22,7 +22,6 @@ const Hero = () => {
           />
         </div>
       </div>
-
       {/* Text Section */}
       <div className="space-y-4" data-aos="fade-left">
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 transition duration-500 hover:tracking-wide hover:text-blue-400">
