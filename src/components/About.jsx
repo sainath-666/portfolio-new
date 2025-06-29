@@ -134,7 +134,6 @@ const About = () => {
                 </div>
               </div>
             </div>
-
             {/* Optional Summary Note */}
             <div className="pt-2 border-t border-gray-700 text-gray-400 text-sm">
               Passionate about scalable UI/UX, full-stack product development,
