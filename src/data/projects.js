@@ -31,5 +31,4 @@ const projects = [
     live: "https://sainath-666.github.io/Portfolio/",
   },
 ];
-
 export default projects;
