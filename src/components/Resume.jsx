@@ -85,14 +85,6 @@ const Resume = () => {
           📄 Download Resume
         </a>
         <br />
-        <a
-          href="https://www.linkedin.com/in/sainath666"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block mt-4 text-blue-400 hover:text-blue-300 underline text-sm"
-        >
-          🔗 View LinkedIn Profile
-        </a>
       </div>
     </section>
   );

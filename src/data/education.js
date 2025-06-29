@@ -27,7 +27,6 @@ export const education = [
     highlights: ["Top grades in Math & Telugu", "Science Focus"],
   },
 ];
-
 export const internships = [
   {
     title: "Front-End Developer Intern",
