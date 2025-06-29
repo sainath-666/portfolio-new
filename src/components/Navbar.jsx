@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import logo from "/logo.png"; // adjust path if needed
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,35 +13,42 @@ const Navbar = () => {
     { label: "Resume", href: "#resume" },
     { label: "Contact", href: "#contact" },
   ];
+
   return (
     <nav className="sticky top-0 z-50 bg-gray-900 bg-opacity-90 backdrop-blur-md shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-        <div className="text-white text-2xl font-bold tracking-wide">Sai</div>
+        
+        {/* 🔵 Logo + Name */}
+        <a href="#hero" className="flex items-center gap-2">
+          <img src={logo} alt="Logo" className="w-8 h-8 md:w-10 md:h-10 rounded-full object-cover" />
+          <span className="text-white text-2xl font-bold tracking-wide">SAI</span>
+        </a>
 
+        {/* 🔷 Desktop Links */}
         <div className="hidden md:flex space-x-6">
           {links.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-gray-300 hover:text-white transition-colors duration-200"
+              className="relative text-gray-300 hover:text-white transition duration-200 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-blue-500 hover:after:w-full after:transition-all"
             >
               {link.label}
             </a>
           ))}
         </div>
 
-        {/* Mobile menu button */}
+        {/* 🔶 Mobile Toggle */}
         <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="text-gray-300 focus:outline-none"
+            className="text-gray-300 text-2xl focus:outline-none"
           >
-            ☰
+            {isOpen ? <FaTimes /> : <FaBars />}
           </button>
         </div>
       </div>
 
-      {/* Mobile menu dropdown */}
+      {/* 🔸 Mobile Menu */}
       {isOpen && (
         <div className="md:hidden px-4 pb-4 space-y-2 bg-gray-800">
           {links.map((link) => (
@@ -59,6 +68,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-// This Navbar component is responsive and includes a mobile menu toggle.
-// It uses Tailwind CSS for styling and React's useState hook to manage the mobile menu state.
-// The links are dynamically generated from an array, making it easy to update or add new links.

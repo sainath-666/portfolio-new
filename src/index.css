@@ -4,6 +4,11 @@ html {
   scroll-behavior: smooth;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 /* Custom animations */
 @layer utilities {
   .animate-fade-in {
