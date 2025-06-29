@@ -9,6 +9,7 @@ import Resume from "./components/Resume";
 import Skills from "./components/Skills";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -28,7 +29,8 @@ function App() {
       <Projects />
       <Resume />
       <Contact />
-      <Chatbot />
+      {/* <Chatbot /> */}
+      <Footer />
     </div>
   );
 }
