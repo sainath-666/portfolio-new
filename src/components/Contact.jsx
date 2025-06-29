@@ -10,8 +10,7 @@ const Contact = () => {
         <h2 className="text-4xl font-bold mb-6">📬 Contact Me</h2>
         <p className="text-gray-400 mb-12">
           Interested in working together or just want to say hi? Fill out the form below or connect with me on social platforms.
-        </p>
-
+        </p> 
         {/* Contact Form */}
         <form
           action="https://formspree.io/f/xzzgopny"
