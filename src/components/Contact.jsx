@@ -1,20 +1,45 @@
+import { useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
+  const [showToast, setShowToast] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+
+    fetch("https://formspree.io/f/xzzgopny", {
+      method: "POST",
+      body: new FormData(form),
+      headers: {
+        Accept: "application/json",
+      },
+    }).then((response) => {
+      if (response.ok) {
+        form.reset();
+        setShowToast(true);
+        setTimeout(() => setShowToast(false), 4000); // auto dismiss
+      } else {
+        alert("Something went wrong. Please try again later.");
+      }
+    });
+  };
+
   return (
     <section
       id="contact"
-      className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white py-12 px-6"
+      className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white py-12 px-6 relative"
     >
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-6">📬 Contact Me</h2>
         <p className="text-gray-400 mb-12">
-          Interested in working together or just want to say hi? Fill out the form below or connect with me on social platforms.
-        </p> 
+          Fill the form or connect through social platforms.
+        </p>
+
         {/* Contact Form */}
         <form
-          action="https://formspree.io/f/xzzgopny"
-          method="POST"
+          onSubmit={handleSubmit}
           className="grid gap-6 max-w-xl mx-auto"
         >
           <input
@@ -22,21 +47,21 @@ const Contact = () => {
             name="name"
             required
             placeholder="Your Name"
-            className="p-3 rounded-md bg-gray-800 border border-gray-700 focus:outline-none focus:border-blue-500 text-white"
+            className="p-3 rounded-md bg-gray-800 border border-gray-700 text-white focus:outline-none focus:border-blue-500"
           />
           <input
             type="email"
             name="email"
             required
             placeholder="Your Email"
-            className="p-3 rounded-md bg-gray-800 border border-gray-700 focus:outline-none focus:border-blue-500 text-white"
+            className="p-3 rounded-md bg-gray-800 border border-gray-700 text-white focus:outline-none focus:border-blue-500"
           />
           <textarea
             name="message"
             rows="5"
             required
             placeholder="Your Message"
-            className="p-3 rounded-md bg-gray-800 border border-gray-700 focus:outline-none focus:border-blue-500 text-white resize-none"
+            className="p-3 rounded-md bg-gray-800 border border-gray-700 text-white resize-none focus:outline-none focus:border-blue-500"
           />
           <button
             type="submit"
@@ -48,19 +73,12 @@ const Contact = () => {
 
         {/* Social Icons */}
         <div className="flex justify-center gap-8 mt-12 text-2xl text-gray-400">
-          <a
-            href="mailto:sai65265@gmail.com"
-            className="hover:text-white transition"
-            aria-label="Email"
-          >
-            📧
-          </a>
+          <a href="mailto:sai65265@gmail.com" className="hover:text-white transition">📧</a>
           <a
             href="https://github.com/sainath-666"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition"
-            aria-label="GitHub"
           >
             <FaGithub />
           </a>
@@ -69,12 +87,18 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition"
-            aria-label="LinkedIn"
           >
             <FaLinkedin />
           </a>
         </div>
       </div>
+
+      {/* Toast Notification */}
+      {showToast && (
+        <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-6 py-3 rounded-md shadow-lg animate-fade-in z-50">
+          ✅ Message sent successfully!
+        </div>
+      )}
     </section>
   );
 };
