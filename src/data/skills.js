@@ -178,3 +178,5 @@ const skills = [
 ];
 
 export default skills;
+
+// This file contains the skills data structured in a way that can be easily used in components.

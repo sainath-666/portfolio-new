@@ -40,7 +40,6 @@ const Skills = () => {
           ))}
         </div>
       </div>
-
       {/* Modal for skill details */}
       {selectedSkill && (
         <SkillModal
