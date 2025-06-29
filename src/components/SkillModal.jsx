@@ -14,7 +14,6 @@ const SkillModal = ({ skill, onClose }) => {
           <span className={`${skill.color} text-4xl`}>{<skill.icon />}</span>
           {skill.name}
         </div>
-
         <p className="mb-3">{skill.description}</p>
         <p className="text-sm text-gray-400 mb-2">
           <strong>Experience:</strong> {skill.experience}
