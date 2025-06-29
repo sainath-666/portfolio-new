@@ -10,6 +10,7 @@ import Skills from "./components/Skills";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Footer from "./components/Footer";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       <Resume />
       <Contact />
       {/* <Chatbot /> */}
+      <ScrollToTopButton />
       <Footer />
     </div>
   );
