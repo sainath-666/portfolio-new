@@ -1,5 +1,6 @@
 import { MdEmail } from "react-icons/md";
 import profileImg from "../assets/profile.jpg";
+import resumePdf from "../assets/resume.pdf";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 
@@ -46,7 +47,7 @@ const Hero = () => {
         {/* Buttons */}
         <div className="flex flex-wrap justify-center md:justify-start gap-4">
           <a
-            href="/resume.pdf"
+            href={resumePdf}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-blue-500 hover:bg-blue-600 hover:shadow-blue-500/40 hover:shadow-lg text-white px-6 py-2 rounded-md font-medium transition duration-300"
