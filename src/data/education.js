@@ -1,13 +1,13 @@
 export const education = [
   {
-    title: "B.Tech in CSE (IoT, Cybersecurity, Blockchain)",
+    title: "B.Tech in CSE (IoT, Cybersecurity & Blockchain)",
     institution: "Siddharth Institute of Engineering & Technology",
     duration: "2020 – 2024",
     score: "62.7% (6.8 CGPA)",
     location: "Puttur",
     highlights: [
-      "Final Year Project on Doctor Consultation App",
-      "Specialized in IoT, Blockchain & Security",
+      "Built confidence to solve real-world tech problems through continuous hands-on development",
+      "Developed self-discipline and adaptability by learning full-stack technologies outside the curriculum",
     ],
   },
   {
@@ -16,7 +16,10 @@ export const education = [
     duration: "2018 – 2020",
     score: "64.6%",
     location: "Vijayawada",
-    highlights: ["JEE Preparation", "Core Science Subjects"],
+    highlights: [
+      "Developed consistency and discipline through rigorous preparation for competitive exams like JEE",
+      "Built strong foundation in Mathematics and Physics essential for engineering problem-solving",
+    ],
   },
   {
     title: "Class X (CBSE)",
@@ -24,28 +27,41 @@ export const education = [
     duration: "2017 – 2018",
     score: "88.6%",
     location: "Rayachoty",
-    highlights: ["Top grades in Math & Telugu", "Science Focus"],
+    highlights: [
+      "Built essential study habits, time management, and early interest in technology",
+      "Achieved strong academic performance with emphasis on core subjects like Math and Science",
+    ],
   },
 ];
 export const internships = [
   {
-    title: "Front-End Developer Intern",
-    institution: "Virtunexa",
-    duration: "Jan 2025",
+    title: "Web Development Intern",
+    institution: "ShadowFox",
+    duration: "Jan - Feb 2025",
     location: "Remote",
     highlights: [
-      "Developed multiple UI screens using HTML, CSS, JS",
-      "Received Certificate & Letter of Recommendation",
+      "Built beginner to advanced-level projects across HTML, CSS, and JavaScript with guided mentorship",
+      "Enhanced skills in responsive design, clean UI structure, and real-world project delivery",
+    ],
+  },
+  {
+    title: "Front-End Developer Intern",
+    institution: "VirtuNexa",
+    duration: "Jan - Feb 2025",
+    location: "Remote",
+    highlights: [
+      "Created and enhanced web interfaces using HTML, CSS, and JavaScript for real-world applications",
+      "Improved problem-solving and independent development skills through flexible, remote project work",
     ],
   },
   {
     title: "Full Stack Java Intern",
     institution: "QSpiders",
-    duration: "Aug 2023",
+    duration: "Aug - Nov 2023",
     location: "Remote",
     highlights: [
       "Hands-on training in Java, JDBC, Servlets",
-      "Worked on internal projects and assessments",
+      "Built backend logic and practiced real-time project tasks",
     ],
   },
 ];

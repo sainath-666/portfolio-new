@@ -8,7 +8,7 @@ const Resume = () => {
       className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white py-12 px-6"
     >
       <h2 className="text-4xl font-bold text-center mb-12">
-        Resume & Timeline
+        Resume
       </h2>
 
       <div className="relative max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
@@ -34,9 +34,9 @@ const Resume = () => {
                 {item.institution} — {item.location}
               </p>
               <p className="text-sm">{item.duration}</p>
-              <p className="text-sm font-medium text-gray-300 mb-2">
+              {/* <p className="text-sm font-medium text-gray-300 mb-2">
                 {item.score}
-              </p>
+              </p> */}
               <ul className="list-disc list-inside text-sm text-gray-300">
                 {item.highlights.map((point, i) => (
                   <li key={i}>{point}</li>
@@ -80,7 +80,11 @@ const Resume = () => {
         <a
           href="/resume.pdf"
           download
-          className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md font-medium transition duration-300 inline-block"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          rel="noopener noreferrer"
+          target="_blank"
+            className="bg-blue-500 hover:bg-blue-600 hover:shadow-blue-500/40 hover:shadow-lg text-white px-6 py-3 rounded-md font-medium transition duration-300 inline-block"
         >
           📄 Download Resume
         </a>
