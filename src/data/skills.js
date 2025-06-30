@@ -83,11 +83,7 @@ const skills = [
         description:
           "A statically typed superset of JavaScript that enhances code reliability and developer productivity.",
         experience: "1+ years",
-        projects: [
-          "Car Rental App",
-          "Spotify Clone",
-          "Portfolio Refactor",
-        ],
+        projects: ["Car Rental App", "Spotify Clone", "Portfolio Refactor"],
         libraries: [
           "TypeORM",
           "Zod",
@@ -143,7 +139,7 @@ const skills = [
         description:
           "A blazing fast frontend build tool and development server optimized for modern JavaScript frameworks like React and Vue.",
         experience: "1+ years",
-        projects: ["Music Player", "Chat App", "Portfolio Site"],
+        projects: ["Weather App", "Chat App", "Portfolio Site"],
         libraries: [
           "@vitejs/plugin-react",
           "vite-plugin-pwa",
@@ -159,12 +155,8 @@ const skills = [
         icon: materialuiIcon,
         description:
           "A popular React component library that implements Google’s Material Design for building sleek and consistent UIs.",
-        experience: "1.5+ years",
-        projects: [
-          "Admin Dashboard",
-          "Authentication UI",
-          "Responsive Web Panels",
-        ],
+        experience: "1+ years",
+        projects: ["Spotify Clone", "Car Rental App"],
         libraries: [
           "@mui/material",
           "@mui/icons-material",
@@ -185,11 +177,11 @@ const skills = [
         icon: nodejsIcon,
         description:
           "A runtime environment that allows JavaScript to run on the server, enabling scalable, event-driven backend development.",
-        experience: "2+ years",
+        experience: "1+ years",
         projects: [
-          "Chat App Backend",
-          "Authentication API",
-          "File Upload Server",
+          "Chat Application Backend",
+          "Car Rental App Backend",
+          "Authentication System",
         ],
         libraries: ["Express.js", "Nodemon", "Multer", "Socket.io", "Cors"],
         quote:
@@ -200,11 +192,11 @@ const skills = [
         icon: expressjsIcon,
         description:
           "A minimal and flexible Node.js web application framework that simplifies backend development and API creation.",
-        experience: "2+ years",
+        experience: "1+ years",
         projects: [
-          "RESTful APIs",
-          "Chat App Backend",
-          "User Authentication System",
+          "Chat Application Backend",
+          "Car Rental App Backend",
+          "Authentication System",
         ],
         libraries: [
           "Morgan",
@@ -221,12 +213,8 @@ const skills = [
         icon: jwtIcon,
         description:
           "A compact, URL-safe means of securely transmitting information between parties for authentication and authorization.",
-        experience: "1.5+ years",
-        projects: [
-          "Authentication System",
-          "Protected Routes",
-          "User Sessions",
-        ],
+        experience: "1+ years",
+        projects: ["Chat Application", "Car Rental App", "Weather App"],
         libraries: [
           "jsonwebtoken",
           "bcryptjs",
@@ -242,12 +230,8 @@ const skills = [
         icon: postmanIcon,
         description:
           "A collaboration platform and API client used for developing, testing, and documenting APIs with ease and efficiency.",
-        experience: "2+ years",
-        projects: [
-          "REST API Testing",
-          "JWT Authentication Debugging",
-          "API Documentation",
-        ],
+        experience: "1+ years",
+        projects: ["API Testing", "Chat Application API"],
         libraries: [
           "Newman",
           "Postman Monitors",
@@ -269,7 +253,7 @@ const skills = [
         icon: mongodbIcon,
         description:
           "A NoSQL document-oriented database designed for high performance, scalability, and flexibility with JSON-like data structures.",
-        experience: "2+ years",
+        experience: "1+ years",
         projects: [
           "Chat App Database",
           "Authentication System",
@@ -291,12 +275,8 @@ const skills = [
         icon: postgresqlIcon,
         description:
           "A powerful, open-source relational database system known for its robustness, advanced features, and SQL compliance.",
-        experience: "1.5+ years",
-        projects: [
-          "Doctor Consultation App (DB Design)",
-          "Inventory Management System",
-          "Data-Driven Dashboards",
-        ],
+        experience: "1+ years",
+        projects: ["Doctor Consultation App (DB Design)"],
         libraries: ["pg", "Sequelize", "pgAdmin", "Prisma", "TypeORM"],
         quote:
           "PostgreSQL is where structure meets strength — engineered for integrity, optimized for performance.",
@@ -306,12 +286,8 @@ const skills = [
         icon: mongooseIcon,
         description:
           "An elegant MongoDB object modeling library for Node.js that provides schema-based solutions for managing application data.",
-        experience: "2+ years",
-        projects: [
-          "Chat App Backend",
-          "User Auth System",
-          "Content Management API",
-        ],
+        experience: "1+ years",
+        projects: ["Chat App Backend", "Car Rental App Backend"],
         libraries: [
           "mongoose-paginate-v2",
           "mongoose-unique-validator",
@@ -327,11 +303,11 @@ const skills = [
         icon: mysqlIcon,
         description:
           "A widely used open-source relational database management system known for its reliability, speed, and ease of use.",
-        experience: "1.5+ years",
+        experience: "1+ years",
         projects: [
           "Student Management System",
-          "E-commerce Backend",
           "User Registration DB",
+          "TO-DO List App",
         ],
         libraries: ["mysql2", "Sequelize", "TypeORM", "Prisma", "Workbench"],
         quote:
@@ -342,8 +318,8 @@ const skills = [
         icon: firebaseIcon,
         description:
           "A comprehensive app development platform by Google offering real-time databases, authentication, hosting, and cloud functions.",
-        experience: "1.5+ years",
-        projects: ["Authentication System", "Chat App", "Portfolio Hosting"],
+        experience: "1+ years",
+        projects: ["LinkedIn Clone"],
         libraries: [
           "Firebase Auth",
           "Cloud Firestore",
@@ -364,7 +340,7 @@ const skills = [
         icon: gitIcon,
         description:
           "A distributed version control system that tracks changes in source code, enabling collaboration and code history management.",
-        experience: "3+ years",
+        experience: "1+ years",
         projects: [
           "All Personal & Team Projects",
           "Open Source Contributions",
@@ -385,7 +361,7 @@ const skills = [
         icon: githubIcon,
         description:
           "A cloud-based platform for hosting Git repositories, enabling version control, collaboration, and code sharing at scale.",
-        experience: "3+ years",
+        experience: "1+ years",
         projects: [
           "Portfolio Website",
           "Chat App",
@@ -406,7 +382,7 @@ const skills = [
         icon: figmaIcon,
         description:
           "A collaborative interface design tool used for UI/UX design, prototyping, and real-time teamwork across the web.",
-        experience: "2+ years",
+        experience: "1+ years",
         projects: [
           "Portfolio UI Design",
           "Doctor App Prototype",
