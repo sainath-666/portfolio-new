@@ -6,7 +6,9 @@ const Skills = () => {
   const [selectedSkill, setSelectedSkill] = useState(null);
 
   return (
-    <section id="skills" className="py-20 px-6 bg-gray-900 text-gray-200">
+    <section id="skills" 
+      className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white py-20 px-10"
+    >
       <div className="max-w-6xl mx-auto" data-aos="fade-down">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-10 text-center">
           My Tech Stack

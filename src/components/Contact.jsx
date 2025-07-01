@@ -45,9 +45,10 @@ const Contact = () => {
       className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white py-20 px-6 relative"
     >
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-6" data-aos="fade-down">📬 Contact Me</h2>
-        <p className="text-gray-400 mb-12"
-          data-aos="fade-up">
+        <h2 className="text-4xl font-bold mb-6" data-aos="fade-down">
+          📬 Contact Me
+        </h2>
+        <p className="text-gray-400 mb-12" data-aos="fade-up">
           Fill the form or connect through social platforms.
         </p>
 
@@ -128,6 +129,16 @@ const Contact = () => {
             <IoLogoWhatsapp />
           </a>
         </div>
+{/* Footer */}
+<div className="mt-16 border-t border-gray-700 pt-6 text-sm text-gray-400 text-center">
+  <p>
+    © {new Date().getFullYear()} <span className="text-white font-medium">Sainath Reddy</span>. All rights reserved.
+  </p>
+  <p className="mt-1">
+    Built with <span className="text-blue-400">React.js</span> & <span className="text-blue-400">Tailwind CSS</span>.
+  </p>
+</div>
+
       </div>
 
       {/* Toast Notification */}

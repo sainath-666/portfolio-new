@@ -30,7 +30,6 @@ const projects = [
       "Cloudinary image upload integration",
     ],
   },
-  // ...other projects
 ];
 
 export default projects;
