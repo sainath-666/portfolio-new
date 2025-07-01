@@ -5,9 +5,10 @@ const Resume = () => {
   return (
     <section
       id="resume"
-      className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white py-12 px-6"
+      className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white py-20 px-6"
     >
-      <h2 className="text-4xl font-bold text-center mb-12">
+      <h2 className="text-4xl font-bold text-center mb-12"
+        data-aos="fade-down">
         Resume
       </h2>
 

@@ -7,8 +7,8 @@ const Skills = () => {
 
   return (
     <section id="skills" className="py-20 px-6 bg-gray-900 text-gray-200">
-      <div className="max-w-6xl mx-auto" data-aos="fade-up">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-10 text-center border-b-2 border-blue-500 inline-block pb-2">
+      <div className="max-w-6xl mx-auto" data-aos="fade-down">
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-10 text-center">
           My Tech Stack
         </h2>
 

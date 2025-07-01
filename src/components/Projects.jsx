@@ -14,7 +14,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white py-12 px-10"
+      className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white py-20 px-10"
     >
       <h2
         className="text-3xl md:text-5xl font-bold text-center mb-12"

@@ -7,7 +7,7 @@ const About = () => {
       >
         {/* Left Side - Text */}
         <div className="flex-1 space-y-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-white border-b-2 border-blue-500 inline-block pb-1">
+          <h2 className="text-3xl md:text-4xl font-bold text-white">
             About Me
           </h2>
           <p className="text-lg text-gray-300 leading-relaxed">

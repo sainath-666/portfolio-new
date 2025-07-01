@@ -42,11 +42,12 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white py-12 px-6 relative"
+      className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white py-20 px-6 relative"
     >
-      <div className="max-w-4xl mx-auto text-center" data-aos="fade-up">
-        <h2 className="text-4xl font-bold mb-6">📬 Contact Me</h2>
-        <p className="text-gray-400 mb-12">
+      <div className="max-w-4xl mx-auto text-center">
+        <h2 className="text-4xl font-bold mb-6" data-aos="fade-down">📬 Contact Me</h2>
+        <p className="text-gray-400 mb-12"
+          data-aos="fade-up">
           Fill the form or connect through social platforms.
         </p>
 
