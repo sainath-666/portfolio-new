@@ -1,34 +1,25 @@
-import { FaReact, FaNodeJs, FaPython } from "react-icons/fa";
-import { SiMongodb, SiPostgresql, SiTailwindcss } from "react-icons/si";
-import chatImg from "../assets/profile.jpg";
+import { FaNode, FaReact } from "react-icons/fa";
+import { SiMongodb, SiTailwindcss, SiVite } from "react-icons/si";
+
+import chatImg from "../assets/projectsIMG/real-time-chat-application/thumbnail.png"; // Import your project image
+import ss1 from "../assets/projectsIMG/real-time-chat-application/screenshot-1.png";
+import ss2 from "../assets/projectsIMG/real-time-chat-application/screenshot-2.png";
+import ss3 from "../assets/projectsIMG/real-time-chat-application/screenshot-3.png";
+import ss4 from "../assets/projectsIMG/real-time-chat-application/screenshot-4.png";
+import ss5 from "../assets/projectsIMG/real-time-chat-application/screenshot-5.png";
 
 const projects = [
   {
-    title: "Real-Time Chat App",
+    image: chatImg,
+    title: "Real-Time Chat Application",
     description:
       "A full-stack chat application with real-time messaging, authentication, and cloud image support.",
-    stack: [FaReact, FaNodeJs, SiMongodb, SiTailwindcss],
-    image: chatImg, // optional thumbnail
-    github: "https://github.com/sainath-666/chat-app",
-    live: "#",
+    stack: [FaReact, FaNode, SiMongodb, SiTailwindcss, SiVite],
+    github: "https://github.com/sainath-666/CHATTY_REALTIME_CHATTING",
+    live: "https://chatty-realtime-chatting.onrender.com",
+    screenshot: [ss1, ss2, ss3, ss4, ss5], // Add your screenshot images here
+    about: "### Real-Time Chat Application",
   },
-  {
-    title: "Hotel Booking Website",
-    description:
-      "Responsive hotel booking frontend with modern UI, location-based search, and form validations.",
-    stack: [FaReact, SiTailwindcss],
-    image: chatImg, // optional thumbnail
-    github: "https://github.com/sainath-666/Hotel-Website",
-    live: "https://sainath-666.github.io/Hotel-Website/",
-  },
-  {
-    title: "Portfolio Website",
-    description:
-      "This portfolio, built to showcase skills, projects, education, and job-readiness.",
-    stack: [FaReact, SiTailwindcss, SiPostgresql],
-    image: chatImg, // optional thumbnail
-    github: "https://github.com/sainath-666/Portfolio",
-    live: "https://sainath-666.github.io/Portfolio/",
-  },
+  
 ];
 export default projects;
