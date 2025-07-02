@@ -126,7 +126,7 @@ const ProjectModal = ({ project, onClose }) => {
                   key={i}
                   className="flex items-center gap-2 text-sm bg-gray-700/60 px-2 py-1 rounded"
                 >
-                  <Icon className="text-lg" />
+                  {Icon && <Icon className="text-lg" />}
                   {name}
                 </div>
               ))}

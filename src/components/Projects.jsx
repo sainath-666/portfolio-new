@@ -50,7 +50,7 @@ const Projects = () => {
             <div className="flex flex-wrap gap-3 text-2xl text-gray-200 mb-4">
               {project.stack.map(({ icon: Icon, name, color }, i) => (
                 <div key={i} className="relative group hover:scale-150" aria-label={name}>
-                  <Icon style={{ color }} />
+                  {Icon && <Icon style={{ color }} />}
                   <span className="absolute bottom-full mb-1 text-xs text-white bg-gray-700 px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">
                     {name}
                   </span>
