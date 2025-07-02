@@ -10,6 +10,7 @@ import Skills from "./components/Skills";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import ScrollToTopButton from "./components/ScrollToTopButton";
+import ChatbotWrapper from "./components/ChatbotWrapper";
 
 
 function App() {
@@ -29,8 +30,9 @@ function App() {
       <Projects />
       <Resume />
       <Contact />
+      <ChatbotWrapper />
       {/* <Chatbot /> */}
-      <ScrollToTopButton />
+      {/* <ScrollToTopButton /> */}
     </div>
   );
 }

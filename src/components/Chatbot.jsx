@@ -1,57 +1,90 @@
 import { useState } from "react";
-import botAnswers from "../data/botAnswers";
+import axios from "axios";
 
 const Chatbot = () => {
-  const [messages, setMessages] = useState([]);
+  const [messages, setMessages] = useState([
+    { role: "assistant", content: "Hi! I'm Sai's portfolio assistant. Ask me anything." },
+  ]);
   const [input, setInput] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  const sendMessage = () => {
+  const handleSend = async () => {
     if (!input.trim()) return;
 
-    const userMessage = { sender: "user", text: input };
-    const matched = botAnswers.find((q) =>
-      input.toLowerCase().includes(q.question.toLowerCase())
-    );
-    const botMessage = {
-      sender: "bot",
-      text: matched
-        ? matched.answer
-        : "I'm not sure how to respond to that. Please ask something else!",
-    };
-
-    setMessages((prev) => [...prev, userMessage, botMessage]);
+    const newMessages = [...messages, { role: "user", content: input }];
+    setMessages(newMessages);
     setInput("");
+    setLoading(true);
+
+    // Build Gradio-compatible history format: [[user, assistant], ...]
+    const history = [];
+    for (let i = 0; i < newMessages.length - 1; i += 2) {
+      if (
+        newMessages[i].role === "user" &&
+        newMessages[i + 1] &&
+        newMessages[i + 1].role === "assistant"
+      ) {
+        history.push([newMessages[i].content, newMessages[i + 1].content]);
+      }
+    }
+
+    try {
+      const res = await axios.post(
+        "https://sai455651651651--sai-chatbot.hf.space/run/predict",
+        {
+          data: [input, history],
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      const reply = res.data?.data?.[0] || "Hmm... I didn't get that.";
+      setMessages([...newMessages, { role: "assistant", content: reply }]);
+    } catch (err) {
+      console.error("Chatbot error:", err);
+      setMessages([
+        ...newMessages,
+        { role: "assistant", content: "Something went wrong. Try again later." },
+      ]);
+    }
+
+    setLoading(false);
   };
 
   return (
-    <div className="fixed bottom-4 right-4 w-80 bg-gray-800 text-white rounded-xl shadow-xl overflow-hidden z-50">
-      <div className="bg-blue-600 px-4 py-3 font-bold">🤖 Ask Me Anything</div>
-      <div className="h-64 overflow-y-auto p-4 space-y-2 text-sm">
-        {messages.map((msg, i) => (
+    <div className="w-full h-full flex flex-col p-4 bg-white rounded shadow-md">
+      <div className="flex-1 overflow-y-auto space-y-2 mb-4 pr-2 max-h-[500px]">
+        {messages.map((msg, idx) => (
           <div
-            key={i}
-            className={`p-2 rounded-md ${
-              msg.sender === "user"
-                ? "bg-blue-500 text-right ml-12"
-                : "bg-gray-700 text-left mr-12"
+            key={idx}
+            className={`p-3 rounded-md max-w-[80%] break-words ${
+              msg.role === "user"
+                ? "bg-blue-100 text-black ml-auto text-right"
+                : "bg-gray-200 text-black mr-auto text-left"
             }`}
           >
-            {msg.text}
+            {msg.content}
           </div>
         ))}
+        {loading && (
+          <div className="text-sm italic text-gray-500">SaiBot is typing...</div>
+        )}
       </div>
-      <div className="flex border-t border-gray-600">
+
+      <div className="flex gap-2 items-center">
         <input
-          type="text"
-          className="flex-1 p-2 bg-gray-700 text-white outline-none"
-          placeholder="Type your question..."
+          className="flex-1 border border-gray-300 rounded px-3 py-2 text-black focus:outline-none"
+          placeholder="Ask something..."
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          onKeyDown={(e) => e.key === "Enter" && sendMessage()}
+          onKeyDown={(e) => e.key === "Enter" && handleSend()}
         />
         <button
-          onClick={sendMessage}
-          className="bg-blue-500 px-4 hover:bg-blue-600"
+          onClick={handleSend}
+          className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
         >
           Send
         </button>
