@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import About from "./components/About";
-import Chatbot from "./components/Chatbot";
+// import Chatbot from "./components/Chatbot";
 import Contact from "./components/Contact";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
@@ -10,7 +10,7 @@ import Skills from "./components/Skills";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import ScrollToTopButton from "./components/ScrollToTopButton";
-import ChatbotWrapper from "./components/ChatbotWrapper";
+// import ChatbotWrapper from "./components/ChatbotWrapper";
 
 
 function App() {
@@ -30,9 +30,9 @@ function App() {
       <Projects />
       <Resume />
       <Contact />
-      <ChatbotWrapper />
+      {/* <ChatbotWrapper /> */}
       {/* <Chatbot /> */}
-      {/* <ScrollToTopButton /> */}
+      <ScrollToTopButton />
     </div>
   );
 }
