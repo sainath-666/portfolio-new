@@ -44,7 +44,7 @@ This is a modern, responsive personal portfolio website built with **React** and
 
 ## 🌐 Live Demo
 
-Check out the live site: [Portfolio Live](https://your-portfolio-live-link.com)
+Check out the live site: [Portfolio Live](https://sainathreddy.vercel.app/)
 
 ## 📸 Example Projects
 
