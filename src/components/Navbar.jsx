@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "/logo.png"; // adjust path if needed
+import logo from "/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Keyboard navigation for closing mobile menu
   useEffect(() => {
     if (!isOpen) return;
     const handleKeyDown = (e) => {
@@ -27,14 +26,10 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 bg-gray-900 bg-opacity-90 backdrop-blur-md shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-
-        {/* 🔵 Logo + Name */}
         <a href="#hero" className="flex items-center gap-2">
           <img src={logo} alt="Logo" className="w-8 h-8 md:w-10 md:h-10 rounded-full object-cover" />
           <span className="text-white text-2xl font-bold tracking-wide">SAI</span>
         </a>
-
-        {/* 🔷 Desktop Links */}
         <div className="hidden md:flex space-x-6">
           {links.map((link) => (
             <a
@@ -47,8 +42,6 @@ const Navbar = () => {
             </a>
           ))}
         </div>
-
-        {/* 🔶 Mobile Toggle */}
         <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -59,8 +52,6 @@ const Navbar = () => {
           </button>
         </div>
       </div>
-
-      {/* 🔸 Mobile Menu */}
       {isOpen && (
         <div className="md:hidden px-4 pb-4 space-y-2 bg-gray-800">
           {links.map((link) => (

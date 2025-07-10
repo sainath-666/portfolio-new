@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense, lazy } from "react";
 import projects from "../data/projects";
-import ProjectModal from "./ProjectModal";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+const ProjectModal = lazy(() => import("./ProjectModal"));
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -46,8 +47,6 @@ const Projects = () => {
             <p className="text-gray-300 text-sm mb-4 line-clamp-3">
               {project.description}
             </p>
-
-            {/* Tech stack icons with tooltip and color */}
             <div className="flex flex-wrap gap-3 text-2xl text-gray-200 mb-4">
               {project.stack.map(({ icon: Icon, name, color }, i) => (
                 <div key={i} className="relative group hover:scale-150" aria-label={name}>
@@ -58,11 +57,9 @@ const Projects = () => {
                 </div>
               ))}
             </div>
-
-            {/* GitHub & Live Demo Buttons */}
             <div
               className="flex gap-4 mt-4"
-              onClick={(e) => e.stopPropagation()} // Prevent modal on button click
+              onClick={(e) => e.stopPropagation()}
             >
               <a
                 href={project.github}
@@ -86,10 +83,12 @@ const Projects = () => {
       </div>
 
       {selectedProject && (
-        <ProjectModal
-          project={selectedProject}
-          onClose={() => setSelectedProject(null)}
-        />
+        <Suspense fallback={<div style={{ textAlign: 'center', padding: '2rem' }}>Loading project...</div>}>
+          <ProjectModal
+            project={selectedProject}
+            onClose={() => setSelectedProject(null)}
+          />
+        </Suspense>
       )}
     </section>
   );

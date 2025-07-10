@@ -35,9 +35,6 @@ const Resume = () => {
                 {item.institution} — {item.location}
               </p>
               <p className="text-sm">{item.duration}</p>
-              {/* <p className="text-sm font-medium text-gray-300 mb-2">
-                {item.score}
-              </p> */}
               <ul className="list-disc list-inside text-sm text-gray-300">
                 {item.highlights.map((point, i) => (
                   <li key={i}>{point}</li>
@@ -85,7 +82,7 @@ const Resume = () => {
           data-aos-delay="200"
           rel="noopener noreferrer"
           target="_blank"
-            className="bg-blue-500 hover:bg-blue-600 hover:shadow-blue-500/40 hover:shadow-lg text-white px-6 py-3 rounded-md font-medium transition duration-300 inline-block"
+          className="bg-blue-500 hover:bg-blue-600 hover:shadow-blue-500/40 hover:shadow-lg text-white px-6 py-3 rounded-md font-medium transition duration-300 inline-block"
         >
           📄 Download Resume
         </a>

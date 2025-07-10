@@ -1,17 +1,15 @@
-import { useEffect } from "react";
-import About from "./components/About";
-// import Chatbot from "./components/Chatbot";
+import React, { useEffect, Suspense, lazy } from "react";
 import Contact from "./components/Contact";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
-import Resume from "./components/Resume";
-import Skills from "./components/Skills";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import ScrollToTopButton from "./components/ScrollToTopButton";
-// import ChatbotWrapper from "./components/ChatbotWrapper";
 
+const About = lazy(() => import("./components/About"));
+const Projects = lazy(() => import("./components/Projects"));
+const Resume = lazy(() => import("./components/Resume"));
+const Skills = lazy(() => import("./components/Skills"));
 
 function App() {
   useEffect(() => {
@@ -25,13 +23,16 @@ function App() {
     <div className="bg-gray-900 text-white font-sans">
       <Navbar />
       <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Resume />
+      <Suspense fallback={<div style={{ textAlign: 'center', padding: '2rem' }}>Loading...</div>}>
+        <About />
+        <Skills />
+        <Projects />
+        <Resume />
+      </Suspense>
       <Contact />
       <ScrollToTopButton />
     </div>
   );
 }
+
 export default App;

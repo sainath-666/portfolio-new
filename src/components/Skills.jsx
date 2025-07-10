@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, Suspense, lazy } from "react";
 import skills from "../data/skills";
-import SkillModal from "./SkillModal";
+
+const SkillModal = lazy(() => import("./SkillModal"));
 
 const Skills = () => {
   const [selectedSkill, setSelectedSkill] = useState(null);
@@ -27,7 +28,6 @@ const Skills = () => {
 
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                 {group.stack.map((skill) => {
-                  const Icon = skill.icon;
                   return (
                     <div
                       key={skill.id || skill.name}
@@ -52,10 +52,12 @@ const Skills = () => {
 
       {/* Modal */}
       {selectedSkill && (
-        <SkillModal
-          skill={selectedSkill}
-          onClose={() => setSelectedSkill(null)}
-        />
+        <Suspense fallback={<div style={{ textAlign: 'center', padding: '2rem' }}>Loading skill...</div>}>
+          <SkillModal
+            skill={selectedSkill}
+            onClose={() => setSelectedSkill(null)}
+          />
+        </Suspense>
       )}
     </section>
   );
