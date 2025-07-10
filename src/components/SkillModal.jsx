@@ -1,14 +1,49 @@
+import React from "react";
 const SkillModal = ({ skill, onClose }) => {
   if (!skill) return null;
+  const modalRef = React.useRef(null);
+
+  // Trap focus and close on Esc
+  React.useEffect(() => {
+    const focusable = modalRef.current.querySelectorAll(
+      'a, button, textarea, input, select, [tabindex]:not([tabindex="-1"])'
+    );
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") onClose();
+      if (e.key === "Tab") {
+        if (e.shiftKey) {
+          if (document.activeElement === first) {
+            e.preventDefault();
+            last.focus();
+          }
+        } else {
+          if (document.activeElement === last) {
+            e.preventDefault();
+            first.focus();
+          }
+        }
+      }
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    first && first.focus();
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [onClose]);
 
   return (
     <div
       className="fixed inset-0 bg-black/60 flex justify-center items-center z-50"
       onClick={onClose}
+      aria-modal="true"
+      role="dialog"
     >
       <div
+        ref={modalRef}
         className="backdrop-blur-md bg-white/10 border border-white/20 p-6 rounded-xl shadow-xl w-11/12 max-w-md text-gray-200 relative transition-all duration-300"
         onClick={(e) => e.stopPropagation()}
+        tabIndex={-1}
+        style={{ transition: 'all 0.5s cubic-bezier(0.4, 0, 0.2, 1)', transform: skill ? 'scale(1)' : 'scale(0.75)', opacity: skill ? 1 : 0 }}
       >
         {/* Close Button */}
         <button
@@ -25,6 +60,7 @@ const SkillModal = ({ skill, onClose }) => {
             src={skill.icon}
             alt={`${skill.name} icon`}
             className="w-10 h-10"
+            loading="lazy"
           />{" "}
           {skill.name}
         </div>

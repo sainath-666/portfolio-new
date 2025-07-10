@@ -6,7 +6,7 @@ const Skills = () => {
   const [selectedSkill, setSelectedSkill] = useState(null);
 
   return (
-    <section id="skills" 
+    <section id="skills"
       className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white py-20 px-10"
     >
       <div className="max-w-6xl mx-auto" data-aos="fade-down">
@@ -18,8 +18,8 @@ const Skills = () => {
           {skills.map((group, groupIndex) => (
             <div
               key={group.title}
-              data-aos="fade-up"
-              data-aos-delay={groupIndex * 100}
+              data-aos={groupIndex % 2 === 0 ? "fade-up" : "zoom-in-up"}
+              data-aos-delay={200 + groupIndex * 150}
             >
               <h3 className="text-xl font-semibold text-blue-400 mb-4 border-b border-gray-600 pb-1">
                 {group.title}
@@ -30,14 +30,15 @@ const Skills = () => {
                   const Icon = skill.icon;
                   return (
                     <div
-                      key={skill.name}
-                      className="flex flex-col items-center justify-center gap-2 cursor-pointer hover:scale-105 transition-transform duration-300"
+                      key={skill.id || skill.name}
+                      className="flex flex-col items-center justify-center gap-2 cursor-pointer hover:scale-110 hover:shadow-2xl transition-transform duration-500 ease-in-out"
                       onClick={() => setSelectedSkill(skill)}
                     >
                       <img
                         src={skill.icon}
                         alt={`${skill.name} icon`}
                         className="w-10 h-10 transition-transform duration-300 hover:scale-125"
+                        loading="lazy"
                       />
                       <p className="text-sm text-gray-300">{skill.name}</p>
                     </div>

@@ -1,9 +1,19 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "/logo.png"; // adjust path if needed
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  // Keyboard navigation for closing mobile menu
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") setIsOpen(false);
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [isOpen]);
 
   const links = [
     { label: "Home", href: "#hero" },
@@ -17,7 +27,7 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 bg-gray-900 bg-opacity-90 backdrop-blur-md shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-        
+
         {/* 🔵 Logo + Name */}
         <a href="#hero" className="flex items-center gap-2">
           <img src={logo} alt="Logo" className="w-8 h-8 md:w-10 md:h-10 rounded-full object-cover" />
@@ -31,6 +41,7 @@ const Navbar = () => {
               key={link.href}
               href={link.href}
               className="relative text-gray-300 hover:text-white transition duration-200 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-blue-500 hover:after:w-full after:transition-all"
+              aria-current={window.location.hash === link.href ? "page" : undefined}
             >
               {link.label}
             </a>
@@ -42,6 +53,7 @@ const Navbar = () => {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="text-gray-300 text-2xl focus:outline-none"
+            aria-label={isOpen ? "Close menu" : "Open menu"}
           >
             {isOpen ? <FaTimes /> : <FaBars />}
           </button>

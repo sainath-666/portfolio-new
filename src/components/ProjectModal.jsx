@@ -5,8 +5,38 @@ const ProjectModal = ({ project, onClose }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   const slideshowRef = useRef(null);
+  const modalRef = useRef(null);
 
   const totalSlides = project.screenshot?.length || 0;
+
+  // Trap focus and close on Esc
+  useEffect(() => {
+    if (!show) return;
+    const focusable = modalRef.current.querySelectorAll(
+      'a, button, textarea, input, select, [tabindex]:not([tabindex="-1"])'
+    );
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") handleClose();
+      if (e.key === "Tab") {
+        if (e.shiftKey) {
+          if (document.activeElement === first) {
+            e.preventDefault();
+            last.focus();
+          }
+        } else {
+          if (document.activeElement === last) {
+            e.preventDefault();
+            first.focus();
+          }
+        }
+      }
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    first && first.focus();
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [show]);
 
   // Autoplay effect
   useEffect(() => {
@@ -35,16 +65,18 @@ const ProjectModal = ({ project, onClose }) => {
 
   return (
     <div
-      className={`fixed inset-0 bg-black/40 backdrop-blur-sm z-50 flex justify-center items-center px-4 transition-opacity duration-300 ${
-        show ? "opacity-100" : "opacity-0"
-      }`}
+      className={`fixed inset-0 bg-black/40 backdrop-blur-sm z-50 flex justify-center items-center px-4 transition-opacity duration-300 ${show ? "opacity-100" : "opacity-0"
+        }`}
       onClick={handleClose}
+      aria-modal="true"
+      role="dialog"
     >
       <div
+        ref={modalRef}
         onClick={(e) => e.stopPropagation()}
-        className={`bg-white/10 backdrop-blur-lg max-w-4xl w-full rounded-xl overflow-hidden text-white shadow-2xl transform transition-all duration-300 ${
-          show ? "scale-100 opacity-100" : "scale-90 opacity-0"
-        }`}
+        className={`bg-white/10 backdrop-blur-lg max-w-4xl w-full rounded-xl overflow-hidden text-white shadow-2xl transform transition-all duration-500 ease-in-out ${show ? "scale-100 opacity-100" : "scale-75 opacity-0"
+          }`}
+        tabIndex={-1}
       >
         {/* Close Button */}
         <button
@@ -65,10 +97,10 @@ const ProjectModal = ({ project, onClose }) => {
             <img
               key={index}
               src={src}
-              alt={`Slide ${index + 1}`}
-              className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${
-                index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
-              }`}
+              alt={`Screenshot of ${project.title} - Slide ${index + 1}`}
+              className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
+                }`}
+              loading="lazy"
             />
           ))}
 

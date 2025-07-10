@@ -14,13 +14,13 @@ import ScrollToTopButton from "./components/ScrollToTopButton";
 
 
 function App() {
-    useEffect(() => {
+  useEffect(() => {
     Aos.init({
       duration: 800,
       once: true,
     });
   }, []);
-  
+
   return (
     <div className="bg-gray-900 text-white font-sans">
       <Navbar />
@@ -30,8 +30,6 @@ function App() {
       <Projects />
       <Resume />
       <Contact />
-      {/* <ChatbotWrapper /> */}
-      {/* <Chatbot /> */}
       <ScrollToTopButton />
     </div>
   );

@@ -26,17 +26,18 @@ const Projects = () => {
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-auto mx-auto">
         {projects.map((project, index) => (
           <div
-            key={index}
+            key={project.id || index}
             onClick={() => setSelectedProject(project)}
-            className="cursor-pointer bg-white/10 backdrop-blur-lg p-6 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"
-            data-aos="fade-up"
-            data-aos-delay={index * 100}
+            className="cursor-pointer bg-white/10 backdrop-blur-lg p-6 rounded-xl shadow-lg hover:scale-110 hover:shadow-2xl transition-transform duration-500 ease-in-out"
+            data-aos={index % 2 === 0 ? "fade-up" : "zoom-in-up"}
+            data-aos-delay={200 + index * 150}
           >
             {project.image && (
               <img
                 src={project.image}
                 alt={project.title}
                 className="rounded-lg mb-4 w-full h-60 object-cover"
+                loading="lazy"
               />
             )}
             <h3 className="text-xl font-semibold text-blue-400 mb-2">

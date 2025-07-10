@@ -9,11 +9,16 @@ const Hero = () => {
     <section
       id="hero"
       className="min-h-screen pt-10 md:pt-0 flex flex-col md:flex-row items-center justify-center gap-10 px-4 text-center md:text-left bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 relative"
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-out"
+      data-aos-duration="1200"
     >
       {/* Profile Image */}
       <div
-        className="relative w-50 h-50 md:w-80 md:h-80 group transition duration-500 transform hover:scale-105"
-        data-aos="fade-right"
+        className="relative w-50 h-50 md:w-80 md:h-80 group transition duration-700 ease-in-out transform hover:scale-110 hover:shadow-2xl"
+        data-aos="zoom-in-right"
+        data-aos-easing="ease-in-out"
+        data-aos-duration="1000"
       >
         <div className="absolute inset-0 rounded-full blur-2xl bg-blue-500 opacity-30 group-hover:opacity-50 z-0 transition duration-500"></div>
         <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-blue-500 shadow-xl z-10 group-hover:shadow-blue-500 group-hover:shadow-md transition-shadow duration-500">
@@ -21,12 +26,13 @@ const Hero = () => {
             src={profileImg}
             alt="Portrait of Sainathreddy - Full Stack Developer"
             className="w-full h-full object-cover"
+            loading="lazy"
           />
         </div>
       </div>
 
       {/* Text Section */}
-      <div className="space-y-4" data-aos="fade-left">
+      <div className="space-y-4" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-duration="1000">
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-2">
           Hi, I'm{" "}
           <span className="transition duration-500 hover:text-blue-400">
@@ -50,13 +56,17 @@ const Hero = () => {
             href={resumePdf}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-blue-500 hover:bg-blue-600 hover:shadow-blue-500/40 hover:shadow-lg text-white px-6 py-2 rounded-md font-medium transition duration-300"
+            className="bg-blue-500 hover:bg-blue-600 hover:shadow-blue-500/40 hover:shadow-lg text-white px-6 py-2 rounded-md font-medium transition duration-300 transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-delay="200"
           >
             Download Resume
           </a>
           <a
             href="#projects"
-            className="border border-blue-400 text-blue-400 hover:bg-blue-500 hover:text-white hover:shadow-blue-400/40 hover:shadow-lg px-6 py-2 rounded-md font-medium transition duration-300"
+            className="border border-blue-400 text-blue-400 hover:bg-blue-500 hover:text-white hover:shadow-blue-400/40 hover:shadow-lg px-6 py-2 rounded-md font-medium transition duration-300 transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-delay="400"
           >
             View Projects
           </a>
@@ -69,7 +79,9 @@ const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className="hover:text-white hover:drop-shadow-[0_0_6px_rgba(255,255,255,0.6)] transition"
+            className="hover:text-white hover:drop-shadow-[0_0_6px_rgba(255,255,255,0.6)] transition duration-300 transform hover:scale-125"
+            data-aos="fade-up"
+            data-aos-delay="600"
           >
             <FaGithub />
           </a>
@@ -78,14 +90,18 @@ const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="hover:text-white hover:drop-shadow-[0_0_6px_rgba(59,130,246,0.6)] transition"
+            className="hover:text-white hover:drop-shadow-[0_0_6px_rgba(59,130,246,0.6)] transition duration-300 transform hover:scale-125"
+            data-aos="fade-up"
+            data-aos-delay="700"
           >
             <FaLinkedin />
           </a>
           <a
             href="mailto:sai65265@gmail.com"
             aria-label="Email"
-            className="hover:text-white hover:drop-shadow-[0_0_6px_rgba(59,130,246,0.6)] transition"
+            className="hover:text-white hover:drop-shadow-[0_0_6px_rgba(59,130,246,0.6)] transition duration-300 transform hover:scale-125"
+            data-aos="fade-up"
+            data-aos-delay="800"
           >
             <MdEmail />
           </a>
@@ -94,7 +110,9 @@ const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="WhatsApp"
-            className="hover:text-white hover:drop-shadow-[0_0_6px_rgba(59,130,246,0.6)] transition"
+            className="hover:text-white hover:drop-shadow-[0_0_6px_rgba(59,130,246,0.6)] transition duration-300 transform hover:scale-125"
+            data-aos="fade-up"
+            data-aos-delay="900"
           >
             <IoLogoWhatsapp />
           </a>
