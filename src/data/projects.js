@@ -5,6 +5,7 @@ import {
   SiExpress,
   SiFontawesome,
   SiGooglefonts,
+  SiGooglegemini,
   SiHtml5,
   SiJavascript,
   SiJsonwebtokens,
@@ -30,6 +31,11 @@ import chat2 from "../assets/projectsIMG/real-time-chat-application/ss-2.png";
 import chat3 from "../assets/projectsIMG/real-time-chat-application/ss-3.png";
 import chat4 from "../assets/projectsIMG/real-time-chat-application/ss-4.png";
 import chat5 from "../assets/projectsIMG/real-time-chat-application/ss-5.png";
+
+import geminiImg from "../assets/projectsIMG/gemini/thumbnail.png";
+import gemini1 from "../assets/projectsIMG/gemini/ss-1.png";
+import gemini2 from "../assets/projectsIMG/gemini/ss-2.png";
+import gemini3 from "../assets/projectsIMG/gemini/ss-3.png";
 
 import spotifyImg from "../assets/projectsIMG/melodify/thumbnail.png";
 import spotify1 from "../assets/projectsIMG/melodify/ss-1.png";
@@ -108,6 +114,35 @@ const projects = [
       "Light/Dark theme toggle and fully responsive layout",
       "Built with Vite, Zustand, TailwindCSS, and a clean modern UI using Daisy UI",
       "Scalable backend with MongoDB, Express, and modular code architecture",
+    ],
+  },
+
+  {
+    image: geminiImg,
+    title: "Gemini Clone - Google AI Chat Interface",
+    description:
+      "A modern, responsive AI-powered chat application that replicates the Google Gemini interface, built with React, Vite, and integrated with the Gemini 2.5 Pro model for intelligent conversations.",
+    stack: [
+      { icon: SiReact, name: "React.js", color: "#61DBFB" },
+      { icon: SiVite, name: "Vite", color: "#646CFF" },
+      { icon: SiTailwindcss, name: "Tailwind CSS", color: "#00bcff" },
+      { icon: SiJavascript, name: "JavaScript", color: "#F7DF1E" },
+      { icon: SiGooglegemini, name: "JavaScript", color: "#F7DF1E" },
+      { icon: SiVercel, name: "Vercel", color: "#ffffff" },
+    ],
+    github: "https://github.com/sainath-666/Gemini_Clone",
+    live: "https://gemini-clone-sainath.vercel.app/",
+    screenshot: [gemini1, gemini2, gemini3],
+    highlights: [
+      "Google Gemini 2.5 Pro model integrated for intelligent AI responses",
+      "Modern Google-inspired chat interface with sleek UI/UX",
+      "Real-time messaging experience with loading states and error handling",
+      "Persistent chat history stored in state with easy navigation",
+      "Responsive design for desktop and mobile with accessibility features",
+      "Built-in safety settings and content moderation",
+      "Optimized for performance using Vite and lazy-loaded components",
+      "API key protected using environment variables for security",
+      "Ready for deployment on Netlify, Vercel, or any static host",
     ],
   },
   {
