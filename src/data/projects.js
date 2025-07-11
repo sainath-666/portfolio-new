@@ -127,7 +127,7 @@ const projects = [
       { icon: SiVite, name: "Vite", color: "#646CFF" },
       { icon: SiTailwindcss, name: "Tailwind CSS", color: "#00bcff" },
       { icon: SiJavascript, name: "JavaScript", color: "#F7DF1E" },
-      { icon: SiGooglegemini, name: "JavaScript", color: "#F7DF1E" },
+      { icon: SiGooglegemini, name: "JavaScript", color: "#4b98fd" },
       { icon: SiVercel, name: "Vercel", color: "#ffffff" },
     ],
     github: "https://github.com/sainath-666/Gemini_Clone",
