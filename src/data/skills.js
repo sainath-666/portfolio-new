@@ -3,21 +3,25 @@ import cssIcon from "../assets/skillsSVG/css.svg";
 import javascriptIcon from "../assets/skillsSVG/javascript.svg";
 import typescriptIcon from "../assets/skillsSVG/typescript.svg";
 import tailwindIcon from "../assets/skillsSVG/tailwind.svg";
+import angularIcon from "../assets/skillsSVG/angular.svg";
 import reactIcon from "../assets/skillsSVG/react.svg";
 import viteIcon from "../assets/skillsSVG/vite.svg";
 import materialuiIcon from "../assets/skillsSVG/materialui.svg";
 import nodejsIcon from "../assets/skillsSVG/nodejs.svg";
 import expressjsIcon from "../assets/skillsSVG/expressjs.svg";
+import dotnetIcon from "../assets/skillsSVG/dotnet.svg";
 import jwtIcon from "../assets/skillsSVG/jwt.svg";
 import postmanIcon from "../assets/skillsSVG/postman.svg";
 import mongodbIcon from "../assets/skillsSVG/mongodb.svg";
 import postgresqlIcon from "../assets/skillsSVG/postgresql.svg";
+import sqlServerIcon from "../assets/skillsSVG/sql-server.svg";
 import mongooseIcon from "../assets/skillsSVG/mongoose.svg";
 import mysqlIcon from "../assets/skillsSVG/mysql.svg";
 import firebaseIcon from "../assets/skillsSVG/firebase.svg";
 import gitIcon from "../assets/skillsSVG/git.svg";
 import githubIcon from "../assets/skillsSVG/github.svg";
 import figmaIcon from "../assets/skillsSVG/figma.svg";
+import visualStudioIcon from "../assets/skillsSVG/visualstudio.svg";
 import vscodeIcon from "../assets/skillsSVG/vscode.svg";
 import dockerIcon from "../assets/skillsSVG/docker.svg";
 import wordpressIcon from "../assets/skillsSVG/wordpress.svg";
@@ -111,6 +115,28 @@ const skills = [
         ],
         quote:
           "React isn't just a library — it's a mindset of building UI through composable logic.",
+      },
+
+      {
+        name: "Angular",
+        icon: angularIcon,
+        description:
+          "A robust TypeScript-based framework for building scalable, enterprise-ready, and maintainable single-page applications.",
+        experience: "1+ years",
+        projects: [
+          "Employee Management System",
+          "E-Commerce Platform",
+          "Task Tracker",
+        ],
+        libraries: [
+          "RxJS",
+          "NgRx",
+          "Angular Material",
+          "PrimeNG",
+          "ngx-bootstrap",
+        ],
+        quote:
+          "Angular brings structure and power — it’s like having a full toolkit for building complex applications out of the box.",
       },
       {
         name: "Tailwind CSS",
@@ -209,6 +235,27 @@ const skills = [
           "Express.js is the backbone of Node — clean routes, simple logic, powerful APIs.",
       },
       {
+        name: ".NET Core",
+        icon: dotnetIcon,
+        description:
+          "A high-performance, cross-platform framework for building modern, scalable, and secure web applications and APIs.",
+        experience: "1+ years",
+        projects: [
+          "Personal Task Manager API",
+          "E-Commerce Backend",
+          "Authentication System",
+        ],
+        libraries: [
+          "Entity Framework Core",
+          "ASP.NET Identity",
+          "SignalR",
+          "AutoMapper",
+          "Serilog",
+        ],
+        quote:
+          ".NET Core gives you both speed and reliability — it’s built for developers who want power with productivity.",
+      },
+      {
         name: "JWT",
         icon: jwtIcon,
         description:
@@ -280,6 +327,27 @@ const skills = [
         libraries: ["pg", "Sequelize", "pgAdmin", "Prisma", "TypeORM"],
         quote:
           "PostgreSQL is where structure meets strength — engineered for integrity, optimized for performance.",
+      },
+      {
+        name: "SQL Server",
+        icon: sqlServerIcon,
+        description:
+          "A powerful relational database management system for handling structured data with advanced querying and transaction support.",
+        experience: "1+ years",
+        projects: [
+          "E-Commerce Database",
+          "Employee Management DB",
+          "Chat App Storage",
+        ],
+        libraries: [
+          "T-SQL",
+          "Stored Procedures",
+          "Views",
+          "Triggers",
+          "Functions",
+        ],
+        quote:
+          "Data is the backbone of every application — SQL Server ensures it’s organized, secure, and lightning-fast to query.",
       },
       {
         name: "Mongoose",
@@ -377,27 +445,7 @@ const skills = [
         quote:
           "GitHub is where code lives, collaborates, and evolves — your project’s global stage.",
       },
-      {
-        name: "Figma",
-        icon: figmaIcon,
-        description:
-          "A collaborative interface design tool used for UI/UX design, prototyping, and real-time teamwork across the web.",
-        experience: "1+ years",
-        projects: [
-          "Portfolio UI Design",
-          "Doctor App Prototype",
-          "Landing Page Wireframes",
-        ],
-        libraries: [
-          "Figma Community Plugins",
-          "FigJam",
-          "Autoflow",
-          "Blush",
-          "Wireframe Kits",
-        ],
-        quote:
-          "Figma turns ideas into interactive visuals — where creativity meets collaboration in the browser.",
-      },
+
       {
         name: "VS Code",
         icon: vscodeIcon,
@@ -418,6 +466,48 @@ const skills = [
         ],
         quote:
           "VS Code is more than an editor — it's the developer’s cockpit, streamlined for productivity and precision.",
+      },
+      {
+        name: "VisualStudio",
+        icon: visualStudioIcon,
+        description:
+          "A powerful and feature-rich integrated development environment (IDE) for building, debugging, and deploying applications across multiple platforms.",
+        experience: "2+ years",
+        projects: [
+          "ASP.NET Core APIs",
+          "Full-Stack Web Applications",
+          "SQL Server Integration",
+        ],
+        libraries: [
+          "NuGet Package Manager",
+          "IntelliSense",
+          "Live Share",
+          "Debugger",
+          "Extensions Marketplace",
+        ],
+        quote:
+          "Visual Studio isn’t just an editor — it’s a complete ecosystem that makes development faster, smarter, and more productive.",
+      },
+      {
+        name: "Figma",
+        icon: figmaIcon,
+        description:
+          "A collaborative interface design tool used for UI/UX design, prototyping, and real-time teamwork across the web.",
+        experience: "1+ years",
+        projects: [
+          "Portfolio UI Design",
+          "Doctor App Prototype",
+          "Landing Page Wireframes",
+        ],
+        libraries: [
+          "Figma Community Plugins",
+          "FigJam",
+          "Autoflow",
+          "Blush",
+          "Wireframe Kits",
+        ],
+        quote:
+          "Figma turns ideas into interactive visuals — where creativity meets collaboration in the browser.",
       },
       {
         name: "Docker",
