@@ -131,7 +131,7 @@ const projects = [
       { icon: SiVercel, name: "Vercel", color: "#ffffff" },
     ],
     github: "https://github.com/sainath-666/Gemini_Clone",
-    live: "https://gemini-clone-sainath.vercel.app/",
+    live: "https://sainathreddy-gemini-clone.vercel.app/",
     screenshot: [gemini1, gemini2, gemini3],
     highlights: [
       "Google Gemini 2.5 Pro model integrated for intelligent AI responses",

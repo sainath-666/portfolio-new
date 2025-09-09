@@ -15,7 +15,7 @@ import postmanIcon from "../assets/skillsSVG/postman.svg";
 import mongodbIcon from "../assets/skillsSVG/mongodb.svg";
 import postgresqlIcon from "../assets/skillsSVG/postgresql.svg";
 import sqlServerIcon from "../assets/skillsSVG/sql-server.svg";
-import mongooseIcon from "../assets/skillsSVG/mongoose.svg";
+// import mongooseIcon from "../assets/skillsSVG/mongoose.svg";
 import mysqlIcon from "../assets/skillsSVG/mysql.svg";
 import firebaseIcon from "../assets/skillsSVG/firebase.svg";
 import gitIcon from "../assets/skillsSVG/git.svg";
@@ -349,23 +349,23 @@ const skills = [
         quote:
           "Data is the backbone of every application — SQL Server ensures it’s organized, secure, and lightning-fast to query.",
       },
-      {
-        name: "Mongoose",
-        icon: mongooseIcon,
-        description:
-          "An elegant MongoDB object modeling library for Node.js that provides schema-based solutions for managing application data.",
-        experience: "1+ years",
-        projects: ["Chat App Backend", "Car Rental App Backend"],
-        libraries: [
-          "mongoose-paginate-v2",
-          "mongoose-unique-validator",
-          "mongoose-timestamp",
-          "dotenv",
-          "validator",
-        ],
-        quote:
-          "Mongoose bridges structure and flexibility — bringing order to MongoDB's freedom.",
-      },
+      // {
+      //   name: "Mongoose",
+      //   icon: mongooseIcon,
+      //   description:
+      //     "An elegant MongoDB object modeling library for Node.js that provides schema-based solutions for managing application data.",
+      //   experience: "1+ years",
+      //   projects: ["Chat App Backend", "Car Rental App Backend"],
+      //   libraries: [
+      //     "mongoose-paginate-v2",
+      //     "mongoose-unique-validator",
+      //     "mongoose-timestamp",
+      //     "dotenv",
+      //     "validator",
+      //   ],
+      //   quote:
+      //     "Mongoose bridges structure and flexibility — bringing order to MongoDB's freedom.",
+      // },
       {
         name: "MySQL",
         icon: mysqlIcon,
