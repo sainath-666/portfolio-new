@@ -1,0 +1,1114 @@
+COMBINED PROFILE EXPORT
+Source repository: portfolio-new
+Generated: 2025-11-09
+
+--- BEGIN: profile_data.json ---
+{
+  "metadata": {
+    "generated": "2025-11-09",
+    "source": "portfolio-new",
+    "notes": "This JSON was generated from README.md, src/components (About/Hero/Contact), src/data/education.js, src/data/projects.js, src/data/skills.js"
+  },
+  "profile": {
+    "fullName": "Sainathreddy Nerusupalli",
+    "displayName": "Sainathreddy",
+    "altName": "Sainath Reddy",
+    "email": "sai65265@gmail.com",
+    "location": "Hyderabad, Telangana",
+    "roles": ["Web Developer", "App Developer", "Video Editor"],
+    "availability": "Freelancing - Available",
+    "github": "https://github.com/sainath-666",
+    "linkedin": "https://linkedin.com/in/sainath666",
+    "portfolio": "https://sainathreddy.vercel.app/",
+    "whatsapp": "https://wa.link/oeaxld",
+    "resumePath": "src/assets/resume.pdf",
+    "profileImagePath": "src/assets/profile.jpg",
+    "contactFormEndpoint": "https://formspree.io/f/xzzgopny",
+    "shortTagline": "Full Stack Developer | React.js | Node.js | MongoDB",
+    "quote": "Code isn't just about logic — it's about creating meaningful impact."
+  },
+  "education": [
+    {
+      "title": "B.Tech in CSE (IoT, Cybersecurity & Blockchain)",
+      "institution": "Siddharth Institute of Engineering & Technology",
+      "duration": "2020 – 2024",
+      "score": "62.7% (6.8 CGPA)",
+      "location": "Puttur",
+      "highlights": [
+        "Built confidence to solve real-world tech problems through continuous hands-on development",
+        "Developed self-discipline and adaptability by learning full-stack technologies outside the curriculum"
+      ]
+    },
+    {
+      "title": "Intermediate (MPC)",
+      "institution": "Sri Chaitanya Junior College",
+      "duration": "2018 – 2020",
+      "score": "64.6%",
+      "location": "Vijayawada",
+      "highlights": [
+        "Developed consistency and discipline through rigorous preparation for competitive exams like JEE",
+        "Built strong foundation in Mathematics and Physics essential for engineering problem-solving"
+      ]
+    },
+    {
+      "title": "Class X (CBSE)",
+      "institution": "Penchalreddy High School",
+      "duration": "2017 – 2018",
+      "score": "88.6%",
+      "location": "Rayachoty",
+      "highlights": [
+        "Built essential study habits, time management, and early interest in technology",
+        "Achieved strong academic performance with emphasis on core subjects like Math and Science"
+      ]
+    }
+  ],
+  "internships": [
+    {
+      "title": "Web Development Intern",
+      "institution": "ShadowFox",
+      "duration": "Jan - Feb 2025",
+      "location": "Remote",
+      "highlights": [
+        "Built beginner to advanced-level projects across HTML, CSS, and JavaScript with guided mentorship",
+        "Enhanced skills in responsive design, clean UI structure, and real-world project delivery"
+      ]
+    },
+    {
+      "title": "Front-End Developer Intern",
+      "institution": "VirtuNexa",
+      "duration": "Jan - Feb 2025",
+      "location": "Remote",
+      "highlights": [
+        "Created and enhanced web interfaces using HTML, CSS, and JavaScript for real-world applications",
+        "Improved problem-solving and independent development skills through flexible, remote project work"
+      ]
+    },
+    {
+      "title": "Full Stack Java Intern",
+      "institution": "QSpiders",
+      "duration": "Aug - Nov 2023",
+      "location": "Remote",
+      "highlights": [
+        "Hands-on training in Java, JDBC, Servlets",
+        "Built backend logic and practiced real-time project tasks"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Chatty - Real-time Chat Application",
+      "description": "A modern full-stack real-time chat application built with the MERN stack and Socket.io, featuring live messaging, authentication, image sharing, and responsive UI with dark mode support.",
+      "stack": ["React.js", "Node.js", "Tailwind CSS", "MongoDB", "Express.js", "Vite", "Daisy UI", "JWT", "Socket.io", "Cloudinary", "Render"],
+      "github": "https://github.com/sainath-666/CHATTY_REALTIME_CHATTING",
+      "live": "https://chatty-realtime-chatting.onrender.com",
+      "thumbnail": "src/assets/projectsIMG/real-time-chat-application/thumbnail.png",
+      "screenshots": [
+        "src/assets/projectsIMG/real-time-chat-application/ss-1.png",
+        "src/assets/projectsIMG/real-time-chat-application/ss-2.png",
+        "src/assets/projectsIMG/real-time-chat-application/ss-3.png",
+        "src/assets/projectsIMG/real-time-chat-application/ss-4.png",
+        "src/assets/projectsIMG/real-time-chat-application/ss-5.png"
+      ],
+      "highlights": [
+        "Real-time messaging system powered by Socket.io with online user indicators",
+        "JWT-based authentication for secure login and registration",
+        "Image upload and sharing functionality via Cloudinary",
+        "Light/Dark theme toggle and fully responsive layout",
+        "Built with Vite, Zustand, TailwindCSS, and a clean modern UI using Daisy UI",
+        "Scalable backend with MongoDB, Express, and modular code architecture"
+      ]
+    },
+    {
+      "title": "Gemini Clone - Google AI Chat Interface",
+      "description": "A modern, responsive AI-powered chat application that replicates the Google Gemini interface, built with React, Vite, and integrated with the Gemini 2.5 Pro model for intelligent conversations.",
+      "stack": ["React.js", "Vite", "Tailwind CSS", "JavaScript", "Gemini 2.5 Pro model", "Vercel"],
+      "github": "https://github.com/sainath-666/Gemini_Clone",
+      "live": "https://sainathreddy-gemini-clone.vercel.app/",
+      "thumbnail": "src/assets/projectsIMG/gemini/thumbnail.png",
+      "screenshots": [
+        "src/assets/projectsIMG/gemini/ss-1.png",
+        "src/assets/projectsIMG/gemini/ss-2.png",
+        "src/assets/projectsIMG/gemini/ss-3.png"
+      ],
+      "highlights": [
+        "Google Gemini 2.5 Pro model integrated for intelligent AI responses",
+        "Modern Google-inspired chat interface with sleek UI/UX",
+        "Real-time messaging experience with loading states and error handling",
+        "Persistent chat history stored in state with easy navigation",
+        "Responsive design for desktop and mobile with accessibility features",
+        "Built-in safety settings and content moderation",
+        "Optimized for performance using Vite and lazy-loaded components",
+        "API key protected using environment variables for security",
+        "Ready for deployment on Netlify, Vercel, or any static host"
+      ]
+    },
+    {
+      "title": "Car Rental Web App",
+      "description": "A modern and responsive car rental application built with Next.js, TypeScript, and Tailwind CSS, allowing users to browse, filter, and book cars seamlessly with an elegant user experience.",
+      "stack": ["Next.js", "TypeScript", "React.js", "Tailwind CSS", "Context API", "Vercel"],
+      "github": "https://github.com/sainath-666/car-rental",
+      "live": "https://car-rental-sai.vercel.app/",
+      "thumbnail": "src/assets/projectsIMG/car-rental/thumbnail.png",
+      "screenshots": [
+        "src/assets/projectsIMG/car-rental/ss-1.png",
+        "src/assets/projectsIMG/car-rental/ss-2.png",
+        "src/assets/projectsIMG/car-rental/ss-3.png",
+        "src/assets/projectsIMG/car-rental/ss-4.png",
+        "src/assets/projectsIMG/car-rental/ss-5.png",
+        "src/assets/projectsIMG/car-rental/ss-6.png"
+      ],
+      "highlights": [
+        "Browse a variety of cars with images and specifications",
+        "Filter by brand, category, and price for personalized results",
+        "Interactive booking modal with toast notifications for confirmation",
+        "View and manage booking history",
+        "Responsive layout designed for both desktop and mobile",
+        "Built with modern technologies including Next.js App Router and Tailwind CSS"
+      ]
+    },
+    {
+      "title": "Melodify - Spotify Clone",
+      "description": "A modern music streaming platform inspired by Spotify, built with React, TypeScript, and SCSS, offering a responsive UI, dynamic theming, and persistent user preferences.",
+      "stack": ["React.js", "TypeScript", "SCSS", "React Bootstrap", "Vercel"],
+      "github": "https://github.com/sainath-666/Spotify_Clone_1",
+      "live": "https://spotify-clone-1-sai.vercel.app/",
+      "thumbnail": "src/assets/projectsIMG/melodify/thumbnail.png",
+      "screenshots": [
+        "src/assets/projectsIMG/melodify/ss-1.png",
+        "src/assets/projectsIMG/melodify/ss-2.png",
+        "src/assets/projectsIMG/melodify/ss-3.png",
+        "src/assets/projectsIMG/melodify/ss-4.png",
+        "src/assets/projectsIMG/melodify/ss-5.png"
+      ],
+      "highlights": [
+        "Dynamic theming based on album artwork using a custom useBackgroundColor hook",
+        "Real-time playback with progress tracking and intelligent animations",
+        "Persistent favorites and listening history using localStorage and sessionStorage",
+        "Advanced search functionality for tracks, artists, and playlists",
+        "Responsive layout optimized for mobile, tablet, and desktop"
+      ]
+    },
+    {
+      "title": "Weather Forecast Applications",
+      "description": "A collection of beautifully designed and responsive weather applications providing real-time weather information, built using vanilla JavaScript and modern React technologies.",
+      "stack": ["JavaScript", "React.js", "HTML5", "CSS3", "Vite", "OpenWeatherMap API", "Font Awesome"],
+      "github": "https://github.com/sainath-666/Weather_Application_2",
+      "live": "https://sainath-666.github.io/Weather_Application_2/",
+      "thumbnail": "src/assets/projectsIMG/weather/thumbnail.png",
+      "screenshots": [
+        "src/assets/projectsIMG/weather/ss-1.png",
+        "src/assets/projectsIMG/weather/ss-2.png",
+        "src/assets/projectsIMG/weather/ss-3.png",
+        "src/assets/projectsIMG/weather/ss-4.png",
+        "src/assets/projectsIMG/weather/ss-5.png"
+      ],
+      "highlights": [
+        "Real-time weather data using OpenWeatherMap and WeatherAPI integrations",
+        "Geolocation support to fetch weather for the user's current location",
+        "Dynamic backgrounds and icons based on live weather conditions",
+        "Fully responsive UIs with support for mobile, tablet, and desktop",
+        "Built using both vanilla JS and modern React + Vite setup for flexibility"
+      ]
+    },
+    {
+      "title": "Interactive Puzzle & Logic Games",
+      "description": "A collection of four interactive and responsive games—2048, Snake, Memory Match, and Find My Number—crafted using HTML, CSS, and JavaScript. Each game features modern UI, smooth animations, and engaging gameplay experiences for both desktop and mobile users.",
+      "stack": ["JavaScript", "HTML5", "CSS3", "Font Awesome", "Google Fonts"],
+      "github": "https://sainath-666.github.io/Games/",
+      "live": "https://sainath-666.github.io/Games/",
+      "thumbnail": "src/assets/projectsIMG/games/thumbnail.png",
+      "screenshots": [
+        "src/assets/projectsIMG/games/ss-1.png",
+        "src/assets/projectsIMG/games/ss-2.png",
+        "src/assets/projectsIMG/games/ss-3.png",
+        "src/assets/projectsIMG/games/ss-4.png",
+        "src/assets/projectsIMG/games/ss-5.png",
+        "src/assets/projectsIMG/games/ss-6.png",
+        "src/assets/projectsIMG/games/ss-7.png",
+        "src/assets/projectsIMG/games/ss-8.png",
+        "src/assets/projectsIMG/games/ss-9.png",
+        "src/assets/projectsIMG/games/ss-10.png"
+      ],
+      "highlights": [
+        "2048: Addictive tile-merging puzzle with touch and keyboard support, sleek animations, and score tracking",
+        "Snake: Classic arcade snake with keyboard and mobile touch controls, high score tracking, and dynamic difficulty",
+        "Memory Game: Match emoji card pairs with a timer and move counter, responsive UI, and celebratory animations",
+        "Find My Number: Binary logic-based number guessing game with a step-by-step table interaction and intuitive results display",
+        "All games are mobile-friendly, include modern UI design, and offer responsive performance across all screen sizes"
+      ]
+    },
+    {
+      "title": "TextUtils Application",
+      "description": "A modern React-based text manipulation tool that allows users to transform, analyze, and clean up their text with real-time alerts and a responsive UI.",
+      "stack": ["React.js", "React Router", "CSS3"],
+      "github": "https://github.com/sainath-666/Textutils",
+      "live": "https://textutils-sainathreddy666.vercel.app/",
+      "thumbnail": "src/assets/projectsIMG/textutils/thumbnail.png",
+      "screenshots": [
+        "src/assets/projectsIMG/textutils/ss-1.png",
+        "src/assets/projectsIMG/textutils/ss-2.png",
+        "src/assets/projectsIMG/textutils/ss-3.png"
+      ],
+      "highlights": [
+        "Convert text to uppercase and lowercase with one click",
+        "Remove extra spaces and copy cleaned text to clipboard",
+        "Real-time word and character count analytics",
+        "Toggle between light and dark mode for better accessibility",
+        "Responsive design compatible with all device sizes"
+      ]
+    },
+    {
+      "title": "Temperature Converter",
+      "description": "A simple, responsive web application that converts temperatures between Celsius, Fahrenheit, and Kelvin with real-time feedback and a clean user interface.",
+      "stack": ["JavaScript", "HTML5", "CSS3", "Font Awesome", "Google Fonts"],
+      "github": "https://github.com/sainath-666/Temperature_Converter",
+      "live": "https://sainath-666.github.io/Temperature_Converter/",
+      "thumbnail": "src/assets/projectsIMG/temperature/thumbnail.png",
+      "screenshots": [
+        "src/assets/projectsIMG/temperature/ss-1.png",
+        "src/assets/projectsIMG/temperature/ss-2.png",
+        "src/assets/projectsIMG/temperature/ss-3.png",
+        "src/assets/projectsIMG/temperature/ss-4.png"
+      ],
+      "highlights": [
+        "Converts between Celsius, Fahrenheit, and Kelvin units",
+        "Fully responsive design across all devices",
+        "Real-time conversion updates with user-friendly feedback",
+        "Minimalist and clean UI for ease of use"
+      ]
+    },
+    {
+      "title": "Calculator",
+      "description": "A basic calculator web application that performs arithmetic operations such as addition, subtraction, multiplication, and division using vanilla JavaScript.",
+      "stack": ["JavaScript", "HTML5", "CSS3"],
+      "github": "https://github.com/sainath-666/Calculator_1",
+      "live": "https://sainath-666.github.io/Calculator_1/",
+      "thumbnail": "src/assets/projectsIMG/calculator/thumbnail.png",
+      "screenshots": [
+        "src/assets/projectsIMG/calculator/ss-1.png"
+      ],
+      "highlights": [
+        "Performs real-time arithmetic operations (+, -, ×, ÷)",
+        "Minimalist and responsive UI design",
+        "Built using only HTML, CSS, and JavaScript",
+        "User-friendly interface for quick calculations",
+        "Offline-capable with zero dependencies"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "group": "Frontend",
+      "stack": [
+        {
+          "name": "HTML",
+          "iconPath": "src/assets/skillsSVG/html.svg",
+          "description": "Semantic, accessible markup for structuring content on the web.",
+          "experience": "2+ years",
+          "projects": ["Portfolio Website", "Landing Page", "Static Sites"],
+          "libraries": ["Bootstrap", "HTML5 Boilerplate", "Emmet", "W3.CSS", "Handlebars.js"],
+          "quote": "HTML is not just code; it's the skeleton of the web. Build it right, and the rest will stand strong."
+        },
+        {
+          "name": "CSS",
+          "iconPath": "src/assets/skillsSVG/css.svg",
+          "description": "Stylesheet language used to design, layout, and visually enhance HTML content.",
+          "experience": "2+ years",
+          "projects": ["Portfolio Website", "Hotel Booking Site", "Product Landing Page"],
+          "libraries": ["Tailwind CSS", "Bootstrap", "Sass", "Animate.css", "Bulma"],
+          "quote": "CSS is where creativity meets structure — it transforms plain code into beautiful experiences."
+        },
+        {
+          "name": "JavaScript",
+          "iconPath": "src/assets/skillsSVG/javascript.svg",
+          "description": "Dynamic programming language used to build interactive and functional web applications.",
+          "experience": "2+ years",
+          "projects": ["Chat Application", "Weather Application", "Some Games"],
+          "libraries": ["React", "jQuery", "Axios", "Lodash", "Chart.js"],
+          "quote": "JavaScript adds life to the web — it's the bridge between user actions and meaningful interactions."
+        },
+        {
+          "name": "TypeScript",
+          "iconPath": "src/assets/skillsSVG/typescript.svg",
+          "description": "A statically typed superset of JavaScript that enhances code reliability and developer productivity.",
+          "experience": "1+ years",
+          "projects": ["Car Rental App", "Spotify Clone", "Portfolio Refactor"],
+          "libraries": ["TypeORM", "Zod", "ts-node", "React with TypeScript", "NestJS"],
+          "quote": "TypeScript turns chaos into clarity — strong typing leads to stronger code."
+        },
+        {
+          "name": "React.js",
+          "iconPath": "src/assets/skillsSVG/react.svg",
+          "description": "A powerful JavaScript library for building fast, dynamic, and scalable user interfaces using components.",
+          "experience": "1+ years",
+          "projects": ["Portfolio Website", "Real-Time Chat App", "Weather Apps"],
+          "libraries": ["React Router", "Redux", "Axios", "Framer Motion", "React Query"],
+          "quote": "React isn't just a library — it's a mindset of building UI through composable logic."
+        },
+        {
+          "name": "Angular",
+          "iconPath": "src/assets/skillsSVG/angular.svg",
+          "description": "A robust TypeScript-based framework for building scalable, enterprise-ready, and maintainable single-page applications.",
+          "experience": "1+ years",
+          "projects": ["Employee Management System", "E-Commerce Platform", "Task Tracker"],
+          "libraries": ["RxJS", "NgRx", "Angular Material", "PrimeNG", "ngx-bootstrap"],
+          "quote": "Angular brings structure and power — it’s like having a full toolkit for building complex applications out of the box."
+        },
+        {
+          "name": "Tailwind CSS",
+          "iconPath": "src/assets/skillsSVG/tailwind.svg",
+          "description": "A utility-first CSS framework for building modern, responsive UIs quickly and efficiently.",
+          "experience": "1+ years",
+          "projects": ["Chat Application", "Music Player UI", "Car Rental Platform"],
+          "libraries": ["Headless UI", "DaisyUI", "Heroicons", "Twin.Macro", "Preline UI"],
+          "quote": "Tailwind CSS is like LEGO for UI — small utilities, endless combinations, rapid results."
+        },
+        {
+          "name": "Vite",
+          "iconPath": "src/assets/skillsSVG/vite.svg",
+          "description": "A blazing fast frontend build tool and development server optimized for modern JavaScript frameworks like React and Vue.",
+          "experience": "1+ years",
+          "projects": ["Weather App", "Chat App", "Portfolio Site"],
+          "libraries": ["@vitejs/plugin-react", "vite-plugin-pwa", "vite-plugin-svgr", "vite-plugin-compression", "vite-plugin-env-compatible"],
+          "quote": "Vite is the speed your frontend deserves — instant dev server, lightning-fast builds."
+        },
+        {
+          "name": "Material UI",
+          "iconPath": "src/assets/skillsSVG/materialui.svg",
+          "description": "A popular React component library that implements Google’s Material Design for building sleek and consistent UIs.",
+          "experience": "1+ years",
+          "projects": ["Spotify Clone", "Car Rental App"],
+          "libraries": ["@mui/material", "@mui/icons-material", "@emotion/styled", "@emotion/react", "@mui/lab"],
+          "quote": "Material UI brings design harmony and development speed together — beauty meets consistency in every component."
+        }
+      ]
+    },
+    {
+      "group": "Backend",
+      "stack": [
+        {
+          "name": "Node.js",
+          "iconPath": "src/assets/skillsSVG/nodejs.svg",
+          "description": "A runtime environment that allows JavaScript to run on the server, enabling scalable, event-driven backend development.",
+          "experience": "1+ years",
+          "projects": ["Chat Application Backend", "Car Rental App Backend", "Authentication System"],
+          "libraries": ["Express.js", "Nodemon", "Multer", "Socket.io", "Cors"],
+          "quote": "With Node.js, JavaScript breaks free from the browser — it's where speed and scalability meet on the backend."
+        },
+        {
+          "name": "Express.js",
+          "iconPath": "src/assets/skillsSVG/expressjs.svg",
+          "description": "A minimal and flexible Node.js web application framework that simplifies backend development and API creation.",
+          "experience": "1+ years",
+          "projects": ["Chat Application Backend", "Car Rental App Backend", "Authentication System"],
+          "libraries": ["Morgan", "Cors", "Body-Parser", "Express-Validator", "JWT"],
+          "quote": "Express.js is the backbone of Node — clean routes, simple logic, powerful APIs."
+        },
+        {
+          "name": ".NET Core",
+          "iconPath": "src/assets/skillsSVG/dotnet.svg",
+          "description": "A high-performance, cross-platform framework for building modern, scalable, and secure web applications and APIs.",
+          "experience": "1+ years",
+          "projects": ["Personal Task Manager API", "E-Commerce Backend", "Authentication System"],
+          "libraries": ["Entity Framework Core", "ASP.NET Identity", "SignalR", "AutoMapper", "Serilog"],
+          "quote": ".NET Core gives you both speed and reliability — it’s built for developers who want power with productivity."
+        },
+        {
+          "name": "JWT",
+          "iconPath": "src/assets/skillsSVG/jwt.svg",
+          "description": "A compact, URL-safe means of securely transmitting information between parties for authentication and authorization.",
+          "experience": "1+ years",
+          "projects": ["Chat Application", "Car Rental App", "Weather App"],
+          "libraries": ["jsonwebtoken", "bcryptjs", "cookie-parser", "dotenv", "express-jwt"],
+          "quote": "JWT secures your logic — it’s the gatekeeper of modern web authentication."
+        },
+        {
+          "name": "Postman",
+          "iconPath": "src/assets/skillsSVG/postman.svg",
+          "description": "A collaboration platform and API client used for developing, testing, and documenting APIs with ease and efficiency.",
+          "experience": "1+ years",
+          "projects": ["API Testing", "Chat Application API"],
+          "libraries": ["Newman", "Postman Monitors", "Mock Servers", "Collection Runner", "Environment Variables"],
+          "quote": "Postman turns API testing into a seamless experience — where every request tells a story and every response gives clarity."
+        }
+      ]
+    },
+    {
+      "group": "Database",
+      "stack": [
+        {
+          "name": "MongoDB",
+          "iconPath": "src/assets/skillsSVG/mongodb.svg",
+          "description": "A NoSQL document-oriented database designed for high performance, scalability, and flexibility with JSON-like data structures.",
+          "experience": "1+ years",
+          "projects": ["Chat App Database", "Authentication System", "Car Rental App"],
+          "libraries": ["Mongoose", "MongoDB Atlas", "MongoDB Compass", "dotenv", "mongoose-paginate-v2"],
+          "quote": "MongoDB stores data like you think — flexible, fast, and built for modern applications."
+        },
+        {
+          "name": "PostgreSQL",
+          "iconPath": "src/assets/skillsSVG/postgresql.svg",
+          "description": "A powerful, open-source relational database system known for its robustness, advanced features, and SQL compliance.",
+          "experience": "1+ years",
+          "projects": ["Doctor Consultation App (DB Design)"],
+          "libraries": ["pg", "Sequelize", "pgAdmin", "Prisma", "TypeORM"],
+          "quote": "PostgreSQL is where structure meets strength — engineered for integrity, optimized for performance."
+        },
+        {
+          "name": "SQL Server",
+          "iconPath": "src/assets/skillsSVG/sql-server.svg",
+          "description": "A powerful relational database management system for handling structured data with advanced querying and transaction support.",
+          "experience": "1+ years",
+          "projects": ["E-Commerce Database", "Employee Management DB", "Chat App Storage"],
+          "libraries": ["T-SQL", "Stored Procedures", "Views", "Triggers", "Functions"],
+          "quote": "Data is the backbone of every application — SQL Server ensures it’s organized, secure, and lightning-fast to query."
+        },
+        {
+          "name": "MySQL",
+          "iconPath": "src/assets/skillsSVG/mysql.svg",
+          "description": "A widely used open-source relational database management system known for its reliability, speed, and ease of use.",
+          "experience": "1+ years",
+          "projects": ["Student Management System", "User Registration DB", "TO-DO List App"],
+          "libraries": ["mysql2", "Sequelize", "TypeORM", "Prisma", "Workbench"],
+          "quote": "MySQL powers structured data with precision — dependable, scalable, and built for performance."
+        },
+        {
+          "name": "Firebase",
+          "iconPath": "src/assets/skillsSVG/firebase.svg",
+          "description": "A comprehensive app development platform by Google offering real-time databases, authentication, hosting, and cloud functions.",
+          "experience": "1+ years",
+          "projects": ["LinkedIn Clone"],
+          "libraries": ["Firebase Auth", "Cloud Firestore", "Firebase Storage", "Firebase Hosting", "Firebase SDK"],
+          "quote": "Firebase accelerates development — letting you focus on your app while it handles the infrastructure."
+        }
+      ]
+    },
+    {
+      "group": "Tools & Platforms",
+      "stack": [
+        {
+          "name": "Git",
+          "iconPath": "src/assets/skillsSVG/git.svg",
+          "description": "A distributed version control system that tracks changes in source code, enabling collaboration and code history management.",
+          "experience": "1+ years",
+          "projects": ["All Personal & Team Projects", "Open Source Contributions", "Versioned Feature Development"],
+          "libraries": ["Git CLI", "Git Bash", "GitHub Desktop", "VSCode Git Extension", "GitKraken"],
+          "quote": "Git is your project's memory — never lose progress, never fear breaking things."
+        },
+        {
+          "name": "GitHub",
+          "iconPath": "src/assets/skillsSVG/github.svg",
+          "description": "A cloud-based platform for hosting Git repositories, enabling version control, collaboration, and code sharing at scale.",
+          "experience": "1+ years",
+          "projects": ["Portfolio Website", "Chat App", "Open Source Contributions"],
+          "libraries": ["GitHub Actions", "GitHub Pages", "GitHub CLI", "Dependabot", "GitHub REST API"],
+          "quote": "GitHub is where code lives, collaborates, and evolves — your project’s global stage."
+        },
+        {
+          "name": "VS Code",
+          "iconPath": "src/assets/skillsSVG/vscode.svg",
+          "description": "A lightweight yet powerful source code editor by Microsoft, featuring built-in Git support, extensions, and an intuitive interface.",
+          "experience": "3+ years",
+          "projects": ["All Development Projects", "Web & App Debugging", "Real-Time Coding"],
+          "libraries": ["Prettier", "ESLint", "Live Server", "GitLens", "Debugger for Chrome"],
+          "quote": "VS Code is more than an editor — it's the developer’s cockpit, streamlined for productivity and precision."
+        },
+        {
+          "name": "VisualStudio",
+          "iconPath": "src/assets/skillsSVG/visualstudio.svg",
+          "description": "A powerful and feature-rich integrated development environment (IDE) for building, debugging, and deploying applications across multiple platforms.",
+          "experience": "2+ years",
+          "projects": ["ASP.NET Core APIs", "Full-Stack Web Applications", "SQL Server Integration"],
+          "libraries": ["NuGet Package Manager", "IntelliSense", "Live Share", "Debugger", "Extensions Marketplace"],
+          "quote": "Visual Studio isn’t just an editor — it’s a complete ecosystem that makes development faster, smarter, and more productive."
+        },
+        {
+          "name": "Figma",
+          "iconPath": "src/assets/skillsSVG/figma.svg",
+          "description": "A collaborative interface design tool used for UI/UX design, prototyping, and real-time teamwork across the web.",
+          "experience": "1+ years",
+          "projects": ["Portfolio UI Design", "Doctor App Prototype", "Landing Page Wireframes"],
+          "libraries": ["Figma Community Plugins", "FigJam", "Autoflow", "Blush", "Wireframe Kits"],
+          "quote": "Figma turns ideas into interactive visuals — where creativity meets collaboration in the browser."
+        },
+        {
+          "name": "Docker",
+          "iconPath": "src/assets/skillsSVG/docker.svg",
+          "description": "An open platform for developing, shipping, and running applications in isolated containers, ensuring consistency across environments.",
+          "experience": "1+ year",
+          "projects": ["Containerized Node.js App", "MongoDB + Express Stack", "Dev Environment Setup"],
+          "libraries": ["Docker CLI", "Docker Compose", "Docker Hub", "Dockerfile", "Docker Desktop"],
+          "quote": "Docker brings order to deployment — build once, run anywhere, scale anytime."
+        },
+        {
+          "name": "WordPress",
+          "iconPath": "src/assets/skillsSVG/wordpress.svg",
+          "description": "An open-source content management system (CMS) that enables users to build and manage websites with ease using themes and plugins.",
+          "experience": "1+ year",
+          "projects": ["Business Website", "Personal Blog", "Portfolio CMS"],
+          "libraries": ["Elementor", "Yoast SEO", "WooCommerce", "Contact Form 7", "WPBakery Page Builder"],
+          "quote": "WordPress empowers creators — from blogging to e-commerce, it's the engine behind millions of websites."
+        },
+        {
+          "name": "Informatica IDMC",
+          "iconPath": "src/assets/skillsSVG/informaticaidmc.svg",
+          "description": "The Intelligent Data Management Cloud (IDMC) is a modern, AI-powered data integration and governance platform that supports multi-cloud and hybrid environments.",
+          "experience": "Beginner",
+          "projects": ["Data Pipeline Demo", "Cloud Integration Practice", "IDMC Certification Quiz"],
+          "libraries": ["Cloud Data Integration", "Data Governance & Catalog", "Application Integration", "Mass Ingestion", "Informatica Cloud Secure Agent"],
+          "quote": "Informatica IDMC turns raw data into intelligent assets — unifying integration, governance, and innovation in one cloud-native platform."
+        },
+        {
+          "name": "PowerApps",
+          "iconPath": "src/assets/skillsSVG/powerapps.svg",
+          "description": "A low-code development platform by Microsoft that enables users to build custom business apps with ease, connecting data from various sources.",
+          "experience": "Beginner",
+          "projects": ["Internal Tools Demo", "Employee Form App", "Workflow Automation"],
+          "libraries": ["Power Automate", "Common Data Service (Dataverse)", "Power BI", "SharePoint Connector", "AI Builder"],
+          "quote": "PowerApps empowers anyone to solve problems — bridging business needs with custom app solutions, without writing much code."
+        }
+      ]
+    }
+  ]
+}
+
+--- END: profile_data.json ---
+
+--- BEGIN: profile_for_chatbot.txt ---
+PROFILE FOR CHATBOT DEVELOPMENT
+
+SOURCE: portfolio-new (React + Vite) by Sainathreddy
+Generated from files: README.md, package.json, src/components/About.jsx, src/components/Hero.jsx, src/components/Contact.jsx, src/data/education.js, src/data/projects.js, src/data/skills.js
+
+------------------------------------------------------------
+BASIC IDENTIFIERS
+------------------------------------------------------------
+Full Name: Sainathreddy Nerusupalli
+Preferred display name / short: Sainathreddy (also appears as Sainath Reddy in footer)
+GitHub username / URL: sainath-666 -> https://github.com/sainath-666
+LinkedIn: https://linkedin.com/in/sainath666
+Portfolio live URL: https://sainathreddy.vercel.app/
+Primary email: sai65265@gmail.com
+WhatsApp link: https://wa.link/oeaxld
+Resume (asset path in repo): src/assets/resume.pdf
+Profile Image (asset path in repo): src/assets/profile.jpg
+
+------------------------------------------------------------
+BIO / ABOUT (short & long)
+------------------------------------------------------------
+Short tagline (Hero):
+"Full Stack Developer | React.js | Node.js | MongoDB"
+
+About / Summary (from About component):
+I’m Sainathreddy, a passionate Web & App Developer driven by curiosity and a deep love for clean, scalable solutions. I specialize in modern full-stack technologies including React.js, Node.js, and MongoDB. I build intuitive UIs and scalable APIs, focusing on user-centered experiences that are both functional and beautiful.
+
+Personal quote (About):
+"Code isn't just about logic — it's about creating meaningful impact."
+
+Roles / Titles:
+- Web Developer
+- App Developer
+- Video Editor
+
+Location: Hyderabad, Telangana
+Availability: Freelancing - Available
+
+------------------------------------------------------------
+CONTACT & INTERACTION
+------------------------------------------------------------
+Primary email: sai65265@gmail.com
+Contact form endpoint: https://formspree.io/f/xzzgopny  (used by Contact form)
+Socials: GitHub (https://github.com/sainath-666), LinkedIn (https://www.linkedin.com/in/sainath666), WhatsApp (https://wa.link/oeaxld)
+
+Suggested contact prompt examples for chatbot:
+- "How can I contact Sainathreddy?" -> return email, contact form link, socials
+- "Show Sainathreddy's GitHub" -> return GitHub URL and notable repo list
+- "Is Sainath available for freelancing?" -> return "Available"
+
+------------------------------------------------------------
+EDUCATION
+------------------------------------------------------------
+1) B.Tech in CSE (IoT, Cybersecurity & Blockchain)
+   Institution: Siddharth Institute of Engineering & Technology
+   Duration: 2020 – 2024
+   Score: 62.7% (6.8 CGPA)
+   Location: Puttur
+   Highlights:
+     - Hands-on development and problem solving
+     - Self-learning full-stack technologies outside curriculum
+
+2) Intermediate (MPC)
+   Institution: Sri Chaitanya Junior College
+   Duration: 2018 – 2020
+   Score: 64.6%
+   Location: Vijayawada
+   Highlights:
+     - Strong foundation in Math/Physics
+     - Discipline and JEE preparation
+
+3) Class X (CBSE)
+   Institution: Penchalreddy High School
+   Duration: 2017 – 2018
+   Score: 88.6%
+   Location: Rayachoty
+   Highlights: foundational study habits and early interest in tech
+
+Internships:
+- Web Development Intern, ShadowFox (Jan-Feb 2025) — built front-end projects, responsive design
+- Front-End Developer Intern, VirtuNexa (Jan-Feb 2025) — web interfaces with HTML/CSS/JS
+- Full Stack Java Intern, QSpiders (Aug-Nov 2023) — Java, JDBC, Servlets
+
+------------------------------------------------------------
+PROJECTS (summary for chatbot ingestion)
+------------------------------------------------------------
+Note: Full project details, screenshots and stacks are in src/data/projects.js. Key projects include:
+
+1) Chatty - Real-time Chat Application
+   - Description: MERN + Socket.io real-time messaging, auth, image sharing, dark mode
+   - Stack highlights: React.js, Node.js, Tailwind, MongoDB, Express, Socket.io, JWT, Cloudinary
+   - GitHub: https://github.com/sainath-666/CHATTY_REALTIME_CHATTING
+   - Live: https://chatty-realtime-chatting.onrender.com
+
+2) Gemini Clone - Google AI Chat Interface
+   - Description: Gemini 2.5 Pro integrated AI chat UI clone
+   - GitHub: https://github.com/sainath-666/Gemini_Clone
+   - Live: https://sainathreddy-gemini-clone.vercel.app/
+
+3) Car Rental Web App
+   - Description: Next.js + TypeScript car booking platform
+   - GitHub: https://github.com/sainath-666/car-rental
+   - Live: https://car-rental-sai.vercel.app/
+
+4) Melodify - Spotify Clone
+   - Description: Music streaming UI with persistent preferences (React/TypeScript)
+   - GitHub: https://github.com/sainath-666/Spotify_Clone_1
+   - Live: https://spotify-clone-1-sai.vercel.app/
+
+5) Weather Forecast Applications
+   - Description: Multiple weather apps using OpenWeatherMap & WeatherAPI
+   - GitHub: https://github.com/sainath-666/Weather_Application_2
+   - Live: https://sainath-666.github.io/Weather_Application_2/
+
+6) Games, TextUtils, Temperature Converter, Calculator (several smaller projects with GitHub and live pages listed in projects.js)
+
+For each project, projects.js contains: title, description, stack array (icons and names), github URL, live URL, screenshot paths, and highlights. Use that for detailed answers.
+
+------------------------------------------------------------
+SKILLS & TECHNICAL STACK (high-level)
+------------------------------------------------------------
+Top stacks (from Hero/About/skills.js):
+- Frontend: React.js, HTML, CSS, Tailwind CSS, Vite, TypeScript, JavaScript, Angular, Material UI
+- Backend: Node.js, Express.js, .NET Core
+- Databases: MongoDB, PostgreSQL, MySQL, Firebase
+- Tools & Platforms: Git, GitHub, VS Code, Visual Studio, Docker, Figma
+- Other: JWT, Postman, Cloudinary, Socket.io
+
+Skills are grouped in src/data/skills.js with details per skill: experience, projects, libraries and a short quote. Recommended ingestion: parse that file to extract skill name, experience, and short description for each skill.
+
+------------------------------------------------------------
+REPO / DEPENDENCIES
+------------------------------------------------------------
+Project name in package.json: portf
+Main stack (from README & package.json): React, Vite, Tailwind CSS, AOS, React Icons
+Dev: ESLint, TypeScript types, @vitejs/plugin-react
+
+------------------------------------------------------------
+ASSETS & LOCAL PATHS (useful for chatbot to reference images/resume)
+------------------------------------------------------------
+- Profile image: src/assets/profile.jpg (used in Hero)
+- Resume PDF: src/assets/resume.pdf (download link in Hero)
+- Project screenshots: src/assets/projectsIMG/* (each project folder)
+- Skill SVG icons: src/assets/skillsSVG/*
+
+When linking assets for display, use static host or bundle them; local paths in repo are as above.
+
+------------------------------------------------------------
+NOTES FOR CHATBOT DEVELOPMENT / INTEGRATION TIPS
+------------------------------------------------------------
+1) Preferred structured format: Provide both a human-readable text version (this file) and a machine-readable JSON file (export of the same info). If you want, I can generate a JSON variant next.
+2) Prioritize these fields for quick answers:
+   - name, short name, roles, location, email
+   - social URLs (GitHub, LinkedIn, WhatsApp)
+   - top skills (React.js, Node.js, MongoDB, Tailwind)
+   - 3–6 featured projects (title, 1-sentence description, live, github)
+   - education summary
+3) Content provenance: Cite source file (e.g., "About.jsx" or "src/data/projects.js") when answering to explain where data came from.
+4) Updates: When updating the repo content (About/skills/projects), regenerate this file or use an automated script to extract data programmatically.
+5) Example user prompts for the chatbot:
+   - "Tell me about Sainathreddy's experience and skills."
+   - "Show me Sainathreddy's top 3 projects with links."
+   - "How to contact Sainathreddy?"
+
+------------------------------------------------------------
+END OF PROFILE
+------------------------------------------------------------
+Generated: 2025-11-09
+Repository: portfolio-new
+File generated by: assistant (profile aggregation)
+
+If you'd like the same data as JSON or CSV for direct ingestion into your chatbot training data, tell me which format and I'll create it next.
+--- END: profile_for_chatbot.txt ---
+
+--- BEGIN: skills_projects_detailed.txt ---
+SKILLS & PROJECTS — DETAILED EXPORT
+Source: portfolio-new (src/data/skills.js, src/data/projects.js)
+Generated: 2025-11-09
+
+--- HOW TO USE ---
+This file contains a full, human-readable export of all skills and all projects defined in the repository. Use it as training/context for a chatbot. Each skill entry includes: name, short description, experience, example projects, libraries/tools, and a short quote. Each project entry includes: title, description, tech stack, github URL, live URL, screenshot paths (repo-local), and highlight bullets.
+
+--- PROJECTS (full detail) ---
+
+1) Chatty - Real-time Chat Application
+- image (thumbnail): src/assets/projectsIMG/real-time-chat-application/thumbnail.png
+- Title: Chatty - Real-time Chat Application
+- Description: A modern full-stack real-time chat application built with the MERN stack and Socket.io, featuring live messaging, authentication, image sharing, and responsive UI with dark mode support.
+- Stack (highlights): React.js, Node.js, Tailwind CSS, MongoDB, Express.js, Vite, Daisy UI, JWT, Socket.io (client), Cloudinary, Render
+- GitHub: https://github.com/sainath-666/CHATTY_REALTIME_CHATTING
+- Live: https://chatty-realtime-chatting.onrender.com
+- Screenshots (examples): src/assets/projectsIMG/real-time-chat-application/ss-1.png, ss-2.png, ss-3.png, ss-4.png, ss-5.png
+- Highlights:
+  * Real-time messaging system powered by Socket.io with online user indicators
+  * JWT-based authentication for secure login and registration
+  * Image upload and sharing functionality via Cloudinary
+  * Light/Dark theme toggle and fully responsive layout
+  * Built with Vite, Zustand, TailwindCSS, and a clean modern UI using Daisy UI
+  * Scalable backend with MongoDB, Express, and modular code architecture
+
+
+2) Gemini Clone - Google AI Chat Interface
+- image (thumbnail): src/assets/projectsIMG/gemini/thumbnail.png
+- Title: Gemini Clone - Google AI Chat Interface
+- Description: A modern, responsive AI-powered chat application that replicates the Google Gemini interface, built with React, Vite, and integrated with the Gemini 2.5 Pro model for intelligent conversations.
+- Stack (highlights): React.js, Vite, Tailwind CSS, JavaScript, Gemini model integration, Vercel
+- GitHub: https://github.com/sainath-666/Gemini_Clone
+- Live: https://sainathreddy-gemini-clone.vercel.app/
+- Screenshots: src/assets/projectsIMG/gemini/ss-1.png, ss-2.png, ss-3.png
+- Highlights:
+  * Google Gemini 2.5 Pro model integrated for intelligent AI responses
+  * Modern Google-inspired chat interface with sleek UI/UX
+  * Real-time messaging experience with loading states and error handling
+  * Persistent chat history stored in state with easy navigation
+  * Responsive design for desktop and mobile with accessibility features
+  * Built-in safety settings and content moderation
+  * Optimized for performance using Vite and lazy-loaded components
+  * API key protected using environment variables for security
+  * Ready for deployment on Netlify, Vercel, or any static host
+
+
+3) Car Rental Web App
+- image (thumbnail): src/assets/projectsIMG/car-rental/thumbnail.png
+- Title: Car Rental Web App
+- Description: A modern and responsive car rental application built with Next.js, TypeScript, and Tailwind CSS, allowing users to browse, filter, and book cars seamlessly with an elegant user experience.
+- Stack (highlights): Next.js, TypeScript, React.js, Tailwind CSS, Context API, Vercel
+- GitHub: https://github.com/sainath-666/car-rental
+- Live: https://car-rental-sai.vercel.app/
+- Screenshots: src/assets/projectsIMG/car-rental/ss-1.png ... ss-6.png
+- Highlights:
+  * Browse a variety of cars with images and specifications
+  * Filter by brand, category, and price for personalized results
+  * Interactive booking modal with toast notifications for confirmation
+  * View and manage booking history
+  * Responsive layout designed for both desktop and mobile
+  * Built with modern technologies including Next.js App Router and Tailwind CSS
+
+
+4) Melodify - Spotify Clone
+- image (thumbnail): src/assets/projectsIMG/melodify/thumbnail.png
+- Title: Melodify - Spotify Clone
+- Description: A modern music streaming platform inspired by Spotify, built with React, TypeScript, and SCSS, offering a responsive UI, dynamic theming, and persistent user preferences.
+- Stack (highlights): React.js, TypeScript, SCSS, React Bootstrap, Vercel
+- GitHub: https://github.com/sainath-666/Spotify_Clone_1
+- Live: https://spotify-clone-1-sai.vercel.app/
+- Screenshots: src/assets/projectsIMG/melodify/ss-1.png ... ss-5.png
+- Highlights:
+  * Dynamic theming based on album artwork using a custom useBackgroundColor hook
+  * Real-time playback with progress tracking and intelligent animations
+  * Persistent favorites and listening history using localStorage and sessionStorage
+  * Advanced search functionality for tracks, artists, and playlists
+  * Responsive layout optimized for mobile, tablet, and desktop
+
+
+5) Weather Forecast Applications
+- image (thumbnail): src/assets/projectsIMG/weather/thumbnail.png
+- Title: Weather Forecast Applications
+- Description: A collection of beautifully designed and responsive weather applications providing real-time weather information, built using vanilla JavaScript and modern React technologies.
+- Stack (highlights): JavaScript, React.js, HTML5, CSS3, Vite, OpenWeatherMap API, Font Awesome
+- GitHub: https://github.com/sainath-666/Weather_Application_2
+- Live: https://sainath-666.github.io/Weather_Application_2/
+- Screenshots: src/assets/projectsIMG/weather/ss-1.png ... ss-5.png
+- Highlights:
+  * Real-time weather data using OpenWeatherMap and WeatherAPI integrations
+  * Geolocation support to fetch weather for the user's current location
+  * Dynamic backgrounds and icons based on live weather conditions
+  * Fully responsive UIs with support for mobile, tablet, and desktop
+  * Built using both vanilla JS and modern React + Vite setup for flexibility
+
+
+6) Interactive Puzzle & Logic Games
+- image (thumbnail): src/assets/projectsIMG/games/thumbnail.png
+- Title: Interactive Puzzle & Logic Games
+- Description: A collection of four interactive and responsive games—2048, Snake, Memory Match, and Find My Number—crafted using HTML, CSS, and JavaScript. Each game features modern UI, smooth animations, and engaging gameplay experiences for both desktop and mobile users.
+- Stack (highlights): JavaScript, HTML5, CSS3, Font Awesome, Google Fonts
+- GitHub / Live: https://sainath-666.github.io/Games/
+- Screenshots: src/assets/projectsIMG/games/ss-1.png ... ss-10.png
+- Highlights:
+  * 2048: tile-merging puzzle with touch and keyboard support, animations, score tracking
+  * Snake: classic arcade snake with keyboard and mobile touch controls, high score tracking, dynamic difficulty
+  * Memory Game: match emoji card pairs with timer and move counter
+  * Find My Number: binary logic-based number guessing game with table interaction
+  * All games are mobile-friendly and include modern UI design
+
+
+7) TextUtils Application
+- image (thumbnail): src/assets/projectsIMG/textutils/thumbnail.png
+- Title: TextUtils Application
+- Description: A modern React-based text manipulation tool that allows users to transform, analyze, and clean up their text with real-time alerts and a responsive UI.
+- Stack (highlights): React.js, React Router, CSS3
+- GitHub: https://github.com/sainath-666/Textutils
+- Live: https://textutils-sainathreddy666.vercel.app/
+- Screenshots: src/assets/projectsIMG/textutils/ss-1.png ... ss-3.png
+- Highlights:
+  * Convert text to uppercase/lowercase, remove extra spaces, copy to clipboard
+  * Real-time word and character count analytics
+  * Toggle between light and dark mode
+  * Responsive design
+
+
+8) Temperature Converter
+- image (thumbnail): src/assets/projectsIMG/temperature/thumbnail.png
+- Title: Temperature Converter
+- Description: Converts temperatures between Celsius, Fahrenheit, and Kelvin with real-time feedback and a clean UI.
+- Stack: JavaScript, HTML5, CSS3, Font Awesome
+- GitHub: https://github.com/sainath-666/Temperature_Converter
+- Live: https://sainath-666.github.io/Temperature_Converter/
+- Highlights:
+  * Real-time conversion updates
+  * Fully responsive UI
+
+
+9) Calculator
+- image (thumbnail): src/assets/projectsIMG/calculator/thumbnail.png
+- Title: Calculator
+- Description: Basic arithmetic calculator using vanilla JavaScript.
+- Stack: JavaScript, HTML5, CSS3
+- GitHub: https://github.com/sainath-666/Calculator_1
+- Live: https://sainath-666.github.io/Calculator_1/
+- Highlights: Minimalist responsive UI, offline-capable
+
+
+--- SKILLS (full detail) ---
+Note: Skills are organized in groups (Frontend, Backend, Database, Tools & Platforms). Each entry: Name | Short description | Experience | Example projects | Libraries/tools | Quote
+
+GROUP: Frontend
+
+- HTML
+  Description: Semantic, accessible markup for structuring content on the web.
+  Experience: 2+ years
+  Projects: Portfolio Website, Landing Page, Static Sites
+  Libraries/Tools: Bootstrap, HTML5 Boilerplate, Emmet, W3.CSS, Handlebars.js
+  Quote: "HTML is not just code; it's the skeleton of the web. Build it right, and the rest will stand strong."
+
+- CSS
+  Description: Stylesheet language used to design, layout, and visually enhance HTML content.
+  Experience: 2+ years
+  Projects: Portfolio Website, Hotel Booking Site, Product Landing Page
+  Libraries/Tools: Tailwind CSS, Bootstrap, Sass, Animate.css, Bulma
+  Quote: "CSS is where creativity meets structure — it transforms plain code into beautiful experiences."
+
+- JavaScript
+  Description: Dynamic programming language used to build interactive and functional web applications.
+  Experience: 2+ years
+  Projects: Chat Application, Weather Application, Some Games
+  Libraries/Tools: React, jQuery, Axios, Lodash, Chart.js
+  Quote: "JavaScript adds life to the web — it's the bridge between user actions and meaningful interactions."
+
+- TypeScript
+  Description: A statically typed superset of JavaScript that enhances code reliability and developer productivity.
+  Experience: 1+ years
+  Projects: Car Rental App, Spotify Clone, Portfolio Refactor
+  Libraries/Tools: TypeORM, Zod, ts-node, React with TypeScript, NestJS
+  Quote: "TypeScript turns chaos into clarity — strong typing leads to stronger code."
+
+- React.js
+  Description: A powerful JavaScript library for building fast, dynamic, and scalable user interfaces using components.
+  Experience: 1+ years
+  Projects: Portfolio Website, Real-Time Chat App, Weather Apps
+  Libraries/Tools: React Router, Redux, Axios, Framer Motion, React Query
+  Quote: "React isn't just a library — it's a mindset of building UI through composable logic."
+
+- Angular
+  Description: A robust TypeScript-based framework for building scalable, enterprise-ready, and maintainable single-page applications.
+  Experience: 1+ years
+  Projects: Employee Management System, E-Commerce Platform, Task Tracker
+  Libraries/Tools: RxJS, NgRx, Angular Material, PrimeNG, ngx-bootstrap
+  Quote: "Angular brings structure and power — it’s like having a full toolkit for building complex applications out of the box."
+
+- Tailwind CSS
+  Description: A utility-first CSS framework for building modern, responsive UIs quickly and efficiently.
+  Experience: 1+ years
+  Projects: Chat Application, Music Player UI, Car Rental Platform
+  Libraries/Tools: Headless UI, DaisyUI, Heroicons, Twin.Macro, Preline UI
+  Quote: "Tailwind CSS is like LEGO for UI — small utilities, endless combinations, rapid results."
+
+- Vite
+  Description: A blazing fast frontend build tool and development server optimized for modern JavaScript frameworks like React and Vue.
+  Experience: 1+ years
+  Projects: Weather App, Chat App, Portfolio Site
+  Libraries/Tools: @vitejs/plugin-react, vite-plugin-pwa, vite-plugin-svgr, vite-plugin-compression, vite-plugin-env-compatible
+  Quote: "Vite is the speed your frontend deserves — instant dev server, lightning-fast builds."
+
+- Material UI
+  Description: A popular React component library that implements Google’s Material Design for building sleek and consistent UIs.
+  Experience: 1+ years
+  Projects: Spotify Clone, Car Rental App
+  Libraries/Tools: @mui/material, @mui/icons-material, @emotion/styled, @emotion/react, @mui/lab
+  Quote: "Material UI brings design harmony and development speed together — beauty meets consistency in every component."
+
+
+GROUP: Backend
+
+- Node.js
+  Description: A runtime environment that allows JavaScript to run on the server, enabling scalable, event-driven backend development.
+  Experience: 1+ years
+  Projects: Chat Application Backend, Car Rental App Backend, Authentication System
+  Libraries/Tools: Express.js, Nodemon, Multer, Socket.io, Cors
+  Quote: "With Node.js, JavaScript breaks free from the browser — it's where speed and scalability meet on the backend."
+
+- Express.js
+  Description: A minimal and flexible Node.js web application framework that simplifies backend development and API creation.
+  Experience: 1+ years
+  Projects: Chat Application Backend, Car Rental App Backend, Authentication System
+  Libraries/Tools: Morgan, Cors, Body-Parser, Express-Validator, JWT
+  Quote: "Express.js is the backbone of Node — clean routes, simple logic, powerful APIs."
+
+- .NET Core
+  Description: A high-performance, cross-platform framework for building modern, scalable, and secure web applications and APIs.
+  Experience: 1+ years
+  Projects: Personal Task Manager API, E-Commerce Backend, Authentication System
+  Libraries/Tools: Entity Framework Core, ASP.NET Identity, SignalR, AutoMapper, Serilog
+  Quote: ".NET Core gives you both speed and reliability — it’s built for developers who want power with productivity."
+
+- JWT
+  Description: A compact, URL-safe means of securely transmitting information between parties for authentication and authorization.
+  Experience: 1+ years
+  Projects: Chat Application, Car Rental App, Weather App
+  Libraries/Tools: jsonwebtoken, bcryptjs, cookie-parser, dotenv, express-jwt
+  Quote: "JWT secures your logic — it’s the gatekeeper of modern web authentication."
+
+- Postman
+  Description: A collaboration platform and API client used for developing, testing, and documenting APIs with ease and efficiency.
+  Experience: 1+ years
+  Projects: API Testing, Chat Application API
+  Libraries/Tools: Newman, Postman Monitors, Mock Servers, Collection Runner, Environment Variables
+  Quote: "Postman turns API testing into a seamless experience — where every request tells a story and every response gives clarity."
+
+
+GROUP: Database
+
+- MongoDB
+  Description: A NoSQL document-oriented database designed for high performance, scalability, and flexibility with JSON-like data structures.
+  Experience: 1+ years
+  Projects: Chat App Database, Authentication System, Car Rental App
+  Libraries/Tools: Mongoose, MongoDB Atlas, MongoDB Compass, dotenv, mongoose-paginate-v2
+  Quote: "MongoDB stores data like you think — flexible, fast, and built for modern applications."
+
+- PostgreSQL
+  Description: A powerful, open-source relational database system known for its robustness, advanced features, and SQL compliance.
+  Experience: 1+ years
+  Projects: Doctor Consultation App (DB Design)
+  Libraries/Tools: pg, Sequelize, pgAdmin, Prisma, TypeORM
+  Quote: "PostgreSQL is where structure meets strength — engineered for integrity, optimized for performance."
+
+- SQL Server
+  Description: A powerful relational database management system for handling structured data with advanced querying and transaction support.
+  Experience: 1+ years
+  Projects: E-Commerce Database, Employee Management DB, Chat App Storage
+  Libraries/Tools: T-SQL, Stored Procedures, Views, Triggers, Functions
+  Quote: "Data is the backbone of every application — SQL Server ensures it’s organized, secure, and lightning-fast to query."
+
+- MySQL
+  Description: A widely used open-source relational database management system known for its reliability, speed, and ease of use.
+  Experience: 1+ years
+  Projects: Student Management System, User Registration DB, TO-DO List App
+  Libraries/Tools: mysql2, Sequelize, TypeORM, Prisma, Workbench
+  Quote: "MySQL powers structured data with precision — dependable, scalable, and built for performance."
+
+- Firebase
+  Description: A comprehensive app development platform by Google offering real-time databases, authentication, hosting, and cloud functions.
+  Experience: 1+ years
+  Projects: LinkedIn Clone
+  Libraries/Tools: Firebase Auth, Cloud Firestore, Firebase Storage, Firebase Hosting, Firebase SDK
+  Quote: "Firebase accelerates development — letting you focus on your app while it handles the infrastructure."
+
+
+GROUP: Tools & Platforms
+
+- Git
+  Description: A distributed version control system that tracks changes in source code, enabling collaboration and code history management.
+  Experience: 1+ years
+  Projects: All Personal & Team Projects, Open Source Contributions, Versioned Feature Development
+  Libraries/Tools: Git CLI, Git Bash, GitHub Desktop, VSCode Git Extension, GitKraken
+  Quote: "Git is your project's memory — never lose progress, never fear breaking things."
+
+- GitHub
+  Description: A cloud-based platform for hosting Git repositories, enabling version control, collaboration, and code sharing at scale.
+  Experience: 1+ years
+  Projects: Portfolio Website, Chat App, Open Source Contributions
+  Libraries/Tools: GitHub Actions, GitHub Pages, GitHub CLI, Dependabot, GitHub REST API
+  Quote: "GitHub is where code lives, collaborates, and evolves — your project’s global stage."
+
+- VS Code
+  Description: A lightweight yet powerful source code editor by Microsoft, featuring built-in Git support, extensions, and an intuitive interface.
+  Experience: 3+ years
+  Projects: All Development Projects, Web & App Debugging, Real-Time Coding
+  Libraries/Tools: Prettier, ESLint, Live Server, GitLens, Debugger for Chrome
+  Quote: "VS Code is more than an editor — it's the developer’s cockpit, streamlined for productivity and precision."
+
+- VisualStudio
+  Description: A powerful and feature-rich integrated development environment (IDE) for building, debugging, and deploying applications across multiple platforms.
+  Experience: 2+ years
+  Projects: ASP.NET Core APIs, Full-Stack Web Applications, SQL Server Integration
+  Libraries/Tools: NuGet, IntelliSense, Live Share, Debugger, Extensions Marketplace
+  Quote: "Visual Studio isn’t just an editor — it’s a complete ecosystem that makes development faster, smarter, and more productive."
+
+- Figma
+  Description: A collaborative interface design tool used for UI/UX design, prototyping, and real-time teamwork across the web.
+  Experience: 1+ years
+  Projects: Portfolio UI Design, Doctor App Prototype, Landing Page Wireframes
+  Libraries/Tools: Figma Community Plugins, FigJam, Autoflow, Blush, Wireframe Kits
+  Quote: "Figma turns ideas into interactive visuals — where creativity meets collaboration in the browser."
+
+- Docker
+  Description: An open platform for developing, shipping, and running applications in isolated containers, ensuring consistency across environments.
+  Experience: 1+ year
+  Projects: Containerized Node.js App, MongoDB + Express Stack, Dev Environment Setup
+  Libraries/Tools: Docker CLI, Docker Compose, Docker Hub, Dockerfile, Docker Desktop
+  Quote: "Docker brings order to deployment — build once, run anywhere, scale anytime."
+
+- WordPress
+  Description: An open-source content management system (CMS) that enables users to build and manage websites with ease using themes and plugins.
+  Experience: 1+ year
+  Projects: Business Website, Personal Blog, Portfolio CMS
+  Libraries/Tools: Elementor, Yoast SEO, WooCommerce, Contact Form 7, WPBakery Page Builder
+  Quote: "WordPress empowers creators — from blogging to e-commerce, it's the engine behind millions of websites."
+
+- Informatica IDMC
+  Description: Intelligent Data Management Cloud for data integration/governance.
+  Experience: Beginner
+  Projects: Data Pipeline Demo, Cloud Integration Practice, IDMC Certification Quiz
+  Tools: Cloud Data Integration, Data Governance & Catalog, Application Integration, Mass Ingestion, Informatica Cloud Secure Agent
+  Quote: "Informatica IDMC turns raw data into intelligent assets — unifying integration, governance, and innovation in one cloud-native platform."
+
+- PowerApps
+  Description: Low-code development platform by Microsoft for business apps.
+  Experience: Beginner
+  Projects: Internal Tools Demo, Employee Form App, Workflow Automation
+  Tools: Power Automate, Dataverse, Power BI, SharePoint Connector, AI Builder
+  Quote: "PowerApps empowers anyone to solve problems — bridging business needs with custom app solutions, without writing much code."
+
+
+--- END OF EXPORT ---
+
+If you'd like this exported as JSON or CSV for direct ingestion, say which format you prefer (JSON recommended). I can also generate a smaller "featured" subset (top 6 skills + top 5 projects) if that helps the chatbot serve shorter answers.
+--- END: skills_projects_detailed.txt ---
