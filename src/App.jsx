@@ -25,7 +25,7 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-indigo-950 to-cyan-950 text-white font-sans relative">
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-indigo-950 to-cyan-950 text-white font-sans relative overflow-x-hidden w-full max-w-full">
       <BackgroundEffects />
       <Navbar />
       <Hero />

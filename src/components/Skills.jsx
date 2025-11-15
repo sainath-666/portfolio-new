@@ -9,9 +9,9 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="relative min-h-screen text-white py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 z-10"
+      className="relative min-h-screen text-white py-12 sm:py-16 md:py-20 px-3 sm:px-4 md:px-6 lg:px-8 z-10 overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto w-full">
         {/* Section Header */}
         <div className="text-center mb-8 sm:mb-12 md:mb-16" data-aos="fade-down">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white drop-shadow-[0_0_30px_rgba(6,182,212,0.4)] mb-3 sm:mb-4">
@@ -23,11 +23,11 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6 lg:gap-8 w-full">
           {skills.map((group, groupIndex) => (
             <div
               key={group.title}
-              className={`relative group ${
+              className={`relative group w-full ${
                 group.title === "Tools & Platforms"
                   ? "md:col-span-2 lg:col-span-3"
                   : ""
@@ -36,7 +36,7 @@ const Skills = () => {
               data-aos-delay={groupIndex * 100}
             >
               {/* Skill Group Card */}
-              <div className="relative h-full p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 hover:border-cyan-400/50 transition-all duration-300 overflow-hidden">
+              <div className="relative h-full p-3 sm:p-4 md:p-6 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 hover:border-cyan-400/50 transition-all duration-300 overflow-hidden w-full">
                 {/* Shimmer Effect */}
                 <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
 
@@ -45,35 +45,35 @@ const Skills = () => {
 
                 <div className="relative z-10">
                   {/* Group Header */}
-                  <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
-                    <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-cyan-400 rounded-full animate-pulse"></div>
-                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white">
+                  <div className="flex items-center gap-1.5 sm:gap-2 md:gap-3 mb-3 sm:mb-4 md:mb-6">
+                    <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-cyan-400 rounded-full animate-pulse flex-shrink-0"></div>
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-white truncate">
                       {group.title}
                     </h3>
-                    <div className="flex-1 h-px bg-gradient-to-r from-cyan-400/50 to-transparent"></div>
+                    <div className="flex-1 h-px bg-gradient-to-r from-cyan-400/50 to-transparent min-w-[20px]"></div>
                   </div>
 
                   {/* Skills Grid/Row */}
                   <div
                     className={
                       group.title === "Tools & Platforms"
-                        ? "flex flex-nowrap gap-3 sm:gap-4 overflow-x-auto pb-2 pt-1 pr-1 custom-scrollbar"
-                        : "grid grid-cols-3 sm:grid-cols-4 gap-2 sm:gap-3 md:gap-4"
+                        ? "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:flex lg:flex-nowrap gap-1.5 sm:gap-2 md:gap-3 lg:gap-4 w-full lg:overflow-x-auto lg:custom-scrollbar lg:pb-2 lg:pt-1 lg:pr-1"
+                        : "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-1.5 sm:gap-2 md:gap-3 lg:gap-4 w-full"
                     }
                   >
                     {group.stack.map((skill) => {
                       return (
                         <div
                           key={skill.id || skill.name}
-                          className={`group/skill relative flex flex-col items-center justify-center gap-1 sm:gap-2 p-2 sm:p-3 rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-cyan-400/50 transition-all duration-300 cursor-pointer hover:scale-110 touch-manipulation active:scale-95 ${
+                          className={`group/skill relative flex flex-col items-center justify-center gap-1 sm:gap-2 p-1.5 sm:p-2 md:p-3 rounded-md sm:rounded-lg md:rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-cyan-400/50 transition-all duration-300 cursor-pointer hover:scale-110 touch-manipulation active:scale-95 w-full max-w-full ${
                             group.title === "Tools & Platforms"
-                              ? "flex-shrink-0"
+                              ? "lg:flex-shrink-0 lg:w-auto lg:min-w-[100px]"
                               : ""
                           }`}
                           onClick={() => setSelectedSkill(skill)}
                         >
                           {/* Skill Icon Container */}
-                          <div className="relative w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-white/5 p-1.5 sm:p-2 group-hover/skill:bg-white/10 transition-all duration-300 flex items-center justify-center">
+                          <div className="relative w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-lg bg-white/5 p-1 sm:p-1.5 md:p-2 group-hover/skill:bg-white/10 transition-all duration-300 flex items-center justify-center flex-shrink-0">
                             <img
                               src={skill.icon}
                               alt={`${skill.name} icon`}
@@ -85,7 +85,7 @@ const Skills = () => {
                           </div>
 
                           {/* Skill Name */}
-                          <p className="text-[10px] sm:text-xs text-gray-300 group-hover/skill:text-white font-medium text-center transition-colors duration-300 leading-tight">
+                          <p className="text-[9px] sm:text-[10px] md:text-xs text-gray-300 group-hover/skill:text-white font-medium text-center transition-colors duration-300 leading-tight px-0.5 break-words max-w-full">
                             {skill.name}
                           </p>
 

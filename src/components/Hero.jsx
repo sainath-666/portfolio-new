@@ -263,7 +263,7 @@ const Hero = () => {
       </div>
 
       {/* Scroll Down Indicator */}
-      <div className="absolute bottom-2 sm:bottom-4 left-1/2 transform -translate-x-1/2 block z-20">
+      <div className="absolute bottom-2 sm:bottom-4 left-1/2 transform -translate-x-1/2 hidden md:block z-20">
         <a
           href="#about"
           className="flex flex-col items-center gap-1.5 sm:gap-2 text-white/60 hover:text-white transition-colors duration-300 group touch-manipulation"
