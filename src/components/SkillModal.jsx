@@ -1,4 +1,6 @@
 import React from "react";
+import { createPortal } from "react-dom";
+
 const SkillModal = ({ skill, onClose }) => {
   const modalRef = React.useRef(null);
 
@@ -34,12 +36,13 @@ const SkillModal = ({ skill, onClose }) => {
 
   if (!skill) return null;
 
-  return (
+  const modalContent = (
     <div
-      className="fixed inset-0 bg-black/60 flex justify-center items-center z-50"
+      className="fixed inset-0 bg-black/60 flex justify-center items-center"
       onClick={onClose}
       aria-modal="true"
       role="dialog"
+      style={{ zIndex: 99999 }}
     >
       <div
         ref={modalRef}
@@ -109,6 +112,8 @@ const SkillModal = ({ skill, onClose }) => {
       </div>
     </div>
   );
+
+  return createPortal(modalContent, document.body);
 };
 
 export default SkillModal;
