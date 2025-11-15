@@ -15,71 +15,86 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white py-20 px-10"
+      className="relative min-h-screen text-white py-20 px-4 sm:px-6 lg:px-8 z-10"
     >
-      <h2
-        className="text-3xl md:text-5xl font-bold text-center mb-12"
-        data-aos="fade-down"
-      >
-        Projects
-      </h2>
+      <div className="max-w-7xl mx-auto">
+        {/* Section Header */}
+        <div className="text-center mb-16" data-aos="fade-down">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white drop-shadow-[0_0_30px_rgba(6,182,212,0.4)] mb-4">
+            Projects
+          </h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-indigo-400 rounded-full mx-auto"></div>
+          <p className="text-gray-400 mt-6 text-lg max-w-2xl mx-auto">
+            Explore my latest projects and see what I've been building
+          </p>
+        </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-auto mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <div
             key={project.id || index}
             onClick={() => setSelectedProject(project)}
-            className="cursor-pointer bg-white/10 backdrop-blur-lg p-6 rounded-xl shadow-lg hover:scale-110 hover:shadow-2xl transition-transform duration-500 ease-in-out"
+            className="group relative cursor-pointer bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl shadow-lg hover:scale-105 hover:shadow-2xl hover:border-cyan-400/50 transition-all duration-300 ease-in-out overflow-hidden"
             data-aos={index % 2 === 0 ? "fade-up" : "zoom-in-up"}
             data-aos-delay={200 + index * 150}
           >
-            {project.image && (
-              <img
-                src={project.image}
-                alt={project.title}
-                className="rounded-lg mb-4 w-full h-60 object-cover"
-                loading="lazy"
-              />
-            )}
-            <h3 className="text-xl font-semibold text-blue-400 mb-2">
-              {project.title}
-            </h3>
-            <p className="text-gray-300 text-sm mb-4 line-clamp-3">
-              {project.description}
-            </p>
-            <div className="flex flex-wrap gap-3 text-2xl text-gray-200 mb-4">
-              {project.stack.map(({ icon: Icon, name, color }, i) => (
-                <div key={i} className="relative group hover:scale-150" aria-label={name}>
-                  {Icon && <Icon style={{ color }} />}
-                  <span className="absolute bottom-full mb-1 text-xs text-white bg-gray-700 px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">
-                    {name}
-                  </span>
-                </div>
-              ))}
-            </div>
-            <div
-              className="flex gap-4 mt-4"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-blue-500 hover:bg-blue-600 hover:shadow-blue-500/40 hover:shadow-lg text-white px-4 py-2 rounded-md font-medium transition duration-300"
+            {/* Shimmer Effect */}
+            <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
+            
+            {/* Glow Effect */}
+            <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500/20 via-indigo-500/20 to-teal-500/20 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-300 -z-10"></div>
+            <div className="relative z-10">
+              {project.image && (
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="rounded-xl mb-4 w-full h-60 object-cover border border-white/10 group-hover:border-cyan-400/30 transition-all duration-300"
+                  loading="lazy"
+                />
+              )}
+              <h3 className="text-xl font-bold text-cyan-400 mb-2 group-hover:text-cyan-300 transition-colors duration-300">
+                {project.title}
+              </h3>
+              <p className="text-gray-300 text-sm mb-4 line-clamp-3 leading-relaxed">
+                {project.description}
+              </p>
+              <div className="flex flex-wrap gap-3 text-2xl text-gray-200 mb-4">
+                {project.stack.map(({ icon: Icon, name, color }, i) => (
+                  <div key={i} className="relative group/tech hover:scale-125 transition-transform duration-300" aria-label={name}>
+                    {Icon && <Icon style={{ color }} className="filter drop-shadow-lg" />}
+                    <span className="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 text-xs text-white bg-slate-800/90 backdrop-blur-sm px-2 py-1 rounded opacity-0 group-hover/tech:opacity-100 transition-opacity duration-300 whitespace-nowrap z-20 border border-white/10">
+                      {name}
+                    </span>
+                  </div>
+                ))}
+              </div>
+              <div
+                className="flex gap-4 mt-4"
+                onClick={(e) => e.stopPropagation()}
               >
-                GitHub
-              </a>
-              <a
-                href={project.live}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border border-blue-400 text-blue-400 hover:bg-blue-500 hover:text-white hover:shadow-blue-400/40 hover:shadow-lg px-4 py-2 rounded-md font-medium transition duration-300"
-              >
-                Live Demo
-              </a>
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group/btn relative px-4 py-2 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-500 hover:from-cyan-400 hover:to-indigo-400 text-white font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/50 overflow-hidden"
+                >
+                  <div className="absolute inset-0 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
+                  <span className="relative z-10">GitHub</span>
+                </a>
+                <a
+                  href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group/btn relative px-4 py-2 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 hover:border-cyan-400/50 text-white font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/30 overflow-hidden"
+                >
+                  <div className="absolute inset-0 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+                  <span className="relative z-10">Live Demo</span>
+                </a>
+              </div>
             </div>
           </div>
         ))}
+        </div>
       </div>
 
       {selectedProject && (

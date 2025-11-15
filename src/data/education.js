@@ -33,6 +33,22 @@ export const education = [
     ],
   },
 ];
+export const workExperience = [
+  {
+    title: "Software Junior Engineer",
+    institution: "CLOVE Technologies",
+    duration: "September 2025 - Present",
+    location: "Hyderabad",
+    highlights: [
+      "Developing and maintaining web applications using Angular for frontend development",
+      "Building robust backend APIs and services with .NET Core framework",
+      "Designing and managing database schemas and queries using SQL Server",
+      "Collaborating with cross-functional teams to deliver high-quality software solutions",
+    ],
+    techStack: ["Angular", ".NET Core", "SQL Server"],
+  },
+];
+
 export const internships = [
   {
     title: "Web Development Intern",

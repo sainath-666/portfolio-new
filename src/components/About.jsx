@@ -1,117 +1,227 @@
+import { workExperience } from "../data/education";
+
 const About = () => {
   return (
-    <section id="about" className="py-20 px-6 bg-gray-950 text-gray-200">
-      <div
-        className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10"
-        data-aos="fade-up"
-      >
-        {/* Left Side - Text */}
-        <div className="flex-1 space-y-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">
+    <section
+      id="about"
+      className="relative py-20 px-4 sm:px-6 lg:px-8 text-gray-200 z-10"
+    >
+      <div className="max-w-7xl mx-auto">
+        {/* Section Header */}
+        <div className="text-center mb-16" data-aos="fade-down">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white drop-shadow-[0_0_30px_rgba(6,182,212,0.4)] mb-4">
             About Me
           </h2>
-          <p className="text-lg text-gray-300 leading-relaxed">
-            I’m <span className="text-blue-400 font-medium">Sainathreddy</span>,
-            a passionate <strong>Web & App Developer</strong> driven by
-            curiosity and a deep love for clean, scalable solutions. I specialize in modern full-stack technologies including{" "}
-            <span className="text-blue-400 font-semibold">React.js</span>,{" "}
-            <span className="text-green-400 font-semibold">Node.js</span>, and{" "}
-            <span className="text-emerald-400 font-semibold">MongoDB</span>.
-          </p>
-          <p className="text-gray-400">
-            With a solid understanding of front-end and back-end development, I
-            build intuitive UIs and scalable APIs that bring ideas to life. My
-            approach is always user-centered, aiming to craft experiences that
-            are both functional and beautiful.
-          </p>
-          <p className="italic text-blue-300">
-            "Code isn't just about logic — it's about creating meaningful
-            impact."
-          </p>
+          <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-indigo-400 rounded-full mx-auto"></div>
         </div>
 
-        {/* Right Side - Info Box */}
-        <div
-          className="flex-1 w-full md:w-auto"
-          data-aos="fade-left"
-          data-aos-delay="200"
-        >
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg space-y-6 text-sm text-gray-300">
-            {/* Personal Info */}
-            <div>
-              <h3 className="text-xl font-semibold text-white border-b border-gray-600 pb-2 mb-4">
-                Personal Info
-              </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 break-words">
-                <div>
-                  <strong className="text-white">Full Name:</strong>
-                  <br />
-                  Sainathreddy Nerusupalli
-                </div>
-                <div>
-                  <strong className="text-white">Roles:</strong>
-                  <br />
-                  Web Developer, App Developer, Video Editor
-                </div>
-                <div>
-                  <strong className="text-white">Location:</strong>
-                  <br />
-                  Hyderabad, Telangana
-                </div>
-                <div>
-                  <strong className="text-white">Education:</strong>
-                  <br />
-                  B.Tech, CSE (IoT, Cybersecurity & Blockchain)
-                </div>
-                <div>
-                  <strong className="text-white">GitHub:</strong>
-                  <br />
-                  <a
-                    href="https://github.com/sainath-666"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-400 hover:underline"
-                  >
-                    github.com/sainath-666
-                  </a>
-                </div>
-                <div>
-                  <strong className="text-white">LinkedIn:</strong>
-                  <br />
-                  <a
-                    href="https://linkedin.com/in/sainath666"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-400 hover:underline"
-                  >
-                    linkedin.com/in/sainath666
-                  </a>
-                </div>
-                <div>
-                  <strong className="text-white">Email:</strong>
-                  <br />
-                  <a
-                    href="mailto:sai65265@gmail.com"
-                    className="text-blue-400 hover:underline"
-                  >
-                    sai65265@gmail.com
-                  </a>
-                </div>
-                <div>
-                  <strong className="text-white">Freelancing:</strong>
-                  <br />
-                  <span className="text-green-500 font-semibold">
-                    Available
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+          {/* Left Side - About Text & Job */}
+          <div className="space-y-8" data-aos="fade-right">
+            {/* About Text */}
+            <div className="space-y-6">
+              <div className="relative p-6 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 hover:border-white/20 transition-all duration-300 group">
+                <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 via-indigo-500/10 to-teal-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
+                <p className="text-lg text-gray-300 leading-relaxed relative z-10">
+                  I'm{" "}
+                  <span className="font-semibold bg-gradient-to-r from-cyan-400 to-teal-400 bg-clip-text text-transparent">
+                    Sainathreddy
                   </span>
+                  , a passionate{" "}
+                  <strong className="text-white">Full Stack Developer</strong>{" "}
+                  driven by curiosity and a deep love for clean, scalable
+                  solutions. I specialize in modern full-stack technologies and
+                  build intuitive UIs and scalable APIs that bring ideas to
+                  life.
+                </p>
+              </div>
+
+              {/* Current Job Card */}
+              {workExperience[0] && (
+                <div className="relative p-6 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 hover:border-cyan-400/50 transition-all duration-300 group overflow-hidden">
+                  {/* Shimmer Effect */}
+                  <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
+
+                  {/* Glow Effect */}
+                  <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500/20 to-indigo-500/20 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-300 -z-10"></div>
+
+                  <div className="relative z-10">
+                    <div className="flex items-start justify-between mb-4">
+                      <div>
+                        <div className="flex items-center gap-2 mb-2">
+                          <span className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></span>
+                          <span className="text-xs font-semibold text-cyan-400 uppercase tracking-wider">
+                            Current Position
+                          </span>
+                        </div>
+                        <h3 className="text-2xl font-bold text-white mb-1">
+                          {workExperience[0].title}
+                        </h3>
+                        <p className="text-cyan-400 font-semibold">
+                          {workExperience[0].institution}
+                        </p>
+                      </div>
+                      <div className="text-right">
+                        <p className="text-sm text-gray-400">
+                          {workExperience[0].location}
+                        </p>
+                        <p className="text-sm font-medium text-cyan-400">
+                          {workExperience[0].duration}
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Tech Stack */}
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {workExperience[0].techStack.map((tech, idx) => (
+                        <span
+                          key={idx}
+                          className="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs font-medium text-gray-300 hover:bg-white/10 hover:border-cyan-400/50 transition-all duration-300"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+
+                    {/* Highlights */}
+                    <ul className="space-y-2 text-sm text-gray-400">
+                      {workExperience[0].highlights
+                        .slice(0, 2)
+                        .map((highlight, idx) => (
+                          <li key={idx} className="flex items-start gap-2">
+                            <span className="text-cyan-400 mt-1">▹</span>
+                            <span>{highlight}</span>
+                          </li>
+                        ))}
+                    </ul>
+                  </div>
+                </div>
+              )}
+
+              {/* Quote */}
+              <div className="relative p-6 rounded-xl bg-white/5 backdrop-blur-md border border-white/10">
+                <p className="italic text-cyan-300 text-lg leading-relaxed">
+                  "Code isn't just about logic — it's about creating meaningful
+                  impact."
+                </p>
+                <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-cyan-400 to-indigo-400 rounded-l-xl"></div>
+              </div>
+
+              {/* Second Quote */}
+              <div className="relative p-6 rounded-xl bg-white/5 backdrop-blur-md border border-white/10 hover:border-white/20 transition-all duration-300 group">
+                <div className="absolute inset-0 bg-gradient-to-r from-indigo-500/10 via-teal-500/10 to-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+                <p className="italic text-indigo-300 text-lg leading-relaxed relative z-10">
+                  "The best way to predict the future is to create it — one line
+                  of code at a time."
+                </p>
+                <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-indigo-400 to-teal-400 rounded-l-xl"></div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Side - Personal Info */}
+          <div className="space-y-8" data-aos="fade-left" data-aos-delay="200">
+            {/* Personal Info Card */}
+            <div className="relative p-6 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 hover:border-white/30 transition-all duration-300 group overflow-hidden">
+              {/* Glow Effect */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500/20 via-indigo-500/20 to-teal-500/20 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-300 -z-10"></div>
+
+              <div className="relative z-10">
+                <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                  <span className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></span>
+                  Personal Info
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="group/item p-3 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                    <strong className="text-white block mb-1 text-sm">
+                      Full Name:
+                    </strong>
+                    <span className="text-gray-300 text-sm">
+                      Sainathreddy Nerusupalli
+                    </span>
+                  </div>
+                  <div className="group/item p-3 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                    <strong className="text-white block mb-1 text-sm">
+                      Roles:
+                    </strong>
+                    <span className="text-gray-300 text-sm">
+                      Web Developer, App Developer
+                    </span>
+                  </div>
+                  <div className="group/item p-3 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                    <strong className="text-white block mb-1 text-sm">
+                      Location:
+                    </strong>
+                    <span className="text-gray-300 text-sm">
+                      Hyderabad, Telangana
+                    </span>
+                  </div>
+                  <div className="group/item p-3 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                    <strong className="text-white block mb-1 text-sm">
+                      Education:
+                    </strong>
+                    <span className="text-gray-300 text-sm">
+                      B.Tech, CSE (IoT, Cybersecurity & Blockchain)
+                    </span>
+                  </div>
+                  <div className="group/item p-3 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                    <strong className="text-white block mb-1 text-sm">
+                      GitHub:
+                    </strong>
+                    <a
+                      href="https://github.com/sainath-666"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-cyan-400 hover:text-cyan-300 transition-colors duration-300 hover:underline text-sm"
+                    >
+                      github.com/sainath-666
+                    </a>
+                  </div>
+                  <div className="group/item p-3 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                    <strong className="text-white block mb-1 text-sm">
+                      LinkedIn:
+                    </strong>
+                    <a
+                      href="https://linkedin.com/in/sainath666"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-cyan-400 hover:text-cyan-300 transition-colors duration-300 hover:underline text-sm"
+                    >
+                      linkedin.com/in/sainath666
+                    </a>
+                  </div>
+                  <div className="group/item p-3 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                    <strong className="text-white block mb-1 text-sm">
+                      Email:
+                    </strong>
+                    <a
+                      href="mailto:sai65265@gmail.com"
+                      className="text-cyan-400 hover:text-cyan-300 transition-colors duration-300 hover:underline text-sm"
+                    >
+                      sai65265@gmail.com
+                    </a>
+                  </div>
+                  <div className="group/item p-3 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                    <strong className="text-white block mb-1 text-sm">
+                      Freelancing:
+                    </strong>
+                    <span className="text-teal-400 font-semibold flex items-center gap-2 text-sm">
+                      <span className="w-2 h-2 bg-teal-400 rounded-full animate-pulse"></span>
+                      Available
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* Summary */}
-            <div className="pt-2 border-t border-gray-700 text-gray-400 text-sm">
-              Passionate about building user-focused products, scalable
-              architectures, and real-time experiences. Always eager to
-              collaborate, grow, and build elegant, performant solutions in fast-paced environments.
+            <div className="relative p-6 rounded-xl bg-white/5 backdrop-blur-md border border-white/10">
+              <p className="text-gray-400 leading-relaxed text-sm">
+                Passionate about building user-focused products, scalable
+                architectures, and real-time experiences. Always eager to
+                collaborate, grow, and build elegant, performant solutions in
+                fast-paced environments.
+              </p>
             </div>
           </div>
         </div>

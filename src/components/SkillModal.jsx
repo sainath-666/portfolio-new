@@ -1,10 +1,11 @@
 import React from "react";
 const SkillModal = ({ skill, onClose }) => {
-  if (!skill) return null;
   const modalRef = React.useRef(null);
 
   // Trap focus and close on Esc
   React.useEffect(() => {
+    if (!skill || !modalRef.current) return;
+
     const focusable = modalRef.current.querySelectorAll(
       'a, button, textarea, input, select, [tabindex]:not([tabindex="-1"])'
     );
@@ -29,7 +30,9 @@ const SkillModal = ({ skill, onClose }) => {
     document.addEventListener("keydown", handleKeyDown);
     first && first.focus();
     return () => document.removeEventListener("keydown", handleKeyDown);
-  }, [onClose]);
+  }, [skill, onClose]);
+
+  if (!skill) return null;
 
   return (
     <div
@@ -43,7 +46,11 @@ const SkillModal = ({ skill, onClose }) => {
         className="backdrop-blur-md bg-white/10 border border-white/20 p-6 rounded-xl shadow-xl w-11/12 max-w-md text-gray-200 relative transition-all duration-300"
         onClick={(e) => e.stopPropagation()}
         tabIndex={-1}
-        style={{ transition: 'all 0.5s cubic-bezier(0.4, 0, 0.2, 1)', transform: skill ? 'scale(1)' : 'scale(0.75)', opacity: skill ? 1 : 0 }}
+        style={{
+          transition: "all 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
+          transform: skill ? "scale(1)" : "scale(0.75)",
+          opacity: skill ? 1 : 0,
+        }}
       >
         {/* Close Button */}
         <button

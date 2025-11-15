@@ -1,131 +1,269 @@
 import { MdEmail } from "react-icons/md";
 import profileImg from "../assets/profile.jpg";
 import resumePdf from "../assets/resume.pdf";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 
 const Hero = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen pt-10 md:pt-0 flex flex-col md:flex-row items-center justify-center gap-10 px-4 text-center md:text-left bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 relative"
-      data-aos="fade-zoom-in"
-      data-aos-easing="ease-in-out"
-      data-aos-duration="1200"
+      className="relative h-screen flex items-center justify-center overflow-hidden z-10 pt-16 lg:pt-20"
     >
-      {/* Profile Image */}
-      <div
-        className="relative w-50 h-50 md:w-80 md:h-80 group transition duration-700 ease-in-out transform hover:scale-110 hover:shadow-2xl"
-        data-aos="zoom-in-right"
-        data-aos-easing="ease-in-out"
-        data-aos-duration="1000"
-      >
-        <div className="absolute inset-0 rounded-full blur-2xl bg-blue-500 opacity-30 group-hover:opacity-50 z-0 transition duration-500"></div>
-        <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-blue-500 shadow-xl z-10 group-hover:shadow-blue-500 group-hover:shadow-md transition-shadow duration-500">
-          <img
-            src={profileImg}
-            alt="Portrait of Sainathreddy - Full Stack Developer"
-            className="w-full h-full object-cover"
-            loading="lazy"
-          />
-        </div>
-      </div>
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 w-full">
+          {/* Left Content Section */}
+          <div
+            className="flex-1 text-center lg:text-left space-y-4 lg:space-y-6"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            {/* Greeting Badge */}
+            <div
+              className="group relative inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-sm text-white/90 font-medium hover:bg-white/15 hover:border-white/30 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/30 overflow-hidden"
+              data-aos="fade-down"
+              data-aos-delay="100"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-green-500/20 via-emerald-500/20 to-green-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <span className="relative z-10 w-2 h-2 bg-green-400 rounded-full animate-pulse group-hover:animate-ping shadow-lg shadow-green-400/50"></span>
+              <span className="relative z-10">Available for opportunities</span>
+            </div>
 
-      {/* Text Section */}
-      <div className="space-y-4" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-duration="1000">
-        <h1 className="text-4xl md:text-6xl font-bold text-white mb-2">
-          Hi, I'm{" "}
-          <span className="transition duration-500 hover:text-blue-400">
-            Sainathreddy
-          </span>
-        </h1>
+            {/* Main Heading */}
+            <div className="space-y-3" data-aos="fade-up" data-aos-delay="200">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-extrabold leading-tight">
+                <span className="block text-white drop-shadow-[0_0_30px_rgba(6,182,212,0.4)]">
+                  Hi, I'm
+                </span>
+                <span className="block relative">
+                  <span className="bg-gradient-to-r from-cyan-400 via-indigo-400 to-teal-400 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
+                    Sainathreddy
+                  </span>
+                  <span className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-indigo-400 to-teal-400 bg-clip-text text-transparent opacity-30 blur-xl animate-gradient bg-[length:200%_auto]">
+                    Sainathreddy
+                  </span>
+                </span>
+              </h1>
+            </div>
 
-        <p className="text-sm md:text-lg text-gray-400 font-mono uppercase tracking-wider">
-          Full Stack Developer | React.js | Node.js | MongoDB
-        </p>
+            {/* Role/Title */}
+            <div className="space-y-2" data-aos="fade-up" data-aos-delay="300">
+              <p className="text-xl sm:text-2xl lg:text-3xl font-semibold text-white/90 drop-shadow-[0_0_20px_rgba(99,102,241,0.4)]">
+                Full Stack Developer
+              </p>
+              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 sm:gap-3 text-sm sm:text-base text-white/70">
+                <span className="group/tech relative px-3 py-1.5 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/30 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300 cursor-default overflow-hidden">
+                  <span className="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/20 to-blue-500/0 translate-x-[-100%] group-hover/tech:translate-x-[100%] transition-transform duration-700"></span>
+                  <span className="relative z-10">React.js</span>
+                </span>
+                <span className="group/tech relative px-3 py-1.5 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/30 hover:scale-105 hover:shadow-lg hover:shadow-red-500/20 transition-all duration-300 cursor-default overflow-hidden">
+                  <span className="absolute inset-0 bg-gradient-to-r from-red-500/0 via-red-500/20 to-red-500/0 translate-x-[-100%] group-hover/tech:translate-x-[100%] transition-transform duration-700"></span>
+                  <span className="relative z-10">Angular</span>
+                </span>
+                <span className="group/tech relative px-3 py-1.5 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/30 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300 cursor-default overflow-hidden">
+                  <span className="absolute inset-0 bg-gradient-to-r from-purple-500/0 via-purple-500/20 to-purple-500/0 translate-x-[-100%] group-hover/tech:translate-x-[100%] transition-transform duration-700"></span>
+                  <span className="relative z-10">.NET Core</span>
+                </span>
+                <span className="group/tech relative px-3 py-1.5 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/30 hover:scale-105 hover:shadow-lg hover:shadow-green-500/20 transition-all duration-300 cursor-default overflow-hidden">
+                  <span className="absolute inset-0 bg-gradient-to-r from-green-500/0 via-green-500/20 to-green-500/0 translate-x-[-100%] group-hover/tech:translate-x-[100%] transition-transform duration-700"></span>
+                  <span className="relative z-10">Node.js</span>
+                </span>
+                <span className="group/tech relative px-3 py-1.5 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/30 hover:scale-105 hover:shadow-lg hover:shadow-emerald-500/20 transition-all duration-300 cursor-default overflow-hidden">
+                  <span className="absolute inset-0 bg-gradient-to-r from-emerald-500/0 via-emerald-500/20 to-emerald-500/0 translate-x-[-100%] group-hover/tech:translate-x-[100%] transition-transform duration-700"></span>
+                  <span className="relative z-10">MongoDB</span>
+                </span>
+              </div>
+            </div>
 
-        <p className="text-lg md:text-xl text-gray-300 max-w-xl mb-6 transition-opacity duration-700 hover:opacity-100 opacity-90">
-          Transforming ideas into impactful digital experiences using modern
-          tech stacks. Ready to contribute to teams and deliver high-quality
-          software solutions.
-        </p>
+            {/* Description */}
+            <p
+              className="text-base sm:text-lg lg:text-xl text-white/80 max-w-2xl mx-auto lg:mx-0 leading-relaxed"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              Transforming ideas into impactful digital experiences using modern
+              tech stacks. Ready to contribute to teams and deliver high-quality
+              software solutions.
+            </p>
 
-        {/* Buttons */}
-        <div className="flex flex-wrap justify-center md:justify-start gap-4">
-          <a
-            href={resumePdf}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-blue-500 hover:bg-blue-600 hover:shadow-blue-500/40 hover:shadow-lg text-white px-6 py-2 rounded-md font-medium transition duration-300 transform hover:scale-105"
-            data-aos="fade-up"
+            {/* CTA Buttons */}
+            <div
+              className="flex flex-wrap justify-center lg:justify-start gap-4 pt-2"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <a
+                href={resumePdf}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative px-8 py-4 bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 rounded-xl font-semibold text-white overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/50"
+              >
+                {/* Shimmer Effect */}
+                <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
+
+                {/* Gradient Overlay on Hover */}
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-pink-500 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+                {/* Glow Effect */}
+                <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
+
+                <span className="relative z-10 flex items-center gap-2">
+                  Download Resume
+                  <svg
+                    className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:scale-110"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                    />
+                  </svg>
+                </span>
+              </a>
+              <a
+                href="#projects"
+                className="group relative px-8 py-4 bg-white/10 backdrop-blur-md border-2 border-white/20 rounded-xl font-semibold text-white transition-all duration-300 hover:bg-white/20 hover:border-white/40 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/30 overflow-hidden"
+              >
+                {/* Shimmer Effect */}
+                <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+
+                {/* Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+                {/* Glow Effect */}
+                <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-300 -z-10"></div>
+
+                <span className="relative z-10 flex items-center gap-2">
+                  View Projects
+                  <svg
+                    className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:scale-110"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </div>
+
+            {/* Social Links */}
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-6 pt-4">
+              <span className="text-white/60 text-sm font-medium whitespace-nowrap">
+                Connect with me:
+              </span>
+              <div className="flex gap-4">
+                <a
+                  href="https://github.com/sainath-666"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                  className="group relative p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/80 transition-all duration-300 hover:bg-white/20 hover:text-white hover:scale-110 hover:shadow-lg hover:shadow-blue-500/50 overflow-hidden"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <FaGithub className="w-5 h-5 relative z-10 transition-transform group-hover:rotate-12" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/sainath666"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  className="group relative p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/80 transition-all duration-300 hover:bg-white/20 hover:text-white hover:scale-110 hover:shadow-lg hover:shadow-blue-500/50 overflow-hidden"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <FaLinkedin className="w-5 h-5 relative z-10 transition-transform group-hover:rotate-12" />
+                </a>
+                <a
+                  href="mailto:sai65265@gmail.com"
+                  aria-label="Email"
+                  className="group relative p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/80 transition-all duration-300 hover:bg-white/20 hover:text-white hover:scale-110 hover:shadow-lg hover:shadow-blue-500/50 overflow-hidden"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br from-red-500/20 to-pink-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <MdEmail className="w-5 h-5 relative z-10 transition-transform group-hover:rotate-12" />
+                </a>
+                <a
+                  href="https://wa.link/oeaxld"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="WhatsApp"
+                  className="group relative p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/80 transition-all duration-300 hover:bg-white/20 hover:text-white hover:scale-110 hover:shadow-lg hover:shadow-green-500/50 overflow-hidden"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-500/20 to-emerald-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <IoLogoWhatsapp className="w-5 h-5 relative z-10 transition-transform group-hover:rotate-12" />
+                </a>
+                <a
+                  href="https://www.instagram.com/sainath_666/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  className="group relative p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/80 transition-all duration-300 hover:bg-white/20 hover:text-white hover:scale-110 hover:shadow-lg hover:shadow-pink-500/50 overflow-hidden"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br from-pink-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <FaInstagram className="w-5 h-5 relative z-10 transition-transform group-hover:rotate-12" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Image Section */}
+          <div
+            className="flex-1 flex justify-center lg:justify-end"
+            data-aos="fade-left"
+            data-aos-duration="1000"
             data-aos-delay="200"
           >
-            Download Resume
-          </a>
-          <a
-            href="#projects"
-            className="border border-blue-400 text-blue-400 hover:bg-blue-500 hover:text-white hover:shadow-blue-400/40 hover:shadow-lg px-6 py-2 rounded-md font-medium transition duration-300 transform hover:scale-105"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            View Projects
-          </a>
-        </div>
+            <div className="relative w-80 h-80 sm:w-96 sm:h-96 lg:w-[28rem] lg:h-[28rem] xl:w-[32rem] xl:h-[32rem]">
+              {/* Glowing Ring */}
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-teal-500 opacity-25 blur-3xl animate-pulse"></div>
 
-        {/* Social Links */}
-        <div className="flex gap-6 justify-center md:justify-start pt-4 text-4xl text-gray-400">
-          <a
-            href="https://github.com/sainath-666"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub"
-            className="hover:text-white hover:drop-shadow-[0_0_6px_rgba(255,255,255,0.6)] transition duration-300 transform hover:scale-125"
-            data-aos="fade-up"
-            data-aos-delay="600"
-          >
-            <FaGithub />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/sainath666"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-            className="hover:text-white hover:drop-shadow-[0_0_6px_rgba(59,130,246,0.6)] transition duration-300 transform hover:scale-125"
-            data-aos="fade-up"
-            data-aos-delay="700"
-          >
-            <FaLinkedin />
-          </a>
-          <a
-            href="mailto:sai65265@gmail.com"
-            aria-label="Email"
-            className="hover:text-white hover:drop-shadow-[0_0_6px_rgba(59,130,246,0.6)] transition duration-300 transform hover:scale-125"
-            data-aos="fade-up"
-            data-aos-delay="800"
-          >
-            <MdEmail />
-          </a>
-          <a
-            href="https://wa.link/oeaxld"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="WhatsApp"
-            className="hover:text-white hover:drop-shadow-[0_0_6px_rgba(59,130,246,0.6)] transition duration-300 transform hover:scale-125"
-            data-aos="fade-up"
-            data-aos-delay="900"
-          >
-            <IoLogoWhatsapp />
-          </a>
+              {/* Animated Border Ring */}
+              <div className="absolute inset-0 rounded-full p-1 bg-gradient-to-r from-cyan-500 via-indigo-500 to-teal-500 animate-spin-slow">
+                <div className="w-full h-full rounded-full bg-slate-950"></div>
+              </div>
+
+              {/* Profile Image Container */}
+              <div className="absolute inset-2 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl backdrop-blur-sm bg-white/5 group hover:scale-105 transition-all duration-500 z-10 hover:shadow-[0_0_50px_rgba(6,182,212,0.5)]">
+                <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/30 via-indigo-500/30 to-teal-500/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <img
+                  src={profileImg}
+                  alt="Portrait of Sainathreddy - Full Stack Developer"
+                  className="w-full h-full object-cover relative z-10 transition-transform duration-500 group-hover:scale-110"
+                  loading="lazy"
+                />
+              </div>
+
+              {/* Floating Tech Icons */}
+              <div className="absolute -top-4 -right-4 w-16 h-16 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-2xl animate-bounce-slow">
+                ⚛️
+              </div>
+              <div className="absolute -bottom-4 -left-4 w-16 h-16 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-2xl animate-bounce-slow animation-delay-1000">
+                💻
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Scroll Down Hint */}
-      <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 hidden md:block">
+      {/* Scroll Down Indicator */}
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 block z-20">
         <a
           href="#about"
-          className="text-gray-400 hover:text-white animate-bounce text-2xl transition-transform duration-300 hover:scale-125"
+          className="flex flex-col items-center gap-2 text-white/60 hover:text-white transition-colors duration-300 group"
         >
-          ↓
+          <span className="text-xs sm:text-sm font-medium">Scroll Down</span>
+          <div className="w-5 h-8 sm:w-6 sm:h-10 border-2 border-white/40 rounded-full flex justify-center p-1.5 sm:p-2 group-hover:border-white/80 transition-colors">
+            <div className="w-1 h-2 sm:h-3 bg-white/60 rounded-full animate-bounce"></div>
+          </div>
         </a>
       </div>
     </section>

@@ -2,6 +2,7 @@ import React, { useEffect, Suspense, lazy } from "react";
 import Contact from "./components/Contact";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import BackgroundEffects from "./components/BackgroundEffects";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import ScrollToTopButton from "./components/ScrollToTopButton";
@@ -24,7 +25,8 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-gray-900 text-white font-sans">
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-indigo-950 to-cyan-950 text-white font-sans relative">
+      <BackgroundEffects />
       <Navbar />
       <Hero />
       <Suspense
