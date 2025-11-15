@@ -15,26 +15,26 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="relative min-h-screen text-white py-20 px-4 sm:px-6 lg:px-8 z-10"
+      className="relative min-h-screen text-white py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 z-10"
     >
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16" data-aos="fade-down">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white drop-shadow-[0_0_30px_rgba(6,182,212,0.4)] mb-4">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16" data-aos="fade-down">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white drop-shadow-[0_0_30px_rgba(6,182,212,0.4)] mb-3 sm:mb-4">
             Projects
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-indigo-400 rounded-full mx-auto"></div>
-          <p className="text-gray-400 mt-6 text-lg max-w-2xl mx-auto">
+          <div className="w-16 sm:w-20 md:w-24 h-1 bg-gradient-to-r from-cyan-400 to-indigo-400 rounded-full mx-auto"></div>
+          <p className="text-gray-400 mt-4 sm:mt-6 text-sm sm:text-base md:text-lg max-w-2xl mx-auto px-4 sm:px-0">
             Explore my latest projects and see what I've been building
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
         {projects.map((project, index) => (
           <div
             key={project.id || index}
             onClick={() => setSelectedProject(project)}
-            className="group relative cursor-pointer bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl shadow-lg hover:scale-105 hover:shadow-2xl hover:border-cyan-400/50 transition-all duration-300 ease-in-out overflow-hidden"
+            className="group relative cursor-pointer bg-white/10 backdrop-blur-md border border-white/20 p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-lg hover:scale-105 hover:shadow-2xl hover:border-cyan-400/50 transition-all duration-300 ease-in-out overflow-hidden touch-manipulation active:scale-[1.02]"
             data-aos={index % 2 === 0 ? "fade-up" : "zoom-in-up"}
             data-aos-delay={200 + index * 150}
           >
@@ -48,20 +48,20 @@ const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="rounded-xl mb-4 w-full h-60 object-cover border border-white/10 group-hover:border-cyan-400/30 transition-all duration-300"
+                  className="rounded-lg sm:rounded-xl mb-3 sm:mb-4 w-full h-48 sm:h-56 md:h-60 object-cover border border-white/10 group-hover:border-cyan-400/30 transition-all duration-300"
                   loading="lazy"
                 />
               )}
-              <h3 className="text-xl font-bold text-cyan-400 mb-2 group-hover:text-cyan-300 transition-colors duration-300">
+              <h3 className="text-lg sm:text-xl font-bold text-cyan-400 mb-2 group-hover:text-cyan-300 transition-colors duration-300">
                 {project.title}
               </h3>
-              <p className="text-gray-300 text-sm mb-4 line-clamp-3 leading-relaxed">
+              <p className="text-gray-300 text-xs sm:text-sm mb-3 sm:mb-4 line-clamp-3 leading-relaxed">
                 {project.description}
               </p>
-              <div className="flex flex-wrap gap-3 text-2xl text-gray-200 mb-4">
+              <div className="flex flex-wrap gap-2 sm:gap-3 text-xl sm:text-2xl text-gray-200 mb-3 sm:mb-4">
                 {project.stack.map(({ icon: Icon, name, color }, i) => (
                   <div key={i} className="relative group/tech hover:scale-125 transition-transform duration-300" aria-label={name}>
-                    {Icon && <Icon style={{ color }} className="filter drop-shadow-lg" />}
+                    {Icon && <Icon style={{ color }} className="filter drop-shadow-lg w-5 h-5 sm:w-6 sm:h-6" />}
                     <span className="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 text-xs text-white bg-slate-800/90 backdrop-blur-sm px-2 py-1 rounded opacity-0 group-hover/tech:opacity-100 transition-opacity duration-300 whitespace-nowrap z-20 border border-white/10">
                       {name}
                     </span>
@@ -69,14 +69,14 @@ const Projects = () => {
                 ))}
               </div>
               <div
-                className="flex gap-4 mt-4"
+                className="flex flex-col sm:flex-row gap-2 sm:gap-3 md:gap-4 mt-3 sm:mt-4"
                 onClick={(e) => e.stopPropagation()}
               >
                 <a
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group/btn relative px-4 py-2 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-500 hover:from-cyan-400 hover:to-indigo-400 text-white font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/50 overflow-hidden"
+                  className="group/btn relative px-3 sm:px-4 py-2 rounded-lg sm:rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-500 hover:from-cyan-400 hover:to-indigo-400 text-white text-sm sm:text-base font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/50 overflow-hidden touch-manipulation active:scale-95 text-center"
                 >
                   <div className="absolute inset-0 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
                   <span className="relative z-10">GitHub</span>
@@ -85,7 +85,7 @@ const Projects = () => {
                   href={project.live}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group/btn relative px-4 py-2 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 hover:border-cyan-400/50 text-white font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/30 overflow-hidden"
+                  className="group/btn relative px-3 sm:px-4 py-2 rounded-lg sm:rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 hover:border-cyan-400/50 text-white text-sm sm:text-base font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/30 overflow-hidden touch-manipulation active:scale-95 text-center"
                 >
                   <div className="absolute inset-0 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
                   <span className="relative z-10">Live Demo</span>

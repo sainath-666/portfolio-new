@@ -52,25 +52,25 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="relative min-h-screen text-white py-20 px-4 sm:px-6 lg:px-8 z-10"
+      className="relative min-h-screen text-white py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 z-10"
     >
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16" data-aos="fade-down">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white drop-shadow-[0_0_30px_rgba(6,182,212,0.4)] mb-4">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16" data-aos="fade-down">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white drop-shadow-[0_0_30px_rgba(6,182,212,0.4)] mb-3 sm:mb-4">
             Contact Me
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-indigo-400 rounded-full mx-auto"></div>
-          <p className="text-gray-400 mt-6 text-lg max-w-2xl mx-auto">
+          <div className="w-16 sm:w-20 md:w-24 h-1 bg-gradient-to-r from-cyan-400 to-indigo-400 rounded-full mx-auto"></div>
+          <p className="text-gray-400 mt-4 sm:mt-6 text-sm sm:text-base md:text-lg max-w-2xl mx-auto px-4 sm:px-0">
             Let's connect! Send me a message or reach out through social
             platforms
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
           {/* Contact Form */}
           <div className="relative group" data-aos="fade-right">
-            <div className="relative p-8 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 hover:border-cyan-400/50 transition-all duration-300 overflow-hidden">
+            <div className="relative p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 hover:border-cyan-400/50 transition-all duration-300 overflow-hidden">
               {/* Shimmer Effect */}
               <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
 
@@ -78,15 +78,15 @@ const Contact = () => {
               <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500/20 via-indigo-500/20 to-teal-500/20 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-300 -z-10"></div>
 
               <div className="relative z-10">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
-                  <h3 className="text-2xl font-bold text-white">
+                <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+                  <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-cyan-400 rounded-full animate-pulse"></div>
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white">
                     Send a Message
                   </h3>
                   <div className="flex-1 h-px bg-gradient-to-r from-cyan-400/50 to-transparent"></div>
                 </div>
 
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
                   <div className="group/input">
                     <input
                       type="text"
@@ -94,7 +94,7 @@ const Contact = () => {
                       required
                       placeholder="Full Name"
                       autoComplete="off"
-                      className="w-full p-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 text-white placeholder-gray-400 focus:outline-none focus:border-cyan-400/50 focus:bg-white/10 transition-all duration-300"
+                      className="w-full p-3 sm:p-4 rounded-lg sm:rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 text-sm sm:text-base text-white placeholder-gray-400 focus:outline-none focus:border-cyan-400/50 focus:bg-white/10 transition-all duration-300"
                     />
                   </div>
                   <div className="group/input">
@@ -104,21 +104,21 @@ const Contact = () => {
                       required
                       placeholder="Your Email"
                       autoComplete="off"
-                      className="w-full p-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 text-white placeholder-gray-400 focus:outline-none focus:border-cyan-400/50 focus:bg-white/10 transition-all duration-300"
+                      className="w-full p-3 sm:p-4 rounded-lg sm:rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 text-sm sm:text-base text-white placeholder-gray-400 focus:outline-none focus:border-cyan-400/50 focus:bg-white/10 transition-all duration-300"
                     />
                   </div>
                   <div className="group/input">
                     <textarea
                       name="message"
-                      rows="6"
+                      rows="5"
                       required
                       placeholder="Your Message"
-                      className="w-full p-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 text-white placeholder-gray-400 resize-none focus:outline-none focus:border-cyan-400/50 focus:bg-white/10 transition-all duration-300"
+                      className="w-full p-3 sm:p-4 rounded-lg sm:rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 text-sm sm:text-base text-white placeholder-gray-400 resize-none focus:outline-none focus:border-cyan-400/50 focus:bg-white/10 transition-all duration-300"
                     />
                   </div>
                   <button
                     type="submit"
-                    className="group/btn relative w-full px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-500 hover:from-cyan-400 hover:to-indigo-400 text-white font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/50 overflow-hidden disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="group/btn relative w-full px-5 sm:px-6 md:px-8 py-3 sm:py-3.5 md:py-4 rounded-lg sm:rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-500 hover:from-cyan-400 hover:to-indigo-400 text-white text-sm sm:text-base font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/50 overflow-hidden disabled:opacity-50 disabled:cursor-not-allowed touch-manipulation active:scale-95"
                     disabled={loading}
                     aria-busy={loading}
                   >
@@ -176,23 +176,23 @@ const Contact = () => {
           </div>
 
           {/* Contact Info & Social Links */}
-          <div className="space-y-8" data-aos="fade-left" data-aos-delay="200">
+          <div className="space-y-4 sm:space-y-6 md:space-y-8" data-aos="fade-left" data-aos-delay="200">
             {/* Contact Info Card */}
             <div className="relative group">
-              <div className="relative p-8 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 hover:border-indigo-400/50 transition-all duration-300 overflow-hidden">
+              <div className="relative p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 hover:border-indigo-400/50 transition-all duration-300 overflow-hidden">
                 {/* Shimmer Effect */}
                 <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
 
                 <div className="relative z-10">
-                  <div className="flex items-center gap-3 mb-6">
-                    <div className="w-2 h-2 bg-indigo-400 rounded-full animate-pulse"></div>
-                    <h3 className="text-2xl font-bold text-white">
+                  <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+                    <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-indigo-400 rounded-full animate-pulse"></div>
+                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white">
                       Get in Touch
                     </h3>
                     <div className="flex-1 h-px bg-gradient-to-r from-indigo-400/50 to-transparent"></div>
                   </div>
 
-                  <div className="space-y-4">
+                  <div className="space-y-3 sm:space-y-4">
                     <a
                       href="mailto:sai65265@gmail.com"
                       className="group/item flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-cyan-400/50 transition-all duration-300 hover:scale-105"
@@ -229,20 +229,20 @@ const Contact = () => {
 
             {/* Social Links Card */}
             <div className="relative group">
-              <div className="relative p-8 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 hover:border-teal-400/50 transition-all duration-300 overflow-hidden">
+              <div className="relative p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 hover:border-teal-400/50 transition-all duration-300 overflow-hidden">
                 {/* Shimmer Effect */}
                 <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
 
                 <div className="relative z-10">
-                  <div className="flex items-center gap-3 mb-6">
-                    <div className="w-2 h-2 bg-teal-400 rounded-full animate-pulse"></div>
-                    <h3 className="text-2xl font-bold text-white">
+                  <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+                    <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-teal-400 rounded-full animate-pulse"></div>
+                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white">
                       Social Links
                     </h3>
                     <div className="flex-1 h-px bg-gradient-to-r from-teal-400/50 to-transparent"></div>
                   </div>
 
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-2 gap-3 sm:gap-4">
                     <a
                       href="https://github.com/sainath-666"
                       target="_blank"
@@ -313,17 +313,17 @@ const Contact = () => {
       {/* Toast Notification */}
       {showToast && (
         <div
-          className={`fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 ${
+          className={`fixed bottom-4 sm:bottom-6 left-1/2 transform -translate-x-1/2 z-50 max-w-[90vw] sm:max-w-md ${
             isError
               ? "bg-red-500/90 backdrop-blur-md border border-red-400/50"
               : "bg-green-500/90 backdrop-blur-md border border-green-400/50"
-          } text-white px-6 py-4 rounded-xl shadow-2xl animate-fade-in`}
+          } text-white px-4 sm:px-6 py-3 sm:py-4 rounded-lg sm:rounded-xl shadow-2xl animate-fade-in mx-4`}
           role="status"
           aria-live="polite"
         >
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3">
             {isError ? (
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+              <svg className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path
                   fillRule="evenodd"
                   d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
@@ -331,7 +331,7 @@ const Contact = () => {
                 />
               </svg>
             ) : (
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+              <svg className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path
                   fillRule="evenodd"
                   d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
@@ -339,7 +339,7 @@ const Contact = () => {
                 />
               </svg>
             )}
-            <span className="font-medium">{toastMsg}</span>
+            <span className="font-medium text-sm sm:text-base">{toastMsg}</span>
           </div>
         </div>
       )}

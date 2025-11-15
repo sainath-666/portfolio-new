@@ -74,7 +74,7 @@ const ProjectModal = ({ project, onClose }) => {
       <div
         ref={modalRef}
         onClick={(e) => e.stopPropagation()}
-        className={`bg-white/10 backdrop-blur-lg max-w-4xl w-full rounded-xl overflow-hidden text-white shadow-2xl transform transition-all duration-500 ease-in-out ${show ? "scale-100 opacity-100" : "scale-75 opacity-0"
+        className={`bg-white/10 backdrop-blur-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto rounded-xl overflow-hidden text-white shadow-2xl transform transition-all duration-500 ease-in-out ${show ? "scale-100 opacity-100" : "scale-75 opacity-0"
           }`}
         tabIndex={-1}
       >
@@ -89,7 +89,7 @@ const ProjectModal = ({ project, onClose }) => {
         {/* Upper Section: Slideshow */}
         <div
           ref={slideshowRef}
-          className="relative h-64 sm:h-72 md:h-80 lg:h-96 overflow-hidden"
+          className="relative h-48 xs:h-56 sm:h-64 md:h-72 lg:h-80 xl:h-96 overflow-hidden"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
@@ -105,11 +105,11 @@ const ProjectModal = ({ project, onClose }) => {
           ))}
 
           {/* Overlay Text */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-transparent p-4 flex flex-col justify-start z-20">
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-transparent p-3 sm:p-4 flex flex-col justify-start z-20">
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white">
               {project.title}
             </h2>
-            <p className="text-sm sm:text-base text-gray-300 line-clamp-2">
+            <p className="text-xs sm:text-sm md:text-base text-gray-300 line-clamp-2">
               {project.description}
             </p>
           </div>
@@ -119,13 +119,15 @@ const ProjectModal = ({ project, onClose }) => {
             <>
               <button
                 onClick={prevSlide}
-                className="absolute left-4 top-1/2 transform -translate-y-1/2 text-3xl text-white hover:text-blue-400 z-30"
+                className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 text-2xl sm:text-3xl text-white hover:text-blue-400 z-30 p-2 rounded-full hover:bg-white/10 touch-manipulation active:scale-90"
+                aria-label="Previous slide"
               >
                 ‹
               </button>
               <button
                 onClick={nextSlide}
-                className="absolute right-4 top-1/2 transform -translate-y-1/2 text-3xl text-white hover:text-blue-400 z-30"
+                className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 text-2xl sm:text-3xl text-white hover:text-blue-400 z-30 p-2 rounded-full hover:bg-white/10 touch-manipulation active:scale-90"
+                aria-label="Next slide"
               >
                 ›
               </button>
@@ -134,13 +136,13 @@ const ProjectModal = ({ project, onClose }) => {
         </div>
 
         {/* Lower Section */}
-        <div className="flex flex-col md:flex-row gap-6 p-6">
+        <div className="flex flex-col md:flex-row gap-4 sm:gap-6 p-4 sm:p-6">
           {/* Left: Highlights */}
           <div className="md:w-1/2">
-            <h3 className="text-xl font-semibold text-blue-400 mb-2">
+            <h3 className="text-lg sm:text-xl font-semibold text-blue-400 mb-2">
               Highlights
             </h3>
-            <ul className="list-disc list-inside text-gray-300 text-sm space-y-1">
+            <ul className="list-disc list-inside text-gray-300 text-xs sm:text-sm space-y-1 pl-2">
               {project.highlights?.map((point, idx) => (
                 <li key={idx}>{point}</li>
               ))}
@@ -149,27 +151,27 @@ const ProjectModal = ({ project, onClose }) => {
 
           {/* Right: Stack + Buttons */}
           <div className="md:w-1/2">
-            <h3 className="text-xl font-semibold text-blue-400 mb-2">
+            <h3 className="text-lg sm:text-xl font-semibold text-blue-400 mb-2">
               Tech Stack
             </h3>
-            <div className="flex flex-wrap gap-3 mb-4">
+            <div className="flex flex-wrap gap-2 sm:gap-3 mb-3 sm:mb-4">
               {project.stack?.map(({ icon: Icon, name }, i) => (
                 <div
                   key={i}
-                  className="flex items-center gap-2 text-sm bg-gray-700/60 px-2 py-1 rounded"
+                  className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm bg-gray-700/60 px-2 sm:px-3 py-1 rounded"
                 >
-                  {Icon && <Icon className="text-lg" />}
+                  {Icon && <Icon className="text-base sm:text-lg" />}
                   {name}
                 </div>
               ))}
             </div>
 
-            <div className="flex gap-4 mt-2">
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 mt-2">
               <a
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-md font-medium"
+                className="bg-blue-500 hover:bg-blue-600 px-3 sm:px-4 py-2 rounded-md text-sm sm:text-base font-medium text-center touch-manipulation active:scale-95"
               >
                 GitHub
               </a>
@@ -177,7 +179,7 @@ const ProjectModal = ({ project, onClose }) => {
                 href={project.live}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border border-blue-400 hover:bg-blue-500 hover:text-white px-4 py-2 rounded-md font-medium"
+                className="border border-blue-400 hover:bg-blue-500 hover:text-white px-3 sm:px-4 py-2 rounded-md text-sm sm:text-base font-medium text-center touch-manipulation active:scale-95"
               >
                 Live Demo
               </a>

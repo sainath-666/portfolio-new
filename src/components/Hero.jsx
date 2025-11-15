@@ -8,19 +8,19 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative h-screen flex items-center justify-center overflow-hidden z-10 pt-16 lg:pt-20"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden z-10 pt-14 sm:pt-16 lg:pt-20 pb-8 sm:pb-12"
     >
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 w-full">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-6 sm:gap-8 lg:gap-12 w-full">
           {/* Left Content Section */}
           <div
-            className="flex-1 text-center lg:text-left space-y-4 lg:space-y-6"
+            className="flex-1 text-center lg:text-left space-y-3 sm:space-y-4 lg:space-y-6 w-full"
             data-aos="fade-right"
             data-aos-duration="1000"
           >
             {/* Greeting Badge */}
             <div
-              className="group relative inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-sm text-white/90 font-medium hover:bg-white/15 hover:border-white/30 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/30 overflow-hidden"
+              className="group relative inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs sm:text-sm text-white/90 font-medium hover:bg-white/15 hover:border-white/30 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/30 overflow-hidden"
               data-aos="fade-down"
               data-aos-delay="100"
             >
@@ -30,8 +30,8 @@ const Hero = () => {
             </div>
 
             {/* Main Heading */}
-            <div className="space-y-3" data-aos="fade-up" data-aos-delay="200">
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-extrabold leading-tight">
+            <div className="space-y-2 sm:space-y-3" data-aos="fade-up" data-aos-delay="200">
+              <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold leading-tight">
                 <span className="block text-white drop-shadow-[0_0_30px_rgba(6,182,212,0.4)]">
                   Hi, I'm
                 </span>
@@ -48,10 +48,10 @@ const Hero = () => {
 
             {/* Role/Title */}
             <div className="space-y-2" data-aos="fade-up" data-aos-delay="300">
-              <p className="text-xl sm:text-2xl lg:text-3xl font-semibold text-white/90 drop-shadow-[0_0_20px_rgba(99,102,241,0.4)]">
+              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-white/90 drop-shadow-[0_0_20px_rgba(99,102,241,0.4)]">
                 Full Stack Developer
               </p>
-              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 sm:gap-3 text-sm sm:text-base text-white/70">
+              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-1.5 sm:gap-2 md:gap-3 text-xs sm:text-sm md:text-base text-white/70">
                 <span className="group/tech relative px-3 py-1.5 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/30 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300 cursor-default overflow-hidden">
                   <span className="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/20 to-blue-500/0 translate-x-[-100%] group-hover/tech:translate-x-[100%] transition-transform duration-700"></span>
                   <span className="relative z-10">React.js</span>
@@ -77,7 +77,7 @@ const Hero = () => {
 
             {/* Description */}
             <p
-              className="text-base sm:text-lg lg:text-xl text-white/80 max-w-2xl mx-auto lg:mx-0 leading-relaxed"
+              className="text-sm sm:text-base md:text-lg lg:text-xl text-white/80 max-w-2xl mx-auto lg:mx-0 leading-relaxed px-2 sm:px-0"
               data-aos="fade-up"
               data-aos-delay="400"
             >
@@ -88,7 +88,7 @@ const Hero = () => {
 
             {/* CTA Buttons */}
             <div
-              className="flex flex-wrap justify-center lg:justify-start gap-4 pt-2"
+              className="flex flex-wrap justify-center lg:justify-start gap-3 sm:gap-4 pt-2"
               data-aos="fade-up"
               data-aos-delay="500"
             >
@@ -96,7 +96,7 @@ const Hero = () => {
                 href={resumePdf}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative px-8 py-4 bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 rounded-xl font-semibold text-white overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/50"
+                className="group relative px-5 sm:px-6 md:px-8 py-3 sm:py-3.5 md:py-4 bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 rounded-xl font-semibold text-sm sm:text-base text-white overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/50 touch-manipulation active:scale-95"
               >
                 {/* Shimmer Effect */}
                 <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
@@ -126,7 +126,7 @@ const Hero = () => {
               </a>
               <a
                 href="#projects"
-                className="group relative px-8 py-4 bg-white/10 backdrop-blur-md border-2 border-white/20 rounded-xl font-semibold text-white transition-all duration-300 hover:bg-white/20 hover:border-white/40 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/30 overflow-hidden"
+                className="group relative px-5 sm:px-6 md:px-8 py-3 sm:py-3.5 md:py-4 bg-white/10 backdrop-blur-md border-2 border-white/20 rounded-xl font-semibold text-sm sm:text-base text-white transition-all duration-300 hover:bg-white/20 hover:border-white/40 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/30 overflow-hidden touch-manipulation active:scale-95"
               >
                 {/* Shimmer Effect */}
                 <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
@@ -157,58 +157,58 @@ const Hero = () => {
             </div>
 
             {/* Social Links */}
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-6 pt-4">
-              <span className="text-white/60 text-sm font-medium whitespace-nowrap">
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-2 sm:gap-3 md:gap-6 pt-3 sm:pt-4">
+              <span className="text-white/60 text-xs sm:text-sm font-medium whitespace-nowrap">
                 Connect with me:
               </span>
-              <div className="flex gap-4">
+              <div className="flex gap-2 sm:gap-3 md:gap-4">
                 <a
                   href="https://github.com/sainath-666"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="GitHub"
-                  className="group relative p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/80 transition-all duration-300 hover:bg-white/20 hover:text-white hover:scale-110 hover:shadow-lg hover:shadow-blue-500/50 overflow-hidden"
+                  className="group relative p-2.5 sm:p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/80 transition-all duration-300 hover:bg-white/20 hover:text-white hover:scale-110 hover:shadow-lg hover:shadow-blue-500/50 overflow-hidden touch-manipulation active:scale-95"
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <FaGithub className="w-5 h-5 relative z-10 transition-transform group-hover:rotate-12" />
+                  <FaGithub className="w-4 h-4 sm:w-5 sm:h-5 relative z-10 transition-transform group-hover:rotate-12" />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/sainath666"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
-                  className="group relative p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/80 transition-all duration-300 hover:bg-white/20 hover:text-white hover:scale-110 hover:shadow-lg hover:shadow-blue-500/50 overflow-hidden"
+                  className="group relative p-2.5 sm:p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/80 transition-all duration-300 hover:bg-white/20 hover:text-white hover:scale-110 hover:shadow-lg hover:shadow-blue-500/50 overflow-hidden touch-manipulation active:scale-95"
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <FaLinkedin className="w-5 h-5 relative z-10 transition-transform group-hover:rotate-12" />
+                  <FaLinkedin className="w-4 h-4 sm:w-5 sm:h-5 relative z-10 transition-transform group-hover:rotate-12" />
                 </a>
                 <a
                   href="mailto:sai65265@gmail.com"
                   aria-label="Email"
-                  className="group relative p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/80 transition-all duration-300 hover:bg-white/20 hover:text-white hover:scale-110 hover:shadow-lg hover:shadow-blue-500/50 overflow-hidden"
+                  className="group relative p-2.5 sm:p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/80 transition-all duration-300 hover:bg-white/20 hover:text-white hover:scale-110 hover:shadow-lg hover:shadow-blue-500/50 overflow-hidden touch-manipulation active:scale-95"
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-red-500/20 to-pink-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <MdEmail className="w-5 h-5 relative z-10 transition-transform group-hover:rotate-12" />
+                  <MdEmail className="w-4 h-4 sm:w-5 sm:h-5 relative z-10 transition-transform group-hover:rotate-12" />
                 </a>
                 <a
                   href="https://wa.link/oeaxld"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="WhatsApp"
-                  className="group relative p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/80 transition-all duration-300 hover:bg-white/20 hover:text-white hover:scale-110 hover:shadow-lg hover:shadow-green-500/50 overflow-hidden"
+                  className="group relative p-2.5 sm:p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/80 transition-all duration-300 hover:bg-white/20 hover:text-white hover:scale-110 hover:shadow-lg hover:shadow-green-500/50 overflow-hidden touch-manipulation active:scale-95"
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-green-500/20 to-emerald-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <IoLogoWhatsapp className="w-5 h-5 relative z-10 transition-transform group-hover:rotate-12" />
+                  <IoLogoWhatsapp className="w-4 h-4 sm:w-5 sm:h-5 relative z-10 transition-transform group-hover:rotate-12" />
                 </a>
                 <a
                   href="https://www.instagram.com/sainath_666/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram"
-                  className="group relative p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/80 transition-all duration-300 hover:bg-white/20 hover:text-white hover:scale-110 hover:shadow-lg hover:shadow-pink-500/50 overflow-hidden"
+                  className="group relative p-2.5 sm:p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/80 transition-all duration-300 hover:bg-white/20 hover:text-white hover:scale-110 hover:shadow-lg hover:shadow-pink-500/50 overflow-hidden touch-manipulation active:scale-95"
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-pink-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <FaInstagram className="w-5 h-5 relative z-10 transition-transform group-hover:rotate-12" />
+                  <FaInstagram className="w-4 h-4 sm:w-5 sm:h-5 relative z-10 transition-transform group-hover:rotate-12" />
                 </a>
               </div>
             </div>
@@ -216,12 +216,12 @@ const Hero = () => {
 
           {/* Right Image Section */}
           <div
-            className="flex-1 flex justify-center lg:justify-end"
+            className="flex-1 flex justify-center lg:justify-end w-full lg:w-auto"
             data-aos="fade-left"
             data-aos-duration="1000"
             data-aos-delay="200"
           >
-            <div className="relative w-80 h-80 sm:w-96 sm:h-96 lg:w-[28rem] lg:h-[28rem] xl:w-[32rem] xl:h-[32rem]">
+            <div className="relative w-64 h-64 xs:w-72 xs:h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] xl:w-[32rem] xl:h-[32rem]">
               {/* Glowing Ring */}
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-teal-500 opacity-25 blur-3xl animate-pulse"></div>
 
@@ -243,10 +243,10 @@ const Hero = () => {
               </div>
 
               {/* Floating Tech Icons */}
-              <div className="absolute -top-4 -right-4 w-16 h-16 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-2xl animate-bounce-slow">
+              <div className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-xl sm:text-2xl animate-bounce-slow">
                 ⚛️
               </div>
-              <div className="absolute -bottom-4 -left-4 w-16 h-16 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-2xl animate-bounce-slow animation-delay-1000">
+              <div className="absolute -bottom-2 -left-2 sm:-bottom-4 sm:-left-4 w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-xl sm:text-2xl animate-bounce-slow animation-delay-1000">
                 💻
               </div>
             </div>
@@ -255,12 +255,12 @@ const Hero = () => {
       </div>
 
       {/* Scroll Down Indicator */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 block z-20">
+      <div className="absolute bottom-2 sm:bottom-4 left-1/2 transform -translate-x-1/2 block z-20">
         <a
           href="#about"
-          className="flex flex-col items-center gap-2 text-white/60 hover:text-white transition-colors duration-300 group"
+          className="flex flex-col items-center gap-1.5 sm:gap-2 text-white/60 hover:text-white transition-colors duration-300 group touch-manipulation"
         >
-          <span className="text-xs sm:text-sm font-medium">Scroll Down</span>
+          <span className="text-xs sm:text-sm font-medium hidden sm:block">Scroll Down</span>
           <div className="w-5 h-8 sm:w-6 sm:h-10 border-2 border-white/40 rounded-full flex justify-center p-1.5 sm:p-2 group-hover:border-white/80 transition-colors">
             <div className="w-1 h-2 sm:h-3 bg-white/60 rounded-full animate-bounce"></div>
           </div>
