@@ -30,7 +30,11 @@ const Hero = () => {
             </div>
 
             {/* Main Heading */}
-            <div className="space-y-2 sm:space-y-3" data-aos="fade-up" data-aos-delay="200">
+            <div
+              className="space-y-2 sm:space-y-3"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-extrabold leading-tight">
                 <span className="block text-white drop-shadow-[0_0_30px_rgba(6,182,212,0.4)]">
                   Hi, I'm
@@ -47,7 +51,11 @@ const Hero = () => {
             </div>
 
             {/* Role/Title */}
-            <div className="space-y-3 sm:space-y-4" data-aos="fade-up" data-aos-delay="300">
+            <div
+              className="space-y-3 sm:space-y-4"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold text-white/90 drop-shadow-[0_0_20px_rgba(99,102,241,0.4)]">
                 Full Stack Developer
               </p>
@@ -260,7 +268,9 @@ const Hero = () => {
           href="#about"
           className="flex flex-col items-center gap-1.5 sm:gap-2 text-white/60 hover:text-white transition-colors duration-300 group touch-manipulation"
         >
-          <span className="text-xs sm:text-sm font-medium hidden sm:block">Scroll Down</span>
+          <span className="text-xs sm:text-sm font-medium hidden sm:block">
+            Scroll Down
+          </span>
           <div className="w-5 h-8 sm:w-6 sm:h-10 border-2 border-white/40 rounded-full flex justify-center p-1.5 sm:p-2 group-hover:border-white/80 transition-colors">
             <div className="w-1 h-2 sm:h-3 bg-white/60 rounded-full animate-bounce"></div>
           </div>
