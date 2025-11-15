@@ -11,10 +11,10 @@ const Hero = () => {
       className="relative min-h-screen flex items-center justify-center overflow-hidden z-10 pt-14 sm:pt-16 lg:pt-20 pb-8 sm:pb-12"
     >
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-6 sm:gap-8 lg:gap-12 w-full">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 sm:gap-10 md:gap-12 lg:gap-16 w-full">
           {/* Left Content Section */}
           <div
-            className="flex-1 text-center lg:text-left space-y-3 sm:space-y-4 lg:space-y-6 w-full"
+            className="flex-1 text-center lg:text-left space-y-4 sm:space-y-5 lg:space-y-6 w-full order-2 lg:order-1"
             data-aos="fade-right"
             data-aos-duration="1000"
           >
@@ -31,7 +31,7 @@ const Hero = () => {
 
             {/* Main Heading */}
             <div className="space-y-2 sm:space-y-3" data-aos="fade-up" data-aos-delay="200">
-              <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-extrabold leading-tight">
                 <span className="block text-white drop-shadow-[0_0_30px_rgba(6,182,212,0.4)]">
                   Hi, I'm
                 </span>
@@ -47,28 +47,28 @@ const Hero = () => {
             </div>
 
             {/* Role/Title */}
-            <div className="space-y-2" data-aos="fade-up" data-aos-delay="300">
-              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-white/90 drop-shadow-[0_0_20px_rgba(99,102,241,0.4)]">
+            <div className="space-y-3 sm:space-y-4" data-aos="fade-up" data-aos-delay="300">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold text-white/90 drop-shadow-[0_0_20px_rgba(99,102,241,0.4)]">
                 Full Stack Developer
               </p>
-              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-1.5 sm:gap-2 md:gap-3 text-xs sm:text-sm md:text-base text-white/70">
-                <span className="group/tech relative px-3 py-1.5 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/30 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300 cursor-default overflow-hidden">
+              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 sm:gap-2.5 md:gap-3 text-xs sm:text-sm md:text-base text-white/70 px-2 sm:px-4 md:px-0">
+                <span className="group/tech relative px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-md sm:rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/30 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300 cursor-default overflow-hidden text-xs sm:text-sm">
                   <span className="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/20 to-blue-500/0 translate-x-[-100%] group-hover/tech:translate-x-[100%] transition-transform duration-700"></span>
                   <span className="relative z-10">React.js</span>
                 </span>
-                <span className="group/tech relative px-3 py-1.5 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/30 hover:scale-105 hover:shadow-lg hover:shadow-red-500/20 transition-all duration-300 cursor-default overflow-hidden">
+                <span className="group/tech relative px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-md sm:rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/30 hover:scale-105 hover:shadow-lg hover:shadow-red-500/20 transition-all duration-300 cursor-default overflow-hidden text-xs sm:text-sm">
                   <span className="absolute inset-0 bg-gradient-to-r from-red-500/0 via-red-500/20 to-red-500/0 translate-x-[-100%] group-hover/tech:translate-x-[100%] transition-transform duration-700"></span>
                   <span className="relative z-10">Angular</span>
                 </span>
-                <span className="group/tech relative px-3 py-1.5 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/30 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300 cursor-default overflow-hidden">
+                <span className="group/tech relative px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-md sm:rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/30 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300 cursor-default overflow-hidden text-xs sm:text-sm">
                   <span className="absolute inset-0 bg-gradient-to-r from-purple-500/0 via-purple-500/20 to-purple-500/0 translate-x-[-100%] group-hover/tech:translate-x-[100%] transition-transform duration-700"></span>
                   <span className="relative z-10">.NET Core</span>
                 </span>
-                <span className="group/tech relative px-3 py-1.5 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/30 hover:scale-105 hover:shadow-lg hover:shadow-green-500/20 transition-all duration-300 cursor-default overflow-hidden">
+                <span className="group/tech relative px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-md sm:rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/30 hover:scale-105 hover:shadow-lg hover:shadow-green-500/20 transition-all duration-300 cursor-default overflow-hidden text-xs sm:text-sm">
                   <span className="absolute inset-0 bg-gradient-to-r from-green-500/0 via-green-500/20 to-green-500/0 translate-x-[-100%] group-hover/tech:translate-x-[100%] transition-transform duration-700"></span>
                   <span className="relative z-10">Node.js</span>
                 </span>
-                <span className="group/tech relative px-3 py-1.5 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/30 hover:scale-105 hover:shadow-lg hover:shadow-emerald-500/20 transition-all duration-300 cursor-default overflow-hidden">
+                <span className="group/tech relative px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-md sm:rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/30 hover:scale-105 hover:shadow-lg hover:shadow-emerald-500/20 transition-all duration-300 cursor-default overflow-hidden text-xs sm:text-sm">
                   <span className="absolute inset-0 bg-gradient-to-r from-emerald-500/0 via-emerald-500/20 to-emerald-500/0 translate-x-[-100%] group-hover/tech:translate-x-[100%] transition-transform duration-700"></span>
                   <span className="relative z-10">MongoDB</span>
                 </span>
@@ -77,7 +77,7 @@ const Hero = () => {
 
             {/* Description */}
             <p
-              className="text-sm sm:text-base md:text-lg lg:text-xl text-white/80 max-w-2xl mx-auto lg:mx-0 leading-relaxed px-2 sm:px-0"
+              className="text-sm sm:text-base md:text-lg lg:text-xl text-white/80 max-w-2xl mx-auto lg:mx-0 leading-relaxed px-4 sm:px-6 md:px-0"
               data-aos="fade-up"
               data-aos-delay="400"
             >
@@ -88,7 +88,7 @@ const Hero = () => {
 
             {/* CTA Buttons */}
             <div
-              className="flex flex-wrap justify-center lg:justify-start gap-3 sm:gap-4 pt-2"
+              className="flex flex-wrap justify-center lg:justify-start gap-3 sm:gap-4 pt-4 sm:pt-6 px-4 sm:px-6 md:px-0"
               data-aos="fade-up"
               data-aos-delay="500"
             >
@@ -96,7 +96,7 @@ const Hero = () => {
                 href={resumePdf}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative px-5 sm:px-6 md:px-8 py-3 sm:py-3.5 md:py-4 bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 rounded-xl font-semibold text-sm sm:text-base text-white overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/50 touch-manipulation active:scale-95"
+                className="group relative px-6 sm:px-7 md:px-8 py-3 sm:py-3.5 md:py-4 bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 rounded-lg sm:rounded-xl font-semibold text-sm sm:text-base text-white overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/50 touch-manipulation active:scale-95 w-full sm:w-auto"
               >
                 {/* Shimmer Effect */}
                 <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
@@ -126,7 +126,7 @@ const Hero = () => {
               </a>
               <a
                 href="#projects"
-                className="group relative px-5 sm:px-6 md:px-8 py-3 sm:py-3.5 md:py-4 bg-white/10 backdrop-blur-md border-2 border-white/20 rounded-xl font-semibold text-sm sm:text-base text-white transition-all duration-300 hover:bg-white/20 hover:border-white/40 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/30 overflow-hidden touch-manipulation active:scale-95"
+                className="group relative px-6 sm:px-7 md:px-8 py-3 sm:py-3.5 md:py-4 bg-white/10 backdrop-blur-md border-2 border-white/20 rounded-lg sm:rounded-xl font-semibold text-sm sm:text-base text-white transition-all duration-300 hover:bg-white/20 hover:border-white/40 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/30 overflow-hidden touch-manipulation active:scale-95 w-full sm:w-auto"
               >
                 {/* Shimmer Effect */}
                 <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
@@ -157,11 +157,11 @@ const Hero = () => {
             </div>
 
             {/* Social Links */}
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-2 sm:gap-3 md:gap-6 pt-3 sm:pt-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 md:gap-6 pt-4 sm:pt-6 px-4 sm:px-6 md:px-0">
               <span className="text-white/60 text-xs sm:text-sm font-medium whitespace-nowrap">
                 Connect with me:
               </span>
-              <div className="flex gap-2 sm:gap-3 md:gap-4">
+              <div className="flex gap-3 sm:gap-3.5 md:gap-4">
                 <a
                   href="https://github.com/sainath-666"
                   target="_blank"
@@ -216,12 +216,12 @@ const Hero = () => {
 
           {/* Right Image Section */}
           <div
-            className="flex-1 flex justify-center lg:justify-end w-full lg:w-auto"
+            className="flex-1 flex justify-center lg:justify-end w-full lg:w-auto order-1 lg:order-2 mb-4 sm:mb-6 lg:mb-0"
             data-aos="fade-left"
             data-aos-duration="1000"
             data-aos-delay="200"
           >
-            <div className="relative w-64 h-64 xs:w-72 xs:h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] xl:w-[32rem] xl:h-[32rem]">
+            <div className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96 2xl:w-[28rem] 2xl:h-[28rem]">
               {/* Glowing Ring */}
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-teal-500 opacity-25 blur-3xl animate-pulse"></div>
 
