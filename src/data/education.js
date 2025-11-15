@@ -35,7 +35,7 @@ export const education = [
 ];
 export const workExperience = [
   {
-    title: "Software Junior Engineer",
+    title: "Junior Software Engineer",
     institution: "CLOVE Technologies",
     duration: "September 2025 - Present",
     location: "Hyderabad",
