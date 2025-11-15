@@ -8,13 +8,13 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden z-10 pt-14 sm:pt-16 lg:pt-20 pb-8 sm:pb-12"
+      className="relative min-h-[85vh] sm:min-h-[90vh] md:min-h-screen flex items-center justify-center overflow-hidden z-10 pt-14 sm:pt-16 md:pt-20 lg:pt-20 pb-6 sm:pb-8 md:pb-10 lg:pb-12"
     >
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 sm:gap-10 md:gap-12 lg:gap-16 w-full">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 max-w-7xl h-full flex items-center">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 w-full">
           {/* Left Content Section */}
           <div
-            className="flex-1 text-center lg:text-left space-y-4 sm:space-y-5 lg:space-y-6 w-full order-2 lg:order-1"
+            className="flex-1 text-center md:text-left space-y-2 sm:space-y-3 md:space-y-4 lg:space-y-5 w-full order-2 md:order-1 max-w-full md:max-w-lg lg:max-w-xl xl:max-w-2xl"
             data-aos="fade-right"
             data-aos-duration="1000"
           >
@@ -31,11 +31,11 @@ const Hero = () => {
 
             {/* Main Heading */}
             <div
-              className="space-y-2 sm:space-y-3"
+              className="space-y-1 sm:space-y-1.5 md:space-y-2"
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-extrabold leading-tight">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold leading-[1.1] sm:leading-[1.15] md:leading-tight">
                 <span className="block text-white drop-shadow-[0_0_30px_rgba(6,182,212,0.4)]">
                   Hi, I'm
                 </span>
@@ -52,14 +52,14 @@ const Hero = () => {
 
             {/* Role/Title */}
             <div
-              className="space-y-3 sm:space-y-4"
+              className="space-y-1.5 sm:space-y-2 md:space-y-2.5"
               data-aos="fade-up"
               data-aos-delay="300"
             >
-              <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold text-white/90 drop-shadow-[0_0_20px_rgba(99,102,241,0.4)]">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold text-white/90 drop-shadow-[0_0_20px_rgba(99,102,241,0.4)]">
                 Full Stack Developer
               </p>
-              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 sm:gap-2.5 md:gap-3 text-xs sm:text-sm md:text-base text-white/70 px-2 sm:px-4 md:px-0">
+              <div className="flex flex-wrap items-center justify-center md:justify-start gap-2 sm:gap-2.5 md:gap-3 text-xs sm:text-sm md:text-base text-white/70 px-2 sm:px-4 md:px-0">
                 <span className="group/tech relative px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-md sm:rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/30 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300 cursor-default overflow-hidden text-xs sm:text-sm">
                   <span className="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/20 to-blue-500/0 translate-x-[-100%] group-hover/tech:translate-x-[100%] transition-transform duration-700"></span>
                   <span className="relative z-10">React.js</span>
@@ -85,7 +85,7 @@ const Hero = () => {
 
             {/* Description */}
             <p
-              className="text-sm sm:text-base md:text-lg lg:text-xl text-white/80 max-w-2xl mx-auto lg:mx-0 leading-relaxed px-4 sm:px-6 md:px-0"
+              className="text-xs sm:text-sm md:text-base lg:text-lg text-white/80 max-w-full md:max-w-xl lg:max-w-2xl mx-auto md:mx-0 leading-relaxed px-4 sm:px-6 md:px-0"
               data-aos="fade-up"
               data-aos-delay="400"
             >
@@ -96,7 +96,7 @@ const Hero = () => {
 
             {/* CTA Buttons */}
             <div
-              className="flex flex-wrap justify-center lg:justify-start gap-3 sm:gap-4 pt-4 sm:pt-6 px-4 sm:px-6 md:px-0"
+              className="flex flex-wrap justify-center md:justify-start gap-2.5 sm:gap-3 md:gap-4 pt-2 sm:pt-3 md:pt-4 lg:pt-5 px-4 sm:px-6 md:px-0"
               data-aos="fade-up"
               data-aos-delay="500"
             >
@@ -104,7 +104,7 @@ const Hero = () => {
                 href={resumePdf}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative px-6 sm:px-7 md:px-8 py-3 sm:py-3.5 md:py-4 bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 rounded-lg sm:rounded-xl font-semibold text-sm sm:text-base text-white overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/50 touch-manipulation active:scale-95 w-full sm:w-auto"
+                className="group relative px-4 sm:px-5 md:px-6 lg:px-7 py-2 sm:py-2.5 md:py-3 lg:py-3.5 bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 rounded-lg sm:rounded-xl font-semibold text-xs sm:text-sm md:text-base text-white overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/50 touch-manipulation active:scale-95 w-full sm:w-auto"
               >
                 {/* Shimmer Effect */}
                 <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
@@ -134,7 +134,7 @@ const Hero = () => {
               </a>
               <a
                 href="#projects"
-                className="group relative px-6 sm:px-7 md:px-8 py-3 sm:py-3.5 md:py-4 bg-white/10 backdrop-blur-md border-2 border-white/20 rounded-lg sm:rounded-xl font-semibold text-sm sm:text-base text-white transition-all duration-300 hover:bg-white/20 hover:border-white/40 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/30 overflow-hidden touch-manipulation active:scale-95 w-full sm:w-auto"
+                className="group relative px-4 sm:px-5 md:px-6 lg:px-7 py-2 sm:py-2.5 md:py-3 lg:py-3.5 bg-white/10 backdrop-blur-md border-2 border-white/20 rounded-lg sm:rounded-xl font-semibold text-xs sm:text-sm md:text-base text-white transition-all duration-300 hover:bg-white/20 hover:border-white/40 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/30 overflow-hidden touch-manipulation active:scale-95 w-full sm:w-auto"
               >
                 {/* Shimmer Effect */}
                 <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
@@ -165,11 +165,11 @@ const Hero = () => {
             </div>
 
             {/* Social Links */}
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 md:gap-6 pt-4 sm:pt-6 px-4 sm:px-6 md:px-0">
+            <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-2 sm:gap-3 md:gap-4 lg:gap-5 pt-2 sm:pt-3 md:pt-4 lg:pt-5 px-4 sm:px-6 md:px-0">
               <span className="text-white/60 text-xs sm:text-sm font-medium whitespace-nowrap">
                 Connect with me:
               </span>
-              <div className="flex gap-3 sm:gap-3.5 md:gap-4">
+              <div className="flex gap-2.5 sm:gap-3 md:gap-3.5 lg:gap-4">
                 <a
                   href="https://github.com/sainath-666"
                   target="_blank"
@@ -224,12 +224,12 @@ const Hero = () => {
 
           {/* Right Image Section */}
           <div
-            className="flex-1 flex justify-center lg:justify-end w-full lg:w-auto order-1 lg:order-2 mb-4 sm:mb-6 lg:mb-0"
+            className="flex-1 flex justify-center md:justify-end items-center w-full md:w-auto order-1 md:order-2 mb-3 sm:mb-4 md:mb-0 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto md:mx-0"
             data-aos="fade-left"
             data-aos-duration="1000"
             data-aos-delay="200"
           >
-            <div className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96 2xl:w-[28rem] 2xl:h-[28rem]">
+            <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 xl:w-80 xl:h-80 2xl:w-96 2xl:h-96 flex-shrink-0">
               {/* Glowing Ring */}
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-teal-500 opacity-25 blur-3xl animate-pulse"></div>
 
@@ -239,7 +239,7 @@ const Hero = () => {
               </div>
 
               {/* Profile Image Container */}
-              <div className="absolute inset-2 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl backdrop-blur-sm bg-white/5 group hover:scale-105 transition-all duration-500 z-10 hover:shadow-[0_0_50px_rgba(6,182,212,0.5)]">
+              <div className="absolute inset-2 sm:inset-2.5 md:inset-3 rounded-full overflow-hidden border-[3px] sm:border-4 border-white/20 shadow-2xl backdrop-blur-sm bg-white/5 group hover:scale-105 transition-all duration-500 z-10 hover:shadow-[0_0_50px_rgba(6,182,212,0.5)]">
                 <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/30 via-indigo-500/30 to-teal-500/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <img
