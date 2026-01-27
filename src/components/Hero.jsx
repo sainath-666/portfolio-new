@@ -26,7 +26,7 @@ const Hero = () => {
             >
               <div className="absolute inset-0 bg-gradient-to-r from-green-500/20 via-emerald-500/20 to-green-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <span className="relative z-10 w-2 h-2 bg-green-400 rounded-full animate-pulse group-hover:animate-ping shadow-lg shadow-green-400/50"></span>
-              <span className="relative z-10">Available for opportunities</span>
+              <span className="relative z-10">Available for Freelancing</span>
             </div>
 
             {/* Main Heading */}
