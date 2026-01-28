@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sainathreddy.vercel.app/sitemap.xml
+Sitemap: https://sainathreddy.in/sitemap.xml
+

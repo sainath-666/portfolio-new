@@ -7,6 +7,8 @@ import angularIcon from "../assets/skillsSVG/angular.svg";
 import reactIcon from "../assets/skillsSVG/react.svg";
 import viteIcon from "../assets/skillsSVG/vite.svg";
 import materialuiIcon from "../assets/skillsSVG/materialui.svg";
+import reactNativeIcon from "../assets/skillsSVG/reactnative.svg";
+import flutterIcon from "../assets/skillsSVG/flutter.svg";
 import nodejsIcon from "../assets/skillsSVG/nodejs.svg";
 import expressjsIcon from "../assets/skillsSVG/expressjs.svg";
 import dotnetIcon from "../assets/skillsSVG/dotnet.svg";
@@ -192,6 +194,42 @@ const skills = [
         ],
         quote:
           "Material UI brings design harmony and development speed together — beauty meets consistency in every component.",
+      },
+      {
+        name: "React Native",
+        icon: reactNativeIcon,
+        description:
+          "A powerful framework for building native mobile applications using React and JavaScript, enabling cross-platform development for iOS and Android.",
+        experience: "1+ years",
+        projects: [
+          "Mobile Chat Application",
+          "E-Commerce Mobile App",
+          "Task Manager App",
+        ],
+        libraries: [
+          "React Navigation",
+          "Expo",
+          "React Native Paper",
+          "Async Storage",
+          "React Native Vector Icons",
+        ],
+        quote:
+          "React Native bridges the gap between web and mobile — write once in React, deploy everywhere.",
+      },
+      {
+        name: "Flutter",
+        icon: flutterIcon,
+        description:
+          "Google's UI toolkit for building natively compiled applications for mobile, web, and desktop from a single codebase using Dart.",
+        experience: "Beginner",
+        projects: [
+          "Weather App UI",
+          "To-Do List Mobile App",
+          "Flutter Learning Projects",
+        ],
+        libraries: ["Provider", "Bloc", "GetX", "Dio", "Flutter Material"],
+        quote:
+          "Flutter delivers beautiful, fast experiences across all platforms — one codebase, infinite possibilities.",
       },
     ],
   },
