@@ -13,7 +13,10 @@ const Skills = () => {
     >
       <div className="max-w-7xl mx-auto w-full">
         {/* Section Header */}
-        <div className="text-center mb-8 sm:mb-12 md:mb-16" data-aos="fade-down">
+        <div
+          className="text-center mb-8 sm:mb-12 md:mb-16"
+          data-aos="fade-down"
+        >
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white drop-shadow-[0_0_30px_rgba(6,182,212,0.4)] mb-3 sm:mb-4">
             My Tech Stack
           </h2>
@@ -46,7 +49,7 @@ const Skills = () => {
                 <div className="relative z-10">
                   {/* Group Header */}
                   <div className="flex items-center gap-1.5 sm:gap-2 md:gap-3 mb-3 sm:mb-4 md:mb-6">
-                    <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-cyan-400 rounded-full animate-pulse flex-shrink-0"></div>
+                    <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-cyan-400 rounded-full flex-shrink-0"></div>
                     <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-white truncate">
                       {group.title}
                     </h3>
@@ -91,7 +94,7 @@ const Skills = () => {
 
                           {/* Hover Indicator */}
                           <div
-                            className={`absolute w-3 h-3 bg-cyan-400 rounded-full opacity-0 group-hover/skill:opacity-100 transition-opacity duration-300 animate-pulse ${
+                            className={`absolute w-3 h-3 bg-cyan-400 rounded-full opacity-0 group-hover/skill:opacity-100 transition-opacity duration-300 ${
                               group.title === "Tools & Platforms"
                                 ? "top-0 right-0"
                                 : "-top-1 -right-1"
