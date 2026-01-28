@@ -44,7 +44,19 @@ This is a modern, responsive personal portfolio website built with **React** and
 
 ## 🌐 Live Demo
 
-Check out the live site: [Portfolio Live](https://sainathreddy.vercel.app/)
+Check out the live site: **[sainathreddy.in](https://sainathreddy.in)**
+
+## 🔍 SEO Optimized
+
+This portfolio is fully optimized for search engines with:
+
+- Comprehensive meta tags and Open Graph data
+- JSON-LD structured data
+- Sitemap and robots.txt
+- Performance optimizations
+- Mobile-friendly design
+
+For SEO setup instructions, see [SEO_SETUP_GUIDE.md](SEO_SETUP_GUIDE.md)
 
 ## 📸 Example Projects
 
