@@ -1,18 +1,6 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "redirects": [
-    {
-      "source": "https://www.sainathreddy.in/:path*",
-      "destination": "https://sainathreddy.in/:path*",
-      "permanent": true
-    },
-    {
-      "source": "https://sainathreddy.vercel.app/:path*",
-      "destination": "https://sainathreddy.in/:path*",
-      "permanent": true
-    }
-  ],
   "headers": [
     {
       "source": "/(.*)",
