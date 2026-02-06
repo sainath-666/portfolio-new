@@ -1,36 +1,43 @@
-import React from "react";
+import { useRef, useEffect } from "react";
 import { createPortal } from "react-dom";
+import { SkillItem } from "../types";
 
-const SkillModal = ({ skill, onClose }) => {
-  const modalRef = React.useRef(null);
+interface SkillModalProps {
+  skill: SkillItem | null;
+  onClose: () => void;
+}
+
+const SkillModal = ({ skill, onClose }: SkillModalProps) => {
+  const modalRef = useRef<HTMLDivElement>(null);
 
   // Trap focus and close on Esc
-  React.useEffect(() => {
+  useEffect(() => {
     if (!skill || !modalRef.current) return;
 
-    const focusable = modalRef.current.querySelectorAll(
-      'a, button, textarea, input, select, [tabindex]:not([tabindex="-1"])'
+    const focusable = modalRef.current.querySelectorAll<HTMLElement>(
+      'a, button, textarea, input, select, [tabindex]:not([tabindex="-1"])',
     );
     const first = focusable[0];
     const last = focusable[focusable.length - 1];
-    const handleKeyDown = (e) => {
+
+    const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
       if (e.key === "Tab") {
         if (e.shiftKey) {
           if (document.activeElement === first) {
             e.preventDefault();
-            last.focus();
+            last?.focus();
           }
         } else {
           if (document.activeElement === last) {
             e.preventDefault();
-            first.focus();
+            first?.focus();
           }
         }
       }
     };
     document.addEventListener("keydown", handleKeyDown);
-    first && first.focus();
+    first?.focus();
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, [skill, onClose]);
 
