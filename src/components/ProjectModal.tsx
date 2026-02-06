@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useCallback } from "react";
 import { Project } from "../types";
 
 interface ProjectModalProps {
@@ -14,6 +14,11 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
   const modalRef = useRef<HTMLDivElement>(null);
 
   const totalSlides = project?.screenshot?.length || 0;
+
+  const handleClose = useCallback(() => {
+    setShow(false);
+    setTimeout(onClose, 300);
+  }, [onClose]);
 
   // Trap focus and close on Esc
   useEffect(() => {
@@ -43,7 +48,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
     document.addEventListener("keydown", handleKeyDown);
     first?.focus();
     return () => document.removeEventListener("keydown", handleKeyDown);
-  }, [show]);
+  }, [show, handleClose]);
 
   // Autoplay effect
   useEffect(() => {
@@ -57,11 +62,6 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
 
     return () => clearInterval(interval);
   }, [isHovered, totalSlides]);
-
-  const handleClose = () => {
-    setShow(false);
-    setTimeout(onClose, 300);
-  };
 
   const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % totalSlides);
   const prevSlide = () =>
