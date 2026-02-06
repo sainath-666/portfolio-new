@@ -30,7 +30,9 @@ import wordpressIcon from "../assets/skillsSVG/wordpress.svg";
 import informaticaidmcIcon from "../assets/skillsSVG/informaticaidmc.svg";
 import powerappsIcon from "../assets/skillsSVG/powerapps.svg";
 
-const skills = [
+import { SkillCategory } from "../types";
+
+const skills: SkillCategory[] = [
   {
     title: "Frontend",
     stack: [

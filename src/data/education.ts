@@ -1,4 +1,6 @@
-export const education = [
+import { Education, WorkExperience } from "../types";
+
+export const education: Education[] = [
   {
     title: "B.Tech in CSE (IoT, Cybersecurity & Blockchain)",
     institution: "Siddharth Institute of Engineering & Technology",
@@ -33,7 +35,8 @@ export const education = [
     ],
   },
 ];
-export const workExperience = [
+
+export const workExperience: WorkExperience[] = [
   {
     title: "Junior Software Engineer",
     institution: "CLOVE Technologies",
@@ -49,7 +52,7 @@ export const workExperience = [
   },
 ];
 
-export const internships = [
+export const internships: Education[] = [
   {
     title: "Web Development Intern",
     institution: "ShadowFox",

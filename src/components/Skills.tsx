@@ -1,10 +1,11 @@
 import { useState, Suspense, lazy } from "react";
 import skills from "../data/skills";
+import { SkillItem } from "../types";
 
 const SkillModal = lazy(() => import("./SkillModal"));
 
 const Skills = () => {
-  const [selectedSkill, setSelectedSkill] = useState(null);
+  const [selectedSkill, setSelectedSkill] = useState<SkillItem | null>(null);
 
   return (
     <section
@@ -67,7 +68,7 @@ const Skills = () => {
                     {group.stack.map((skill) => {
                       return (
                         <div
-                          key={skill.id || skill.name}
+                          key={skill.name}
                           className={`group/skill relative flex flex-col items-center justify-center gap-1 sm:gap-2 p-1.5 sm:p-2 md:p-3 rounded-md sm:rounded-lg md:rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-cyan-400/50 transition-all duration-300 cursor-pointer hover:scale-110 touch-manipulation active:scale-95 w-full max-w-full ${
                             group.title === "Tools & Platforms"
                               ? "lg:flex-shrink-0 lg:w-auto lg:min-w-[100px]"

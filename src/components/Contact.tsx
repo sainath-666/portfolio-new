@@ -9,9 +9,9 @@ const Contact = () => {
   const [isError, setIsError] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const form = e.target;
+    const form = e.currentTarget;
     setLoading(true);
     setShowToast(false);
 
@@ -56,7 +56,10 @@ const Contact = () => {
     >
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-8 sm:mb-12 md:mb-16" data-aos="fade-down">
+        <div
+          className="text-center mb-8 sm:mb-12 md:mb-16"
+          data-aos="fade-down"
+        >
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white drop-shadow-[0_0_30px_rgba(6,182,212,0.4)] mb-3 sm:mb-4">
             Contact Me
           </h2>
@@ -86,7 +89,10 @@ const Contact = () => {
                   <div className="flex-1 h-px bg-gradient-to-r from-cyan-400/50 to-transparent"></div>
                 </div>
 
-                <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+                <form
+                  onSubmit={handleSubmit}
+                  className="space-y-4 sm:space-y-6"
+                >
                   <div className="group/input">
                     <input
                       type="text"
@@ -110,7 +116,7 @@ const Contact = () => {
                   <div className="group/input">
                     <textarea
                       name="message"
-                      rows="5"
+                      rows={5}
                       required
                       placeholder="Your Message"
                       className="w-full p-3 sm:p-4 rounded-lg sm:rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 text-sm sm:text-base text-white placeholder-gray-400 resize-none focus:outline-none focus:border-cyan-400/50 focus:bg-white/10 transition-all duration-300"
@@ -176,7 +182,11 @@ const Contact = () => {
           </div>
 
           {/* Contact Info & Social Links */}
-          <div className="space-y-4 sm:space-y-6 md:space-y-8" data-aos="fade-left" data-aos-delay="200">
+          <div
+            className="space-y-4 sm:space-y-6 md:space-y-8"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
             {/* Contact Info Card */}
             <div className="relative group">
               <div className="relative p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 hover:border-indigo-400/50 transition-all duration-300 overflow-hidden">
@@ -323,7 +333,11 @@ const Contact = () => {
         >
           <div className="flex items-center gap-2 sm:gap-3">
             {isError ? (
-              <svg className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <svg
+                className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
                 <path
                   fillRule="evenodd"
                   d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
@@ -331,7 +345,11 @@ const Contact = () => {
                 />
               </svg>
             ) : (
-              <svg className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <svg
+                className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
                 <path
                   fillRule="evenodd"
                   d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"

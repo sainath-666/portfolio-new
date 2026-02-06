@@ -25,6 +25,8 @@ import {
 } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 
+import { Project } from "../types";
+
 import chatImg from "../assets/projectsIMG/real-time-chat-application/thumbnail.png";
 import chat1 from "../assets/projectsIMG/real-time-chat-application/ss-1.png";
 import chat2 from "../assets/projectsIMG/real-time-chat-application/ss-2.png";
@@ -85,7 +87,7 @@ import car4 from "../assets/projectsIMG/car-rental/ss-4.png";
 import car5 from "../assets/projectsIMG/car-rental/ss-5.png";
 import car6 from "../assets/projectsIMG/car-rental/ss-6.png";
 
-const projects = [
+const projects: Project[] = [
   {
     image: chatImg,
     title: "Chatty - Real-time Chat Application",

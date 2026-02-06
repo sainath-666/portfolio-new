@@ -1,49 +1,61 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useCallback } from "react";
+import { Project } from "../types";
 
-const ProjectModal = ({ project, onClose }) => {
+interface ProjectModalProps {
+  project: Project | null;
+  onClose: () => void;
+}
+
+const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
   const [show, setShow] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
-  const slideshowRef = useRef(null);
-  const modalRef = useRef(null);
+  const slideshowRef = useRef<HTMLDivElement>(null);
+  const modalRef = useRef<HTMLDivElement>(null);
 
-  const totalSlides = project.screenshot?.length || 0;
+  const totalSlides = project?.screenshot?.length || 0;
+
+  const handleClose = useCallback(() => {
+    setShow(false);
+    setTimeout(onClose, 300);
+  }, [onClose]);
 
   // Trap focus and close on Esc
   useEffect(() => {
-    if (!show) return;
-    const focusable = modalRef.current.querySelectorAll(
-      'a, button, textarea, input, select, [tabindex]:not([tabindex="-1"])'
+    if (!show || !modalRef.current) return;
+    const focusable = modalRef.current.querySelectorAll<HTMLElement>(
+      'a, button, textarea, input, select, [tabindex]:not([tabindex="-1"])',
     );
     const first = focusable[0];
     const last = focusable[focusable.length - 1];
-    const handleKeyDown = (e) => {
+
+    const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") handleClose();
       if (e.key === "Tab") {
         if (e.shiftKey) {
           if (document.activeElement === first) {
             e.preventDefault();
-            last.focus();
+            last?.focus();
           }
         } else {
           if (document.activeElement === last) {
             e.preventDefault();
-            first.focus();
+            first?.focus();
           }
         }
       }
     };
     document.addEventListener("keydown", handleKeyDown);
-    first && first.focus();
+    first?.focus();
     return () => document.removeEventListener("keydown", handleKeyDown);
-  }, [show]);
+  }, [show, handleClose]);
 
   // Autoplay effect
   useEffect(() => {
     setShow(true);
 
     const interval = setInterval(() => {
-      if (!isHovered) {
+      if (!isHovered && totalSlides > 0) {
         setCurrentSlide((prev) => (prev + 1) % totalSlides);
       }
     }, 2000); // change every 2 seconds
@@ -51,13 +63,7 @@ const ProjectModal = ({ project, onClose }) => {
     return () => clearInterval(interval);
   }, [isHovered, totalSlides]);
 
-  const handleClose = () => {
-    setShow(false);
-    setTimeout(onClose, 300);
-  };
-
-  const nextSlide = () =>
-    setCurrentSlide((prev) => (prev + 1) % totalSlides);
+  const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % totalSlides);
   const prevSlide = () =>
     setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
 
@@ -65,8 +71,9 @@ const ProjectModal = ({ project, onClose }) => {
 
   return (
     <div
-      className={`fixed inset-0 bg-black/40 backdrop-blur-sm z-50 flex justify-center items-center px-4 transition-opacity duration-300 ${show ? "opacity-100" : "opacity-0"
-        }`}
+      className={`fixed inset-0 bg-black/40 backdrop-blur-sm z-50 flex justify-center items-center px-4 transition-opacity duration-300 ${
+        show ? "opacity-100" : "opacity-0"
+      }`}
       onClick={handleClose}
       aria-modal="true"
       role="dialog"
@@ -74,8 +81,9 @@ const ProjectModal = ({ project, onClose }) => {
       <div
         ref={modalRef}
         onClick={(e) => e.stopPropagation()}
-        className={`bg-white/10 backdrop-blur-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto rounded-xl overflow-hidden text-white shadow-2xl transform transition-all duration-500 ease-in-out ${show ? "scale-100 opacity-100" : "scale-75 opacity-0"
-          }`}
+        className={`bg-white/10 backdrop-blur-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto rounded-xl overflow-hidden text-white shadow-2xl transform transition-all duration-500 ease-in-out ${
+          show ? "scale-100 opacity-100" : "scale-75 opacity-0"
+        }`}
         tabIndex={-1}
       >
         {/* Close Button */}
@@ -98,8 +106,9 @@ const ProjectModal = ({ project, onClose }) => {
               key={index}
               src={src}
               alt={`Screenshot of ${project.title} - Slide ${index + 1}`}
-              className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
-                }`}
+              className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${
+                index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
+              }`}
               loading="lazy"
             />
           ))}

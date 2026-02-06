@@ -1,6 +1,8 @@
 import { workExperience } from "../data/education";
 
 const About = () => {
+  const currentJob = workExperience[0];
+
   return (
     <section
       id="about"
@@ -8,7 +10,10 @@ const About = () => {
     >
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-8 sm:mb-12 md:mb-16" data-aos="fade-down">
+        <div
+          className="text-center mb-8 sm:mb-12 md:mb-16"
+          data-aos="fade-down"
+        >
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white drop-shadow-[0_0_30px_rgba(6,182,212,0.4)] mb-3 sm:mb-4">
             About Me
           </h2>
@@ -37,7 +42,7 @@ const About = () => {
               </div>
 
               {/* Current Job Card */}
-              {workExperience[0] && (
+              {currentJob && (
                 <div className="relative p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 hover:border-cyan-400/50 transition-all duration-300 group overflow-hidden">
                   {/* Shimmer Effect */}
                   <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
@@ -55,25 +60,25 @@ const About = () => {
                           </span>
                         </div>
                         <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-1">
-                          {workExperience[0].title}
+                          {currentJob.title}
                         </h3>
                         <p className="text-cyan-400 font-semibold text-sm sm:text-base">
-                          {workExperience[0].institution}
+                          {currentJob.institution}
                         </p>
                       </div>
                       <div className="text-left sm:text-right mt-2 sm:mt-0">
                         <p className="text-xs sm:text-sm text-gray-400">
-                          {workExperience[0].location}
+                          {currentJob.location}
                         </p>
                         <p className="text-xs sm:text-sm font-medium text-cyan-400">
-                          {workExperience[0].duration}
+                          {currentJob.duration}
                         </p>
                       </div>
                     </div>
 
                     {/* Tech Stack */}
                     <div className="flex flex-wrap gap-2 mb-4">
-                      {workExperience[0].techStack.map((tech, idx) => (
+                      {currentJob.techStack?.map((tech, idx) => (
                         <span
                           key={idx}
                           className="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs font-medium text-gray-300 hover:bg-white/10 hover:border-cyan-400/50 transition-all duration-300"
@@ -85,7 +90,7 @@ const About = () => {
 
                     {/* Highlights */}
                     <ul className="space-y-2 text-sm text-gray-400">
-                      {workExperience[0].highlights
+                      {currentJob.highlights
                         .slice(0, 2)
                         .map((highlight, idx) => (
                           <li key={idx} className="flex items-start gap-2">
@@ -120,7 +125,11 @@ const About = () => {
           </div>
 
           {/* Right Side - Personal Info */}
-          <div className="space-y-4 sm:space-y-6 md:space-y-8" data-aos="fade-left" data-aos-delay="200">
+          <div
+            className="space-y-4 sm:space-y-6 md:space-y-8"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
             {/* Personal Info Card */}
             <div className="relative p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 hover:border-white/30 transition-all duration-300 group overflow-hidden">
               {/* Glow Effect */}

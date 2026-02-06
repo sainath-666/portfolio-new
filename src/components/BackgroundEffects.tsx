@@ -1,11 +1,19 @@
 import { useState, useEffect } from "react";
 
+interface Position {
+  x: number;
+  y: number;
+}
+
 const BackgroundEffects = () => {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+  const [mousePosition, setMousePosition] = useState<Position>({ x: 0, y: 0 });
+  const [cursorPosition, setCursorPosition] = useState<Position>({
+    x: 0,
+    y: 0,
+  });
 
   useEffect(() => {
-    const handleMouseMove = (e) => {
+    const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({
         x: (e.clientX / window.innerWidth) * 100,
         y: (e.clientY / window.innerHeight) * 100,
@@ -123,4 +131,3 @@ const BackgroundEffects = () => {
 };
 
 export default BackgroundEffects;
-
