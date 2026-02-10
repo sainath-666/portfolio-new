@@ -21,7 +21,7 @@ const Skills = () => {
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white drop-shadow-[0_0_30px_rgba(6,182,212,0.4)] mb-3 sm:mb-4">
             My Tech Stack
           </h2>
-          <div className="w-16 sm:w-20 md:w-24 h-1 bg-gradient-to-r from-cyan-400 to-indigo-400 rounded-full mx-auto"></div>
+          <div className="w-16 sm:w-20 md:w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-400 rounded-full mx-auto"></div>
           <p className="text-gray-400 mt-4 sm:mt-6 text-sm sm:text-base md:text-lg max-w-2xl mx-auto px-4 sm:px-0">
             Technologies and tools I use to build amazing digital experiences
           </p>
@@ -45,7 +45,7 @@ const Skills = () => {
                 <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
 
                 {/* Glow Effect */}
-                <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500/20 via-indigo-500/20 to-teal-500/20 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-300 -z-10"></div>
+                <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500/20 via-blue-500/20 to-indigo-500/20 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-300 -z-10"></div>
 
                 <div className="relative z-10">
                   {/* Group Header */}
@@ -85,7 +85,7 @@ const Skills = () => {
                               loading="lazy"
                             />
                             {/* Hover Glow */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/20 to-indigo-400/20 opacity-0 group-hover/skill:opacity-100 rounded-lg transition-opacity duration-300"></div>
+                            <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/20 to-blue-400/20 opacity-0 group-hover/skill:opacity-100 rounded-lg transition-opacity duration-300"></div>
                           </div>
 
                           {/* Skill Name */}
@@ -132,3 +132,7 @@ const Skills = () => {
 };
 
 export default Skills;
+
+
+
+

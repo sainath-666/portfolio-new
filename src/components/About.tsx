@@ -17,7 +17,7 @@ const About = () => {
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white drop-shadow-[0_0_30px_rgba(6,182,212,0.4)] mb-3 sm:mb-4">
             About Me
           </h2>
-          <div className="w-16 sm:w-20 md:w-24 h-1 bg-gradient-to-r from-cyan-400 to-indigo-400 rounded-full mx-auto"></div>
+          <div className="w-16 sm:w-20 md:w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-400 rounded-full mx-auto"></div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
@@ -26,10 +26,10 @@ const About = () => {
             {/* About Text */}
             <div className="space-y-4 sm:space-y-6">
               <div className="relative p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 hover:border-white/20 transition-all duration-300 group">
-                <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 via-indigo-500/10 to-teal-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl sm:rounded-2xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 via-blue-500/10 to-indigo-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl sm:rounded-2xl"></div>
                 <p className="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed relative z-10">
                   I'm{" "}
-                  <span className="font-semibold bg-gradient-to-r from-cyan-400 to-teal-400 bg-clip-text text-transparent">
+                  <span className="font-semibold bg-gradient-to-r from-cyan-400 to-indigo-400 bg-clip-text text-transparent">
                     Sainathreddy
                   </span>
                   , a passionate{" "}
@@ -48,7 +48,7 @@ const About = () => {
                   <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
 
                   {/* Glow Effect */}
-                  <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500/20 to-indigo-500/20 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-300 -z-10"></div>
+                  <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-300 -z-10"></div>
 
                   <div className="relative z-10">
                     <div className="flex items-start justify-between mb-4">
@@ -109,17 +109,17 @@ const About = () => {
                   "Code isn't just about logic — it's about creating meaningful
                   impact."
                 </p>
-                <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-cyan-400 to-indigo-400 rounded-l-xl"></div>
+                <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-cyan-400 to-blue-400 rounded-l-xl"></div>
               </div>
 
               {/* Second Quote */}
               <div className="relative p-4 sm:p-6 rounded-xl bg-white/5 backdrop-blur-md border border-white/10 hover:border-white/20 transition-all duration-300 group">
-                <div className="absolute inset-0 bg-gradient-to-r from-indigo-500/10 via-teal-500/10 to-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
-                <p className="italic text-indigo-300 text-sm sm:text-base md:text-lg leading-relaxed relative z-10">
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-indigo-500/10 to-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+                <p className="italic text-blue-300 text-sm sm:text-base md:text-lg leading-relaxed relative z-10">
                   "The best way to predict the future is to create it — one line
                   of code at a time."
                 </p>
-                <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-indigo-400 to-teal-400 rounded-l-xl"></div>
+                <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-blue-400 to-indigo-400 rounded-l-xl"></div>
               </div>
             </div>
           </div>
@@ -133,7 +133,7 @@ const About = () => {
             {/* Personal Info Card */}
             <div className="relative p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 hover:border-white/30 transition-all duration-300 group overflow-hidden">
               {/* Glow Effect */}
-              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500/20 via-indigo-500/20 to-teal-500/20 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-300 -z-10"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500/20 via-blue-500/20 to-indigo-500/20 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-300 -z-10"></div>
 
               <div className="relative z-10">
                 <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-4 sm:mb-6 flex items-center gap-2">
@@ -214,8 +214,8 @@ const About = () => {
                     <strong className="text-white block mb-1 text-sm">
                       Freelancing:
                     </strong>
-                    <span className="text-teal-400 font-semibold flex items-center gap-2 text-sm">
-                      <span className="w-2 h-2 bg-teal-400 rounded-full animate-pulse"></span>
+                    <span className="text-indigo-400 font-semibold flex items-center gap-2 text-sm">
+                      <span className="w-2 h-2 bg-indigo-400 rounded-full animate-pulse"></span>
                       Available
                     </span>
                   </div>
@@ -240,3 +240,7 @@ const About = () => {
 };
 
 export default About;
+
+
+
+

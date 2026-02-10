@@ -51,9 +51,16 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
   }, [show, handleClose]);
 
   // Autoplay effect
+  // Mount animation
   useEffect(() => {
-    setShow(true);
+    const timer = requestAnimationFrame(() => {
+      setShow(true);
+    });
+    return () => cancelAnimationFrame(timer);
+  }, []);
 
+  // Autoplay effect
+  useEffect(() => {
     const interval = setInterval(() => {
       if (!isHovered && totalSlides > 0) {
         setCurrentSlide((prev) => (prev + 1) % totalSlides);
@@ -128,14 +135,14 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
             <>
               <button
                 onClick={prevSlide}
-                className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 text-2xl sm:text-3xl text-white hover:text-blue-400 z-30 p-2 rounded-full hover:bg-white/10 touch-manipulation active:scale-90"
+                className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 text-2xl sm:text-3xl text-white hover:text-cyan-400 z-30 p-2 rounded-full hover:bg-white/10 touch-manipulation active:scale-90"
                 aria-label="Previous slide"
               >
                 ‹
               </button>
               <button
                 onClick={nextSlide}
-                className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 text-2xl sm:text-3xl text-white hover:text-blue-400 z-30 p-2 rounded-full hover:bg-white/10 touch-manipulation active:scale-90"
+                className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 text-2xl sm:text-3xl text-white hover:text-cyan-400 z-30 p-2 rounded-full hover:bg-white/10 touch-manipulation active:scale-90"
                 aria-label="Next slide"
               >
                 ›
@@ -148,7 +155,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
         <div className="flex flex-col md:flex-row gap-4 sm:gap-6 p-4 sm:p-6">
           {/* Left: Highlights */}
           <div className="md:w-1/2">
-            <h3 className="text-lg sm:text-xl font-semibold text-blue-400 mb-2">
+            <h3 className="text-lg sm:text-xl font-semibold text-cyan-400 mb-2">
               Highlights
             </h3>
             <ul className="list-disc list-inside text-gray-300 text-xs sm:text-sm space-y-1 pl-2">
@@ -160,7 +167,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
 
           {/* Right: Stack + Buttons */}
           <div className="md:w-1/2">
-            <h3 className="text-lg sm:text-xl font-semibold text-blue-400 mb-2">
+            <h3 className="text-lg sm:text-xl font-semibold text-cyan-400 mb-2">
               Tech Stack
             </h3>
             <div className="flex flex-wrap gap-2 sm:gap-3 mb-3 sm:mb-4">
@@ -180,7 +187,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-blue-500 hover:bg-blue-600 px-3 sm:px-4 py-2 rounded-md text-sm sm:text-base font-medium text-center touch-manipulation active:scale-95"
+                className="bg-cyan-500 hover:bg-cyan-600 px-3 sm:px-4 py-2 rounded-md text-sm sm:text-base font-medium text-center touch-manipulation active:scale-95"
               >
                 GitHub
               </a>
@@ -188,7 +195,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                 href={project.live}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border border-blue-400 hover:bg-blue-500 hover:text-white px-3 sm:px-4 py-2 rounded-md text-sm sm:text-base font-medium text-center touch-manipulation active:scale-95"
+                className="border border-cyan-400 hover:bg-cyan-500 hover:text-white px-3 sm:px-4 py-2 rounded-md text-sm sm:text-base font-medium text-center touch-manipulation active:scale-95"
               >
                 Live Demo
               </a>
@@ -201,3 +208,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
 };
 
 export default ProjectModal;
+
+
+
+

@@ -63,7 +63,7 @@ const Contact = () => {
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white drop-shadow-[0_0_30px_rgba(6,182,212,0.4)] mb-3 sm:mb-4">
             Contact Me
           </h2>
-          <div className="w-16 sm:w-20 md:w-24 h-1 bg-gradient-to-r from-cyan-400 to-indigo-400 rounded-full mx-auto"></div>
+          <div className="w-16 sm:w-20 md:w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-400 rounded-full mx-auto"></div>
           <p className="text-gray-400 mt-4 sm:mt-6 text-sm sm:text-base md:text-lg max-w-2xl mx-auto px-4 sm:px-0">
             Let's connect! Send me a message or reach out through social
             platforms
@@ -78,7 +78,7 @@ const Contact = () => {
               <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
 
               {/* Glow Effect */}
-              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500/20 via-indigo-500/20 to-teal-500/20 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-300 -z-10"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500/20 via-blue-500/20 to-indigo-500/20 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-300 -z-10"></div>
 
               <div className="relative z-10">
                 <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
@@ -124,7 +124,7 @@ const Contact = () => {
                   </div>
                   <button
                     type="submit"
-                    className="group/btn relative w-full px-5 sm:px-6 md:px-8 py-3 sm:py-3.5 md:py-4 rounded-lg sm:rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-500 hover:from-cyan-400 hover:to-indigo-400 text-white text-sm sm:text-base font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/50 overflow-hidden disabled:opacity-50 disabled:cursor-not-allowed touch-manipulation active:scale-95"
+                    className="group/btn relative w-full px-5 sm:px-6 md:px-8 py-3 sm:py-3.5 md:py-4 rounded-lg sm:rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-white text-sm sm:text-base font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/50 overflow-hidden disabled:opacity-50 disabled:cursor-not-allowed touch-manipulation active:scale-95"
                     disabled={loading}
                     aria-busy={loading}
                   >
@@ -189,17 +189,17 @@ const Contact = () => {
           >
             {/* Contact Info Card */}
             <div className="relative group">
-              <div className="relative p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 hover:border-indigo-400/50 transition-all duration-300 overflow-hidden">
+              <div className="relative p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 hover:border-blue-400/50 transition-all duration-300 overflow-hidden">
                 {/* Shimmer Effect */}
                 <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
 
                 <div className="relative z-10">
                   <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
-                    <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-indigo-400 rounded-full animate-pulse"></div>
+                    <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-blue-400 rounded-full animate-pulse"></div>
                     <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white">
                       Get in Touch
                     </h3>
-                    <div className="flex-1 h-px bg-gradient-to-r from-indigo-400/50 to-transparent"></div>
+                    <div className="flex-1 h-px bg-gradient-to-r from-blue-400/50 to-transparent"></div>
                   </div>
 
                   <div className="space-y-3 sm:space-y-4">
@@ -222,10 +222,10 @@ const Contact = () => {
                       href="https://wa.link/oeaxld"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group/item flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-teal-400/50 transition-all duration-300 hover:scale-105"
+                      className="group/item flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-indigo-400/50 transition-all duration-300 hover:scale-105"
                     >
-                      <div className="w-12 h-12 rounded-lg bg-teal-400/20 border border-teal-400/30 flex items-center justify-center group-hover/item:bg-teal-400/30 transition-all duration-300">
-                        <IoLogoWhatsapp className="text-teal-400 text-xl" />
+                      <div className="w-12 h-12 rounded-lg bg-indigo-400/20 border border-indigo-400/30 flex items-center justify-center group-hover/item:bg-indigo-400/30 transition-all duration-300">
+                        <IoLogoWhatsapp className="text-indigo-400 text-xl" />
                       </div>
                       <div className="flex-1">
                         <p className="text-xs text-gray-400 mb-1">WhatsApp</p>
@@ -239,17 +239,17 @@ const Contact = () => {
 
             {/* Social Links Card */}
             <div className="relative group">
-              <div className="relative p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 hover:border-teal-400/50 transition-all duration-300 overflow-hidden">
+              <div className="relative p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 hover:border-indigo-400/50 transition-all duration-300 overflow-hidden">
                 {/* Shimmer Effect */}
                 <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
 
                 <div className="relative z-10">
                   <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
-                    <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-teal-400 rounded-full animate-pulse"></div>
+                    <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-indigo-400 rounded-full animate-pulse"></div>
                     <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white">
                       Social Links
                     </h3>
-                    <div className="flex-1 h-px bg-gradient-to-r from-teal-400/50 to-transparent"></div>
+                    <div className="flex-1 h-px bg-gradient-to-r from-indigo-400/50 to-transparent"></div>
                   </div>
 
                   <div className="grid grid-cols-2 gap-3 sm:gap-4">
@@ -273,10 +273,10 @@ const Contact = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="LinkedIn"
-                      className="group/social relative p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-indigo-400/50 transition-all duration-300 hover:scale-105 flex flex-col items-center gap-2"
+                      className="group/social relative p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-blue-400/50 transition-all duration-300 hover:scale-105 flex flex-col items-center gap-2"
                     >
-                      <div className="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center group-hover/social:bg-indigo-400/20 transition-all duration-300">
-                        <FaLinkedin className="text-gray-300 group-hover/social:text-indigo-400 text-2xl transition-colors duration-300" />
+                      <div className="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center group-hover/social:bg-blue-400/20 transition-all duration-300">
+                        <FaLinkedin className="text-gray-300 group-hover/social:text-blue-400 text-2xl transition-colors duration-300" />
                       </div>
                       <span className="text-xs text-gray-300 group-hover/social:text-white font-medium transition-colors duration-300">
                         LinkedIn
@@ -288,10 +288,10 @@ const Contact = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Instagram"
-                      className="group/social relative p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-pink-400/50 transition-all duration-300 hover:scale-105 flex flex-col items-center gap-2"
+                      className="group/social relative p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-indigo-400/50 transition-all duration-300 hover:scale-105 flex flex-col items-center gap-2"
                     >
-                      <div className="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center group-hover/social:bg-pink-400/20 transition-all duration-300">
-                        <FaInstagram className="text-gray-300 group-hover/social:text-pink-400 text-2xl transition-colors duration-300" />
+                      <div className="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center group-hover/social:bg-indigo-400/20 transition-all duration-300">
+                        <FaInstagram className="text-gray-300 group-hover/social:text-indigo-400 text-2xl transition-colors duration-300" />
                       </div>
                       <span className="text-xs text-gray-300 group-hover/social:text-white font-medium transition-colors duration-300">
                         Instagram
@@ -326,7 +326,7 @@ const Contact = () => {
           className={`fixed bottom-4 sm:bottom-6 left-1/2 transform -translate-x-1/2 z-50 max-w-[90vw] sm:max-w-md ${
             isError
               ? "bg-red-500/90 backdrop-blur-md border border-red-400/50"
-              : "bg-green-500/90 backdrop-blur-md border border-green-400/50"
+              : "bg-cyan-500/90 backdrop-blur-md border border-cyan-400/50"
           } text-white px-4 sm:px-6 py-3 sm:py-4 rounded-lg sm:rounded-xl shadow-2xl animate-fade-in mx-4`}
           role="status"
           aria-live="polite"
@@ -366,3 +366,7 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+
+

@@ -112,7 +112,7 @@ const SkillModal = ({ skill, onClose }: SkillModalProps) => {
 
         {/* Quote */}
         {skill.quote && (
-          <blockquote className="text-xs sm:text-sm italic text-blue-300 border-l-4 border-blue-500 pl-3 sm:pl-4 mt-3">
+          <blockquote className="text-xs sm:text-sm italic text-cyan-300 border-l-4 border-cyan-500 pl-3 sm:pl-4 mt-3">
             "{skill.quote}"
           </blockquote>
         )}
@@ -124,3 +124,7 @@ const SkillModal = ({ skill, onClose }: SkillModalProps) => {
 };
 
 export default SkillModal;
+
+
+
+
