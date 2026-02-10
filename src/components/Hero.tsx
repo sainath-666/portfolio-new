@@ -20,12 +20,12 @@ const Hero = () => {
           >
             {/* Greeting Badge */}
             <div
-              className="group relative inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs sm:text-sm text-white/90 font-medium hover:bg-white/15 hover:border-white/30 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/30 overflow-hidden"
+              className="group relative inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs sm:text-sm text-white/90 font-medium hover:bg-white/15 hover:border-white/30 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/30 overflow-hidden"
               data-aos="fade-down"
               data-aos-delay="100"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-green-500/20 via-emerald-500/20 to-green-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <span className="relative z-10 w-2 h-2 bg-green-400 rounded-full animate-pulse group-hover:animate-ping shadow-lg shadow-green-400/50"></span>
+              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 via-cyan-500/20 to-cyan-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <span className="relative z-10 w-2 h-2 bg-cyan-400 rounded-full animate-pulse group-hover:animate-ping shadow-lg shadow-cyan-400/50"></span>
               <span className="relative z-10">Available for Freelancing</span>
             </div>
 
@@ -40,10 +40,10 @@ const Hero = () => {
                   Hi, I'm
                 </span>
                 <span className="block relative">
-                  <span className="bg-gradient-to-r from-cyan-400 via-indigo-400 to-teal-400 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
+                  <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
                     Sainathreddy
                   </span>
-                  <span className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-indigo-400 to-teal-400 bg-clip-text text-transparent opacity-30 blur-xl animate-gradient bg-[length:200%_auto]">
+                  <span className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 bg-clip-text text-transparent opacity-30 blur-xl animate-gradient bg-[length:200%_auto]">
                     Sainathreddy
                   </span>
                 </span>
@@ -60,24 +60,24 @@ const Hero = () => {
                 Full Stack Developer
               </p>
               <div className="flex flex-wrap items-center justify-center md:justify-start gap-2 sm:gap-2.5 md:gap-3 text-xs sm:text-sm md:text-base text-white/70 px-2 sm:px-4 md:px-0">
-                <span className="group/tech relative px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-md sm:rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/30 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300 cursor-default overflow-hidden text-xs sm:text-sm">
-                  <span className="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/20 to-blue-500/0 translate-x-[-100%] group-hover/tech:translate-x-[100%] transition-transform duration-700"></span>
+                <span className="group/tech relative px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-md sm:rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/30 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300 cursor-default overflow-hidden text-xs sm:text-sm">
+                  <span className="absolute inset-0 bg-gradient-to-r from-cyan-500/0 via-cyan-500/20 to-cyan-500/0 translate-x-[-100%] group-hover/tech:translate-x-[100%] transition-transform duration-700"></span>
                   <span className="relative z-10">React.js</span>
                 </span>
                 <span className="group/tech relative px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-md sm:rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/30 hover:scale-105 hover:shadow-lg hover:shadow-red-500/20 transition-all duration-300 cursor-default overflow-hidden text-xs sm:text-sm">
                   <span className="absolute inset-0 bg-gradient-to-r from-red-500/0 via-red-500/20 to-red-500/0 translate-x-[-100%] group-hover/tech:translate-x-[100%] transition-transform duration-700"></span>
                   <span className="relative z-10">Angular</span>
                 </span>
-                <span className="group/tech relative px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-md sm:rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/30 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300 cursor-default overflow-hidden text-xs sm:text-sm">
-                  <span className="absolute inset-0 bg-gradient-to-r from-purple-500/0 via-purple-500/20 to-purple-500/0 translate-x-[-100%] group-hover/tech:translate-x-[100%] transition-transform duration-700"></span>
+                <span className="group/tech relative px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-md sm:rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/30 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300 cursor-default overflow-hidden text-xs sm:text-sm">
+                  <span className="absolute inset-0 bg-gradient-to-r from-cyan-500/0 via-cyan-500/20 to-cyan-500/0 translate-x-[-100%] group-hover/tech:translate-x-[100%] transition-transform duration-700"></span>
                   <span className="relative z-10">.NET Core</span>
                 </span>
-                <span className="group/tech relative px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-md sm:rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/30 hover:scale-105 hover:shadow-lg hover:shadow-green-500/20 transition-all duration-300 cursor-default overflow-hidden text-xs sm:text-sm">
-                  <span className="absolute inset-0 bg-gradient-to-r from-green-500/0 via-green-500/20 to-green-500/0 translate-x-[-100%] group-hover/tech:translate-x-[100%] transition-transform duration-700"></span>
+                <span className="group/tech relative px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-md sm:rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/30 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300 cursor-default overflow-hidden text-xs sm:text-sm">
+                  <span className="absolute inset-0 bg-gradient-to-r from-cyan-500/0 via-cyan-500/20 to-cyan-500/0 translate-x-[-100%] group-hover/tech:translate-x-[100%] transition-transform duration-700"></span>
                   <span className="relative z-10">Node.js</span>
                 </span>
-                <span className="group/tech relative px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-md sm:rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/30 hover:scale-105 hover:shadow-lg hover:shadow-emerald-500/20 transition-all duration-300 cursor-default overflow-hidden text-xs sm:text-sm">
-                  <span className="absolute inset-0 bg-gradient-to-r from-emerald-500/0 via-emerald-500/20 to-emerald-500/0 translate-x-[-100%] group-hover/tech:translate-x-[100%] transition-transform duration-700"></span>
+                <span className="group/tech relative px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-md sm:rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/30 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300 cursor-default overflow-hidden text-xs sm:text-sm">
+                  <span className="absolute inset-0 bg-gradient-to-r from-cyan-500/0 via-cyan-500/20 to-cyan-500/0 translate-x-[-100%] group-hover/tech:translate-x-[100%] transition-transform duration-700"></span>
                   <span className="relative z-10">MongoDB</span>
                 </span>
               </div>
@@ -104,13 +104,13 @@ const Hero = () => {
                 href={resumePdf}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative px-4 sm:px-5 md:px-6 lg:px-7 py-2 sm:py-2.5 md:py-3 lg:py-3.5 bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 rounded-lg sm:rounded-xl font-semibold text-xs sm:text-sm md:text-base text-white overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/50 touch-manipulation active:scale-95 w-full sm:w-auto"
+                className="group relative px-4 sm:px-5 md:px-6 lg:px-7 py-2 sm:py-2.5 md:py-3 lg:py-3.5 bg-gradient-to-r from-cyan-500 via-cyan-600 to-indigo-500 rounded-lg sm:rounded-xl font-semibold text-xs sm:text-sm md:text-base text-white overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/50 touch-manipulation active:scale-95 w-full sm:w-auto"
               >
                 {/* Shimmer Effect */}
                 <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
 
                 {/* Gradient Overlay on Hover */}
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-pink-500 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 via-indigo-500 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
                 {/* Glow Effect */}
                 <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
@@ -134,16 +134,16 @@ const Hero = () => {
               </a>
               <a
                 href="#projects"
-                className="group relative px-4 sm:px-5 md:px-6 lg:px-7 py-2 sm:py-2.5 md:py-3 lg:py-3.5 bg-white/10 backdrop-blur-md border-2 border-white/20 rounded-lg sm:rounded-xl font-semibold text-xs sm:text-sm md:text-base text-white transition-all duration-300 hover:bg-white/20 hover:border-white/40 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/30 overflow-hidden touch-manipulation active:scale-95 w-full sm:w-auto"
+                className="group relative px-4 sm:px-5 md:px-6 lg:px-7 py-2 sm:py-2.5 md:py-3 lg:py-3.5 bg-white/10 backdrop-blur-md border-2 border-white/20 rounded-lg sm:rounded-xl font-semibold text-xs sm:text-sm md:text-base text-white transition-all duration-300 hover:bg-white/20 hover:border-white/40 hover:scale-105 hover:shadow-xl hover:shadow-cyan-500/30 overflow-hidden touch-manipulation active:scale-95 w-full sm:w-auto"
               >
                 {/* Shimmer Effect */}
                 <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
 
                 {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 via-cyan-500/20 to-indigo-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
                 {/* Glow Effect */}
-                <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-300 -z-10"></div>
+                <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500/20 to-cyan-500/20 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-300 -z-10"></div>
 
                 <span className="relative z-10 flex items-center gap-2">
                   View Projects
@@ -175,9 +175,9 @@ const Hero = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="GitHub"
-                  className="group relative p-2.5 sm:p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/80 transition-all duration-300 hover:bg-white/20 hover:text-white hover:scale-110 hover:shadow-lg hover:shadow-blue-500/50 overflow-hidden touch-manipulation active:scale-95"
+                  className="group relative p-2.5 sm:p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/80 transition-all duration-300 hover:bg-white/20 hover:text-white hover:scale-110 hover:shadow-lg hover:shadow-cyan-500/50 overflow-hidden touch-manipulation active:scale-95"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-cyan-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <FaGithub className="w-4 h-4 sm:w-5 sm:h-5 relative z-10 transition-transform group-hover:rotate-12" />
                 </a>
                 <a
@@ -185,17 +185,17 @@ const Hero = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
-                  className="group relative p-2.5 sm:p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/80 transition-all duration-300 hover:bg-white/20 hover:text-white hover:scale-110 hover:shadow-lg hover:shadow-blue-500/50 overflow-hidden touch-manipulation active:scale-95"
+                  className="group relative p-2.5 sm:p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/80 transition-all duration-300 hover:bg-white/20 hover:text-white hover:scale-110 hover:shadow-lg hover:shadow-cyan-500/50 overflow-hidden touch-manipulation active:scale-95"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-cyan-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <FaLinkedin className="w-4 h-4 sm:w-5 sm:h-5 relative z-10 transition-transform group-hover:rotate-12" />
                 </a>
                 <a
                   href="mailto:sai65265@gmail.com"
                   aria-label="Email"
-                  className="group relative p-2.5 sm:p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/80 transition-all duration-300 hover:bg-white/20 hover:text-white hover:scale-110 hover:shadow-lg hover:shadow-blue-500/50 overflow-hidden touch-manipulation active:scale-95"
+                  className="group relative p-2.5 sm:p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/80 transition-all duration-300 hover:bg-white/20 hover:text-white hover:scale-110 hover:shadow-lg hover:shadow-cyan-500/50 overflow-hidden touch-manipulation active:scale-95"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-br from-red-500/20 to-pink-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-red-500/20 to-indigo-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <MdEmail className="w-4 h-4 sm:w-5 sm:h-5 relative z-10 transition-transform group-hover:rotate-12" />
                 </a>
                 <a
@@ -203,9 +203,9 @@ const Hero = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="WhatsApp"
-                  className="group relative p-2.5 sm:p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/80 transition-all duration-300 hover:bg-white/20 hover:text-white hover:scale-110 hover:shadow-lg hover:shadow-green-500/50 overflow-hidden touch-manipulation active:scale-95"
+                  className="group relative p-2.5 sm:p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/80 transition-all duration-300 hover:bg-white/20 hover:text-white hover:scale-110 hover:shadow-lg hover:shadow-cyan-500/50 overflow-hidden touch-manipulation active:scale-95"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-br from-green-500/20 to-emerald-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-cyan-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <IoLogoWhatsapp className="w-4 h-4 sm:w-5 sm:h-5 relative z-10 transition-transform group-hover:rotate-12" />
                 </a>
                 <a
@@ -213,9 +213,9 @@ const Hero = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram"
-                  className="group relative p-2.5 sm:p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/80 transition-all duration-300 hover:bg-white/20 hover:text-white hover:scale-110 hover:shadow-lg hover:shadow-pink-500/50 overflow-hidden touch-manipulation active:scale-95"
+                  className="group relative p-2.5 sm:p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/80 transition-all duration-300 hover:bg-white/20 hover:text-white hover:scale-110 hover:shadow-lg hover:shadow-indigo-500/50 overflow-hidden touch-manipulation active:scale-95"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-br from-pink-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/20 to-cyan-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <FaInstagram className="w-4 h-4 sm:w-5 sm:h-5 relative z-10 transition-transform group-hover:rotate-12" />
                 </a>
               </div>
@@ -231,16 +231,16 @@ const Hero = () => {
           >
             <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 xl:w-80 xl:h-80 2xl:w-96 2xl:h-96 flex-shrink-0">
               {/* Glowing Ring */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-teal-500 opacity-25 blur-3xl animate-pulse"></div>
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500 opacity-25 blur-3xl animate-pulse"></div>
 
               {/* Animated Border Ring */}
-              <div className="absolute inset-0 rounded-full p-1 bg-gradient-to-r from-cyan-500 via-indigo-500 to-teal-500 animate-spin-slow">
+              <div className="absolute inset-0 rounded-full p-1 bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500 animate-spin-slow">
                 <div className="w-full h-full rounded-full bg-slate-950"></div>
               </div>
 
               {/* Profile Image Container */}
               <div className="absolute inset-2 sm:inset-2.5 md:inset-3 rounded-full overflow-hidden border-[3px] sm:border-4 border-white/20 shadow-2xl backdrop-blur-sm bg-white/5 group hover:scale-105 transition-all duration-500 z-10 hover:shadow-[0_0_50px_rgba(6,182,212,0.5)]">
-                <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/30 via-indigo-500/30 to-teal-500/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/30 via-blue-500/30 to-indigo-500/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <img
                   src={profileImg}
@@ -281,3 +281,7 @@ const Hero = () => {
 };
 
 export default Hero;
+
+
+
+

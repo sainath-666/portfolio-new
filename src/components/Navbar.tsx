@@ -61,13 +61,13 @@ const Navbar = () => {
             className="group relative flex items-center gap-2 touch-manipulation"
           >
             {/* Logo Container */}
-            <div className="relative w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 overflow-hidden shadow-lg shadow-cyan-500/20 group-hover:shadow-cyan-500/40 transition-all duration-300 group-hover:scale-105">
+            <div className="relative w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-xl bg-gradient-to-tr from-cyan-500 to-cyan-600 overflow-hidden shadow-lg shadow-cyan-500/20 group-hover:shadow-cyan-500/40 transition-all duration-300 group-hover:scale-105">
               <span className="text-white font-bold text-lg sm:text-xl relative z-10">
                 S
               </span>
               <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
-            <span className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-white via-cyan-100 to-gray-300 bg-clip-text text-transparent group-hover:from-cyan-400 group-hover:via-blue-400 group-hover:to-teal-400 transition-all duration-300">
+            <span className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-white via-cyan-100 to-gray-300 bg-clip-text text-transparent group-hover:from-cyan-400 group-hover:via-cyan-400 group-hover:to-indigo-400 transition-all duration-300">
               Sainath
             </span>
           </a>
@@ -177,3 +177,7 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
+

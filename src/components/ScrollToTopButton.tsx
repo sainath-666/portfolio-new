@@ -25,7 +25,7 @@ const ScrollToTopButton = () => {
       {visible && (
         <button
           onClick={scrollToTop}
-          className="group hidden md:flex fixed bottom-4 right-4 sm:right-6 md:right-20 z-50 p-3 sm:p-4 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-teal-500 hover:from-cyan-400 hover:via-indigo-400 hover:to-teal-400 text-white shadow-2xl shadow-cyan-500/50 transition-all duration-300 hover:scale-110 hover:shadow-cyan-500/70 overflow-hidden backdrop-blur-md border border-white/20 touch-manipulation active:scale-95 items-center justify-center"
+          className="group hidden md:flex fixed bottom-4 right-4 sm:right-6 md:right-20 z-50 p-3 sm:p-4 rounded-full bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500 hover:from-cyan-400 hover:via-blue-400 hover:to-indigo-400 text-white shadow-2xl shadow-cyan-500/50 transition-all duration-300 hover:scale-110 hover:shadow-cyan-500/70 overflow-hidden backdrop-blur-md border border-white/20 touch-manipulation active:scale-95 items-center justify-center"
           aria-label="Scroll to top"
         >
           {/* Shimmer Effect */}
@@ -42,3 +42,7 @@ const ScrollToTopButton = () => {
 };
 
 export default ScrollToTopButton;
+
+
+
+

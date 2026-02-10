@@ -16,7 +16,7 @@ const Resume = () => {
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white drop-shadow-[0_0_30px_rgba(6,182,212,0.4)] mb-3 sm:mb-4">
             Resume
           </h2>
-          <div className="w-16 sm:w-20 md:w-24 h-1 bg-gradient-to-r from-cyan-400 to-indigo-400 rounded-full mx-auto"></div>
+          <div className="w-16 sm:w-20 md:w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-400 rounded-full mx-auto"></div>
           <p className="text-gray-400 mt-4 sm:mt-6 text-sm sm:text-base md:text-lg max-w-2xl mx-auto px-4 sm:px-0">
             My professional journey, education, and experiences
           </p>
@@ -45,7 +45,7 @@ const Resume = () => {
                   <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
 
                   {/* Glow Effect */}
-                  <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500/20 to-indigo-500/20 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-300 -z-10"></div>
+                  <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-300 -z-10"></div>
 
                   <div className="relative z-10">
                     <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
@@ -108,15 +108,73 @@ const Resume = () => {
           {/* Education Section */}
           <div data-aos="fade-right">
             <div className="flex items-center gap-2 sm:gap-3 mb-6 sm:mb-8">
-              <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-indigo-400 rounded-full animate-pulse"></div>
+              <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-blue-400 rounded-full animate-pulse"></div>
               <h3 className="text-2xl sm:text-3xl font-bold text-white">
                 Education
+              </h3>
+              <div className="flex-1 h-px bg-gradient-to-r from-blue-400/50 to-transparent"></div>
+            </div>
+
+            <div className="space-y-6">
+              {education.map((item, index) => (
+                <div
+                  key={index}
+                  className="relative group"
+                  data-aos="fade-up"
+                  data-aos-delay={index * 100}
+                >
+                  <div className="relative p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 hover:border-blue-400/50 transition-all duration-300 overflow-hidden">
+                    {/* Shimmer Effect */}
+                    <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
+
+                    <div className="relative z-10">
+                      <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
+                        <div className="flex-1">
+                          <h4 className="text-lg sm:text-xl font-bold text-white mb-2">
+                            {item.title}
+                          </h4>
+                          <p className="text-blue-400 font-semibold text-sm sm:text-base mb-1">
+                            {item.institution}
+                          </p>
+                          <p className="text-gray-400 text-xs sm:text-sm">
+                            {item.location}
+                          </p>
+                        </div>
+                        <div className="text-left sm:text-right mt-2 sm:mt-0">
+                          <span className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg bg-blue-400/20 border border-blue-400/30 text-blue-300 font-semibold text-xs sm:text-sm">
+                            {item.duration}
+                          </span>
+                        </div>
+                      </div>
+                      <ul className="space-y-2 text-sm text-gray-300">
+                        {item.highlights.map((point, i) => (
+                          <li key={i} className="flex items-start gap-3">
+                            <span className="text-blue-400 mt-1.5 flex-shrink-0">
+                              ▹
+                            </span>
+                            <span>{point}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Internships Section */}
+          <div data-aos="fade-left">
+            <div className="flex items-center gap-2 sm:gap-3 mb-6 sm:mb-8">
+              <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-indigo-400 rounded-full animate-pulse"></div>
+              <h3 className="text-2xl sm:text-3xl font-bold text-white">
+                Internships
               </h3>
               <div className="flex-1 h-px bg-gradient-to-r from-indigo-400/50 to-transparent"></div>
             </div>
 
             <div className="space-y-6">
-              {education.map((item, index) => (
+              {internships.map((item, index) => (
                 <div
                   key={index}
                   className="relative group"
@@ -162,64 +220,6 @@ const Resume = () => {
               ))}
             </div>
           </div>
-
-          {/* Internships Section */}
-          <div data-aos="fade-left">
-            <div className="flex items-center gap-2 sm:gap-3 mb-6 sm:mb-8">
-              <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-teal-400 rounded-full animate-pulse"></div>
-              <h3 className="text-2xl sm:text-3xl font-bold text-white">
-                Internships
-              </h3>
-              <div className="flex-1 h-px bg-gradient-to-r from-teal-400/50 to-transparent"></div>
-            </div>
-
-            <div className="space-y-6">
-              {internships.map((item, index) => (
-                <div
-                  key={index}
-                  className="relative group"
-                  data-aos="fade-up"
-                  data-aos-delay={index * 100}
-                >
-                  <div className="relative p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 hover:border-teal-400/50 transition-all duration-300 overflow-hidden">
-                    {/* Shimmer Effect */}
-                    <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
-
-                    <div className="relative z-10">
-                      <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
-                        <div className="flex-1">
-                          <h4 className="text-lg sm:text-xl font-bold text-white mb-2">
-                            {item.title}
-                          </h4>
-                          <p className="text-teal-400 font-semibold text-sm sm:text-base mb-1">
-                            {item.institution}
-                          </p>
-                          <p className="text-gray-400 text-xs sm:text-sm">
-                            {item.location}
-                          </p>
-                        </div>
-                        <div className="text-left sm:text-right mt-2 sm:mt-0">
-                          <span className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg bg-teal-400/20 border border-teal-400/30 text-teal-300 font-semibold text-xs sm:text-sm">
-                            {item.duration}
-                          </span>
-                        </div>
-                      </div>
-                      <ul className="space-y-2 text-sm text-gray-300">
-                        {item.highlights.map((point, i) => (
-                          <li key={i} className="flex items-start gap-3">
-                            <span className="text-teal-400 mt-1.5 flex-shrink-0">
-                              ▹
-                            </span>
-                            <span>{point}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
 
         {/* Download Resume Button */}
@@ -229,7 +229,7 @@ const Resume = () => {
             download
             rel="noopener noreferrer"
             target="_blank"
-            className="group relative inline-flex items-center gap-2 sm:gap-3 px-5 sm:px-6 md:px-8 py-3 sm:py-3.5 md:py-4 rounded-lg sm:rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-500 hover:from-cyan-400 hover:to-indigo-400 text-white text-sm sm:text-base md:text-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/50 overflow-hidden touch-manipulation active:scale-95"
+            className="group relative inline-flex items-center gap-2 sm:gap-3 px-5 sm:px-6 md:px-8 py-3 sm:py-3.5 md:py-4 rounded-lg sm:rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-white text-sm sm:text-base md:text-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/50 overflow-hidden touch-manipulation active:scale-95"
           >
             {/* Shimmer Effect */}
             <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
@@ -258,3 +258,7 @@ const Resume = () => {
 };
 
 export default Resume;
+
+
+
+

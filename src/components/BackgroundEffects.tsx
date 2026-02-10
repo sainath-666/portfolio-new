@@ -93,10 +93,10 @@ const BackgroundEffects = () => {
 
       {/* Floating Orbs with Enhanced Effects */}
       <div className="fixed top-20 left-10 w-72 h-72 bg-cyan-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob pointer-events-none z-0"></div>
-      <div className="fixed top-40 right-10 w-72 h-72 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000 pointer-events-none z-0"></div>
-      <div className="fixed -bottom-8 left-1/2 w-72 h-72 bg-teal-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000 pointer-events-none z-0"></div>
-      <div className="fixed top-1/2 right-1/4 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-3000 pointer-events-none z-0"></div>
-      <div className="fixed bottom-1/4 left-1/3 w-80 h-80 bg-emerald-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-5000 pointer-events-none z-0"></div>
+      <div className="fixed top-40 right-10 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000 pointer-events-none z-0"></div>
+      <div className="fixed -bottom-8 left-1/2 w-72 h-72 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000 pointer-events-none z-0"></div>
+      <div className="fixed top-1/2 right-1/4 w-96 h-96 bg-cyan-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-3000 pointer-events-none z-0"></div>
+      <div className="fixed bottom-1/4 left-1/3 w-80 h-80 bg-cyan-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-5000 pointer-events-none z-0"></div>
 
       {/* Animated Grid Pattern Overlay */}
       <div
@@ -118,7 +118,7 @@ const BackgroundEffects = () => {
           }}
         ></div>
         <div
-          className="absolute h-full w-px bg-gradient-to-b from-transparent via-indigo-500/25 to-transparent"
+          className="absolute h-full w-px bg-gradient-to-b from-transparent via-blue-500/25 to-transparent"
           style={{
             left: `${mousePosition.x}%`,
             transform: `translateX(-50%)`,
@@ -131,3 +131,7 @@ const BackgroundEffects = () => {
 };
 
 export default BackgroundEffects;
+
+
+
+
