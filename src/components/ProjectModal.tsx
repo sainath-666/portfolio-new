@@ -51,9 +51,16 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
   }, [show, handleClose]);
 
   // Autoplay effect
+  // Mount animation
   useEffect(() => {
-    setShow(true);
+    const timer = requestAnimationFrame(() => {
+      setShow(true);
+    });
+    return () => cancelAnimationFrame(timer);
+  }, []);
 
+  // Autoplay effect
+  useEffect(() => {
     const interval = setInterval(() => {
       if (!isHovered && totalSlides > 0) {
         setCurrentSlide((prev) => (prev + 1) % totalSlides);
