@@ -11,12 +11,18 @@
     "analyze": "vite-bundle-visualizer"
   },
   "dependencies": {
+    "@react-spring/three": "^10.0.3",
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.5.0",
     "@tailwindcss/vite": "^4.1.11",
     "@vercel/analytics": "^1.6.1",
     "aos": "^2.3.4",
+    "framer-motion": "^12.34.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-icons": "^5.5.0"
+    "react-icons": "^5.5.0",
+    "react-parallax-tilt": "^1.7.319",
+    "three": "^0.182.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.29.0",
@@ -24,6 +30,7 @@
     "@types/node": "^25.2.1",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
+    "@types/three": "^0.182.0",
     "@vitejs/plugin-react": "^4.5.2",
     "autoprefixer": "^10.4.21",
     "eslint": "^9.29.0",
